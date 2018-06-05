@@ -46,7 +46,7 @@ header, main, nav, aside, article, section, footer {
 #index main > section {
     height: 560px;
     border: solid 0.5px;
-    /* background: url(../images/background.svg); */
+    background: url(../images/background.svg);
     background-repeat: no-repeat;
     display: block;
     opacity: 0.75;
@@ -146,7 +146,7 @@ header, main, nav, aside, article, section, footer {
     border: solid 0.5px;
     display: block;
     position: relative;
-    opacity: 0.75;
+    opacity: 1;
 }
 
 #selfMenu main > section > article > h3 {
@@ -158,3 +158,179 @@ header, main, nav, aside, article, section, footer {
     left: 50px;
 }
 
+
+
+/*First line of players*/
+
+#selfMenu .playerHeadFirstLine {
+    position: relative;
+    top: 25px;
+    float: left;
+}
+
+#selfMenu  .playerHeadFirstLine p {
+    position: relative;
+    right: 27px;
+}
+
+#selfMenu #kadoshHead {
+    left: 90px;
+}
+
+#selfMenu #setkusHead {
+    left: 170px;
+}
+
+#selfMenu #tamasHead {
+    left: 245px;
+}
+
+#selfMenu #resmusHead {
+    left: 330px;
+}
+
+#selfMenu #kapilotoHead {
+    top: 27px; left: 410px;
+}
+
+
+
+/*Second line of players*/
+
+#selfMenu .second {
+    float: left;
+}
+
+
+#selfMenu .second > .playerHeadSecondLine {
+    position: relative;
+    top: 55px;
+    float: left;
+}
+
+#selfMenu .playerHeadSecondLine p {
+    position: relative;
+    right: 27px;
+}
+
+
+#selfMenu #fishlerHead {
+    left: 90px;
+}
+
+#selfMenu #malulHead {
+    left: 170px;
+}
+
+#selfMenu #magrashviliHead {
+    left: 285px;
+}
+
+#selfMenu #sardalHead {
+    left: 355px;
+}
+
+#selfMenu #shaimanHead {
+     left: 455px;
+}
+
+
+/*Third line of players*/
+
+#selfMenu .third {
+    float: left;
+}
+
+
+#selfMenu .third > .playerHeadThirdLine {
+    position: relative;
+    top: 95px;
+    float: left;
+}
+
+#selfMenu .playerHeadThirdLine p {
+    position: relative;
+    right: 27px;
+}
+
+#selfMenu #maximHead p {
+    right: 39px;
+}
+
+
+#selfMenu #barskiHead {
+    left: 90px;
+    position: relative;
+}
+
+#selfMenu #MamanHead {
+    left: 155px;
+    position: relative;
+}
+
+#selfMenu #shchterHead {
+    left: 235px;
+    position: relative;
+}
+
+#selfMenu #CiwanHead {
+    left: 321px;
+    position: relative;
+}
+
+#selfMenu #maximHead {
+     left: 412px;
+     position: relative;
+}
+
+
+
+/*Fourth line of players*/
+
+#selfMenu .fourth {
+    float: left;
+}
+
+
+#selfMenu .fourth > .playerHeadFourthLine {
+    position: relative;
+    top: 125px;
+    float: left;
+}
+
+#selfMenu .playerHeadFourthLine p {
+    position: relative;
+    right: 27px;
+}
+
+#selfMenu #arelHead p {
+    right: 10px;
+}
+
+#selfMenu #arelHead {
+    left: 90px;
+    position: relative;
+}
+
+#selfMenu #edanHead {
+    left: 199px;
+    position: relative;
+}
+
+#selfMenu #ginsariHead {
+    left: 280px;
+    position: relative;
+}
+
+#selfMenu #turjemanHead {
+    left: 371px;
+    position: relative;
+}
+
+#selfMenu #lahlaHead {
+     left: 450px;
+     position: relative;
+}
+
+
+/*---------------------//MainMenu---------------------*/
