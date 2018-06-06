@@ -17,6 +17,9 @@ header, main, nav, aside, article, section, footer {
 
 
 
+
+
+
 /*---------------------INDEX---------------------*/
 
 #index header {
@@ -83,6 +86,12 @@ header, main, nav, aside, article, section, footer {
 }
 
 /*---------------------//INDEX---------------------*/
+
+
+
+
+
+
 
 
 
@@ -192,35 +201,6 @@ header, main, nav, aside, article, section, footer {
     position: relative;
 }
 
-
-
-
-
-
-
-/* #selfMenu header nav {
-    width: 1024px;  height: 45px;
-    display: inline-block;
-    background-color: #606060;
-}
-#selfMenu header nav li {
-    list-style: none;
-    display: inline;
-    position: relative;
-    left: 120px;
-    bottom: 6px    
-} 
-#selfMenu header nav li a {
-    text-decoration: none;
-    position: relative;
-    top: 15px;
-    padding-left: 40px;
-    padding-right: 35px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
-    font-size: 24px;
-} */
-
 #selfMenu main > section {
     height: 560px;
     background-color: #f7f6f6;
@@ -239,7 +219,6 @@ header, main, nav, aside, article, section, footer {
     position: relative;
     left: 50px;
 }
-
 
 
 
@@ -432,6 +411,10 @@ header, main, nav, aside, article, section, footer {
 
 
 
+
+
+
+
 /*---------------------contactUs---------------------*/
 
 
@@ -470,11 +453,31 @@ form label .formDesign {
 #theButton {
     position: relative;
     top: 30px;  left: 130px;
-    background-color: #cc0d0d;
+    background-color: #606060;
     border-color: transparent;
 }
 
 #theButton:hover {
     background-color: #252525;
 }
+
+#successMessage {
+    /* display: none; */
+    width: 450px;   height: 200px;
+    position: absolute;
+    top: 300px; right:490px;
+    border: ridge 6px;
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 15px;
+    
+}
+
+#theSuccessButton {
+    position: relative;
+    background-color: #606060;
+    border-color: transparent;
+    top: 30px;
+}
+
 /*---------------------//contactUs---------------------*/
