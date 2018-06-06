@@ -3,141 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="includes/style.css">
     <title>selfMenu</title>
 </head>
-<body>
-    <div id="wrapper">
-        <section id="selfMenu">
-            <header>
-                <p>Hello Reuven!</p>
-                <a href="index.html"><article id="logo"></article></a>
-                <article id="reuven"></article>  
-                <nav>
-                    <ul>
+    <body>
+        <div id="wrapper">
+            <section id="selfMenu">
+                <header>
+                    <p>Hello Reuven!</p>
+                    <a href="index.html"><img id="logo" src="images/logo.svg"></a>
+                    <article id="reuven"></article>      
+
+
+
+
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light theNav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link hamburger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                            <div class="dropdown-menu dropDownMenu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item first" href="#"><i class="far fa-futbol"></i> &nbsp New Game</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-arrow-left"></i> &nbsp Previous Games</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="fab fa-stack-exchange"></i> &nbsp Statistics</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-male"></i> &nbsp Player Analysis</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-table"></i>&nbsp League Table</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-cog"></i>&nbsp Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-phone"></i>&nbsp Contact Us</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item logout" href="#"><i class="fas fa-sign-out-alt"></i>&nbsp Logout</a>
+                            </div>
+                        </li>
+                        <div id="navMainOptions">
+                            <li><a href="#">New Game</a></li>
+                            <li><a href="#">Previous Games</a></li>
+                            <li><a href="#">Statistics</a></li>
+                            <li><a href="#">Player Analysis</a></li>            
+                        </div>
+                    </nav>
+
+                    <!-- <nav>
+                        <ul>
                         <li><a href="#">New Game</a></li>
                         <li><a href="#">Previous Games</a></li>
                         <li><a href="#">Statistics</a></li>
-                        <li><a href="#">Player Analysis</a></li>
-                    </ul>
-                </nav>  
-            </header>
+                        <li><a href="#">Player Analysis</a></li>                    
 
-            <main>
-                <section>
-                    <article>
-                        <h3>FC Hapoel Haifa</h3>
-                    </article>
-                    
-                    <article class="playerHeadFirstLine" id="kadoshHead">
-                        <img src="images/playersProfile/kadoshHead.png">
-                        <p>#1 Ran Kadosh </p>
-                    </article>
-                    <article class="playerHeadFirstLine" id="setkusHead">
-                        <img src="images/playersProfile/setkusHead.png">
-                        <p>#13 Ernestas Setkus </p>
-                    </article>
-                    <article class="playerHeadFirstLine" id="tamasHead">
-                        <img src="images/playersProfile/tamasHead.png">
-                        <p>#30 Gabriel Tamas</p>
-                    </article>
-                    <article class="playerHeadFirstLine" id="resmusHead">
-                        <img src="images/playersProfile/resmusHead.png">
-                        <p>#2 Resmus Sjostedt</p>
-                    </article>
-                    <article class="playerHeadFirstLine" id="kapilotoHead">
-                        <img src="images/playersProfile/kapilotoHead.png">
-                        <p>#55 Nisso Kapiloto</p>
-                    </article>
+                        </ul>
+                    </nav>   -->
+                </header>
 
-
-                    <!-- Do the fist line as same as the second line (div class..)  -->
-                    <div class="second">
-                        <article class="playerHeadSecondLine" id="fishlerHead">
-                            <img src="images/playersProfile/fishlerHead.png">
-                            <p>#5 Ofek Fishler </p>
+                <main>
+                    <section>
+                        <article>
+                            <h3>&nbsp &nbsp &nbsp &nbsp FC Hapoel Haifa</h3>
                         </article>
-                        <article class="playerHeadSecondLine" id="malulHead">
-                            <img src="images/playersProfile/malulHead.png">
-                            <p>#4 Dor Malul </p>
+                        
+                        <article class="playerHeadFirstLine" id="kadoshHead">
+                            <img src="images/playersProfile/kadoshHead.png">
+                            <p>#1 Ran Kadosh </p>
                         </article>
-                        <article class="playerHeadSecondLine" id="magrashviliHead">
-                            <img src="images/playersProfile/magrashviHead.png">
-                            <p>#3 Haim Magrashvili</p>
+                        <article class="playerHeadFirstLine" id="setkusHead">
+                            <img src="images/playersProfile/setkusHead.png">
+                            <p>#13 Ernestas Setkus </p>
                         </article>
-                        <article class="playerHeadSecondLine" id="sardalHead">
-                            <img src="images/playersProfile/sardalHead.png">
-                            <p>#24 Liran Sardal </p>
+                        <article class="playerHeadFirstLine" id="tamasHead">
+                            <img src="images/playersProfile/tamasHead.png">
+                            <p>#30 Gabriel Tamas</p>
                         </article>
-                        <article class="playerHeadSecondLine" id="shaimanHead">
-                            <img src="images/playersProfile/shaimanHead.png">
-                            <p>#18 Shmuel Shaiman</p>
-                        </article>    
-                    </div>
-
-
-                    <div class="third">
-                        <article class="playerHeadThirdLine" id="barskiHead">
-                            <img src="images/playersProfile/barskiHead.png">
-                            <p>#77 Roslan Barski </p>
+                        <article class="playerHeadFirstLine" id="resmusHead">
+                            <img src="images/playersProfile/resmusHead.png">
+                            <p>#2 Resmus Sjostedt</p>
                         </article>
-                        <article class="playerHeadThirdLine" id="MamanHead">
-                            <img src="images/playersProfile/mamanHead.png">
-                            <p>#15 Hanan Maman </p>
+                        <article class="playerHeadFirstLine" id="kapilotoHead">
+                            <img src="images/playersProfile/kapilotoHead.png">
+                            <p>#55 Nisso Kapiloto</p>
                         </article>
-                        <article class="playerHeadThirdLine" id="shchterHead">
-                            <img src="images/playersProfile/shchterHead.png">
-                            <p>#12 Aner Shechter</p>
-                        </article>
-                        <article class="playerHeadThirdLine" id="CiwanHead">
-                            <img src="images/playersProfile/ciwanHead.png">
-                            <p>#8 Hisham Ciwan </p>
-                        </article>
-                        <article class="playerHeadThirdLine" id="maximHead">
-                            <img src="images/playersProfile/maximHead.png">
-                            <p>#7 Maxim Flakuchenko</p>
-                        </article>    
-                    </div>
 
 
-                    <div class="fourth">
-                        <article class="playerHeadFourthLine" id="arelHead">
-                            <img src="images/playersProfile/arelHead.png">
-                            <p>#6 Gal Arel </p>
-                        </article>
-                        <article class="playerHeadFourthLine" id="edanHead">
-                            <img src="images/playersProfile/edenHead.png">
-                            <p>#9 Eden Ben-Basat </p>
-                        </article>
-                        <article class="playerHeadFourthLine" id="ginsariHead">
-                            <img src="images/playersProfile/ginsariHead.png">
-                            <p>#14 Radu Ginsari</p>
-                        </article>
-                        <article class="playerHeadFourthLine" id="turjemanHead">
-                            <img src="images/playersProfile/turjemanHead.png">
-                            <p>#17 Alon Turjeman </p>
-                        </article>
-                        <article class="playerHeadFourthLine" id="lahlaHead">
-                            <img src="images/playersProfile/lahlaHead.png">
-                            <p>#11 Maharan Lahla</p>
-                        </article>    
-                    </div>
+                        <!-- Do the fist line as same as the second line (div class..)  -->
+                        <div class="second">
+                            <article class="playerHeadSecondLine" id="fishlerHead">
+                                <img src="images/playersProfile/fishlerHead.png">
+                                <p>#5 Ofek Fishler </p>
+                            </article>
+                            <article class="playerHeadSecondLine" id="malulHead">
+                                <img src="images/playersProfile/malulHead.png">
+                                <p>#4 Dor Malul </p>
+                            </article>
+                            <article class="playerHeadSecondLine" id="magrashviliHead">
+                                <img src="images/playersProfile/magrashviHead.png">
+                                <p>#3 Haim Magrashvili</p>
+                            </article>
+                            <article class="playerHeadSecondLine" id="sardalHead">
+                                <img src="images/playersProfile/sardalHead.png">
+                                <p>#24 Liran Sardal </p>
+                            </article>
+                            <article class="playerHeadSecondLine" id="shaimanHead">
+                                <img src="images/playersProfile/shaimanHead.png">
+                                <p>#18 Shmuel Shaiman</p>
+                            </article>    
+                        </div>
+
+
+                        <div class="third">
+                            <article class="playerHeadThirdLine" id="barskiHead">
+                                <img src="images/playersProfile/barskiHead.png">
+                                <p>#77 Roslan Barski </p>
+                            </article>
+                            <article class="playerHeadThirdLine" id="MamanHead">
+                                <img src="images/playersProfile/mamanHead.png">
+                                <p>#15 Hanan Maman </p>
+                            </article>
+                            <article class="playerHeadThirdLine" id="shchterHead">
+                                <img src="images/playersProfile/shchterHead.png">
+                                <p>#12 Aner Shechter</p>
+                            </article>
+                            <article class="playerHeadThirdLine" id="CiwanHead">
+                                <img src="images/playersProfile/ciwanHead.png">
+                                <p>#8 Hisham Ciwan </p>
+                            </article>
+                            <article class="playerHeadThirdLine" id="maximHead">
+                                <img src="images/playersProfile/maximHead.png">
+                                <p>#7 Maxim Flakuchenko</p>
+                            </article>    
+                        </div>
+
+
+                        <div class="fourth">
+                            <article class="playerHeadFourthLine" id="arelHead">
+                                <img src="images/playersProfile/arelHead.png">
+                                <p>#6 Gal Arel </p>
+                            </article>
+                            <article class="playerHeadFourthLine" id="edanHead">
+                                <img src="images/playersProfile/edenHead.png">
+                                <p>#9 Eden Ben-Basat </p>
+                            </article>
+                            <article class="playerHeadFourthLine" id="ginsariHead">
+                                <img src="images/playersProfile/ginsariHead.png">
+                                <p>#14 Radu Ginsari</p>
+                            </article>
+                            <article class="playerHeadFourthLine" id="turjemanHead">
+                                <img src="images/playersProfile/turjemanHead.png">
+                                <p>#17 Alon Turjeman </p>
+                            </article>
+                            <article class="playerHeadFourthLine" id="lahlaHead">
+                                <img src="images/playersProfile/lahlaHead.png">
+                                <p>#11 Maharan Lahla</p>
+                            </article>    
+                        </div>
 
 
 
+                    </section>
 
+                </main>
+            </section>
+        </div>
+        
 
-
-
-
-
-                </section>
-
-            </main>
-        </section>
-    </div>
-    
-
-    <script>src="includes/script.js"</script>
-</body>
+        <script>src="includes/script.js"</script>
+    </body>
 </html>
