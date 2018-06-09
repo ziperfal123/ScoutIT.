@@ -572,9 +572,8 @@ main {
 }
 
 #functions {
-    width: 227px;
+    width: 227px;       height: 596px;
     background-color: #f7f6f6;
-    height: 596px;
 }
 
 
@@ -748,7 +747,252 @@ ul {
 }
 
 
+
+
+/*TeanFormations..*/
+
+/*-4-3-3-*/
+
+#formation4_3_3 {
+    display: none;              /*NOTICE NONE!!!!*/
+}
+
+#formation4_3_3 article {
+    position: relative;
+}
+
+#formation4_3_3 .goalKeeper {
+    bottom: 310px; left: 15px;
+}
+
+#formation4_3_3 .fieldPlayer1 {
+    bottom: 600px;  left: 170px
+}
+
+#formation4_3_3 .fieldPlayer2 {
+    bottom: 530px;  left: 120px
+}
+
+#formation4_3_3 .fieldPlayer3 {
+    bottom: 430px;  left: 120px
+}
+
+#formation4_3_3 .fieldPlayer4 {
+    bottom: 365px;  left: 170px
+}
+
+
+
+#formation4_3_3 .fieldPlayer5 {
+    bottom: 760px;  left: 370px
+}
+
+#formation4_3_3 .fieldPlayer6 {
+    bottom: 710px;  left: 310px
+}
+
+#formation4_3_3 .fieldPlayer7 {
+    bottom: 650px;  left: 370px
+}
+
+
+
+#formation4_3_3 .fieldPlayer8 {
+    bottom: 1010px;  left: 590px;
+}
+
+#formation4_3_3 .fieldPlayer9 {
+    bottom: 910px;  left: 645px;
+}
+
+#formation4_3_3 .fieldPlayer10 {
+    bottom: 810px;  left: 590px
+}
+
+
+
+/*-3-5-2-*/
+
+#formation3_5_2 {
+    display: none;           /*NOTICE NONE!!!!*/
+}
+
+#formation3_5_2 article {
+    position: relative;
+}
+
+#formation3_5_2 .goalKeeper {
+    bottom: 310px; left: 15px;
+}
+
+#formation3_5_2 .fieldPlayer1 {
+    bottom: 540px;  left: 140px
+}
+
+#formation3_5_2 .fieldPlayer2 {
+    bottom: 442px;  left: 120px
+}
+
+#formation3_5_2 .fieldPlayer3 {
+    bottom: 355px;  left: 140px
+}
+
+
+
+
+#formation3_5_2 .fieldPlayer4 {
+    bottom: 785px;  left: 340px
+}
+
+#formation3_5_2 .fieldPlayer5 {
+    bottom: 725px;  left: 280px
+}
+
+#formation3_5_2 .fieldPlayer6 {
+    bottom: 630px;  left: 280px
+}
+
+#formation3_5_2 .fieldPlayer7 {
+    bottom: 570px;  left: 340px
+}
+
+#formation3_5_2 .fieldPlayer8 {
+    bottom: 840px;  left: 400px;
+}
+
+
+
+
+#formation3_5_2 .fieldPlayer9 {
+    bottom: 1020px;  left: 525px;
+}
+
+#formation3_5_2 .fieldPlayer10 {
+    bottom: 850px;  left: 525px
+} 
+
+ 
+
+
 /*---------------------//NewGame---------------------*/
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------matchReport---------------------*/
+
+
+#matchReport header {
+    width: 1024px;      height: 140px;
+    background-color: #606060;
+}
+
+#matchReport #logo {
+    width: 95px;    height: 80px;
+}
+
+#matchReport header > p {
+    display: inline;
+    color: #ffffff;
+    float: right;
+    position: relative;
+    top: 25px;   right: 100px;
+}
+#matchReport #reuven {
+    background: url(../images/reuven.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    left: 100px;
+    width: 85px;    height: 85px;
+    float: right;
+}
+
+#matchReport main > section {
+    height: 560px;
+    background-color: #f7f6f6;
+    border: solid 0.5px;
+    display: block;
+    position: relative;
+    opacity: 1;
+}
+
+#matchReport main > section > article > h3 {
+    width: 890px;
+    padding-top: 29px;
+    padding-bottom: 7px;
+    font-size: 25px;
+    border-bottom: solid 1px;
+    position: relative;
+    left: 50px;
+}
+
+#matchReport button {
+    width: 180px;   height: 30px;
+    position: relative;
+    float: right;
+    top: 15px;  right: 90px;
+    border: none;
+    border-radius: 4px;
+    background-color: #d6d6d6;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#theTeams {
+    position: relative;
+    top: 10px;  left: 330px;
+}
+
+#theScore {
+    display: inline;
+    position: relative;
+    bottom: 60px;   left: 150px;
+}
+
+
+#beitarLogo {
+    position: relative;
+    bottom: 127px;  left: 290px;
+}
+
+#gameDate {
+    width: 870px;    height: 50px;
+    position: relative;
+    bottom: 90px;   left: 80px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    text-align: center;
+    padding-top: 13px;
+}
+
+#theReport {
+    height: 280px;
+    position: relative;
+    bottom: 65px;   left: 80px;
+    font-size: 19px;
+    overflow-y: scroll;
+}
+
+#theReport p {
+    margin-top: 25px;
+}
+
+
+
+
+
+/*---------------------//matchReport---------------------*/
