@@ -1,1033 +1,2085 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-header, main, nav, aside, article, section, footer {
-    display: block;
-}
-
-#wrapper {
-    width: 1024px;
-    margin: 0px auto;
-    font-family: 'Poppins', sans-serif;
-}
-
-.clear {
-    clear: both;
-}
 
 
 
-
-
-
-
-
-
-/*---------------------INDEX---------------------*/
-
-#index header {
-    width: 1024px;      height: 140px;
-    background-color: #606060;
-}
-
-#index #logo {
-    width: 95px;    height: 80px;
-    background: url(../images/logo.svg);
-    background-repeat: no-repeat;
-    display: inline-block;
-
-
-}
-
-#index header > p {
-    display: inline;
-    color: #ffffff;
-    float: right;
-    position: relative;
-    top: 25px;   right: 100px;
-}
-#index #reuven {
-    background: url(../images/reuven.png);
-    background-repeat: no-repeat;
-    display: block;
-    position: relative;
-    width: 85px;    height: 85px;
-    float: right;
-    left: 100px;
-}
-
-#index main > section {
-    height: 560px;
-    border: solid 0.5px;
-    background: url(../images/background.svg);
-    background-repeat: no-repeat;
-    display: block;
-    opacity: 0.75;
-}
-
-#index #self, #index #rival {
-    width: 390px;   height: 71px;
-    position: relative;
-    left: 340px;
-    border-radius: 7px;
-    background-color: #111111;
-    text-align: center;
-    color: #ffffff;
-    padding-top: 20px;
-    padding-left: 10px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-}
-
-/* too long */
-#index main > section >  article > a{   
-    text-decoration: none;
-    color: #d6dbda;
-}
-
-#index #self{
-    top: 225px; 
-}
-
-#index #rival{
-    top: 250px;
-}
-
-/*---------------------//INDEX---------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*---------------------MainMenu---------------------*/
-
-#selfMenu header {
-    width: 1024px;      height: 140px;
-    background-color: #606060;
-}
-
-#selfMenu #logo {
-    width: 95px;    height: 80px;
-    background: url(../images/logo.svg);
-    background-repeat: no-repeat;
-    display: inline-block;
-}
-
-#selfMenu header > p {
-    display: inline;
-    color: #ffffff;
-    float: right;
-    position: relative;
-    top: 25px;   right: 100px;
-}
-#selfMenu #reuven {
-    background: url(../images/reuven.png);
-    background-repeat: no-repeat;
-    display: block;
-    position: relative;
-    left: 100px;
-    width: 85px;    height: 85px;
-    float: right;
+@media screen and (min-width: 1030px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
     
-}
-
-
-.theNav {
-    width: 1024px;  height: 45px;
-    background-color: #606060 !important;
-}
-
-#navMainOptions {
-    position: relative;
-    right: 10px;
-}
-
-.theNav li {
-    list-style: none;
-    display: inline;
-    position: relative;
-    right: 14px;
-    bottom: 14px;
-}
-
-.theNav li a {
-    text-decoration: none;
-    position: relative;
-    top: 15px;
-    padding-left: 50px;
-    padding-right: 35px;
-    font-size: 22px;
-    color: #ffffff;
-}
-
-.dropDownMenu i {
-    font-size: 22px;
-    position: relative;
-    right: 18px;
-}
-
-.dropdown-menu {
-    position: absolute;
-    border-radius: 10px;
-    height: 545px;
-
-}
-
-.hamburger i{
-    font-size: 32px;
-    position: relative;
-    right: 17px;
-}
-
-.dropDownMenu .dropdown-item { 
-    position: relative;
-    width: 250px;   height: 50px;
-    right: 10px;
-    padding-left: 45px;
-    padding-top: 0px;
-    color: #111111;
-}
-
-.dropDownMenu a {
-    position: relative;
-}
-
-.dropDownMenu .dropdown-item:hover {
-    width: 230px;   height: 48px;
-    background-color: transparent;
-}
-
-.dropDownMenu {
-    position: absolute;
-    top: 48px;
-    left: 13px;
-}
-
-.dropdown-divider {
-    position: relative;
-}
-
-#selfMenu main > section {
-    height: 560px;
-    background-color: #f7f6f6;
-    border: solid 0.5px;
-    display: block;
-    position: relative;
-    opacity: 1;
-}
-
-#selfMenu main > section > article > h3 {
-    width: 890px;
-    padding-top: 29px;
-    padding-bottom: 7px;
-    padding-left: 55px;
-    font-size: 25px;
-    border-bottom: solid 1px;
-    position: relative;
-    left: 50px;
-}
-
-
-
-/*First line of players*/
-
-#selfMenu .playerHeadFirstLine {
-    position: relative;
-    top: 12px;
-    float: left;
-}
-
-#selfMenu  .playerHeadFirstLine p {
-    position: relative;
-    font-size: 14px;
-    right: 27px;
-}
-
-#selfMenu #kadoshHead {
-    left: 100px;
-}
-
-#selfMenu #setkusHead {
-    left: 170px;
-}
-
-#selfMenu #tamasHead {
-    left: 230px;
-}
-
-#selfMenu #resmusHead {
-    left: 290px;
-}
-
-#selfMenu #kapilotoHead {
- left: 350px;
-}
-
-
-
-/*Second line of players*/
-
-#selfMenu .second {
-    float: left;
-}
-
-
-#selfMenu .second > .playerHeadSecondLine {
-    position: relative;
-    top: 30px;
-    font-size: 14px;    float: left;
-}
-
-#selfMenu .playerHeadSecondLine p {
-    position: relative;
-    right: 27px;
-}
-
-
-#selfMenu #fishlerHead {
-    left: 100px;
-}
-
-#selfMenu #malulHead {
-    left: 170px;
-}
-
-#selfMenu #magrashviliHead {
-    left: 275px;
-}
-
-#selfMenu #sardalHead {
-    left: 330px;
-}
-
-#selfMenu #shaimanHead {
-     left: 410px;
-}
-
-
-/*Third line of players*/
-
-#selfMenu .third {
-    float: left;
-}
-
-
-#selfMenu .third > .playerHeadThirdLine {
-    position: relative;
-    top: 55px;
-    float: left;
-}
-
-#selfMenu .playerHeadThirdLine p {
-    position: relative;
-    font-size: 14px;
-    right: 27px;
-}
-
-#selfMenu #maximHead p {
-    right: 39px;
-}
-
-
-#selfMenu #barskiHead {
-    left: 100px;
-    position: relative;
-}
-
-#selfMenu #MamanHead {
-    left: 155px;
-    position: relative;
-}
-
-#selfMenu #shchterHead {
-    left: 223px;
-    position: relative;
-}
-
-#selfMenu #CiwanHead {
-    left: 290px;
-    position: relative;
-}
-
-#selfMenu #maximHead {
-     left: 365px;
-     position: relative;
-}
-
-
-
-/*Fourth line of players*/
-
-#selfMenu .fourth {
-    float: left;
-}
-
-
-#selfMenu .fourth > .playerHeadFourthLine {
-    position: relative;
-    top: 70px;
-    float: left;
-}
-
-#selfMenu .playerHeadFourthLine p {
-    position: relative;
-    font-size: 14px;
-    right: 27px;
-}
-
-#selfMenu #arelHead p {
-    right: 10px;
-}
-
-#selfMenu #arelHead {
-    left: 100px;
-    position: relative;
-}
-
-#selfMenu #edanHead {
-    left: 202px;
-    position: relative;
-}
-
-#selfMenu #ginsariHead {
-    left: 263px;
-    position: relative;
-}
-
-#selfMenu #turjemanHead {
-    left: 338px;
-    position: relative;
-}
-
-#selfMenu #lahlaHead {
-     left: 410px;
-     position: relative;
-}
-
-
-/*---------------------//MainMenu---------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*---------------------contactUs---------------------*/
-
-
-#theForm {
-    width: 590px;   height: 450px;
-    margin: 0 auto;
-    position: relative;
-    background-color: #ffffff;
-    border: ridge;
-    border-radius: 15px;
-    padding: 30px;
-    top: 10px;
-}
-
-form {
-    position: relative;
-    left: 100px;
-}
-
-.form-control {
-    display: inline;
-    width: 180%;
-}
-
-form label .formDesign {
-    border: none;
-    border-bottom: solid 1px #a5a1a1;
-    display: inline;
-    height: 35px;
-    width: 350px;
-}
-
-#comment {
-    display: block;
-}
-#theButton {
-    position: relative;
-    top: 30px;  left: 130px;
-    background-color: #606060;
-    border-color: transparent;
-}
-
-#theButton:hover {
-    background-color: #252525;
-}
-
-#successMessage {
-    display: none;
-    width: 450px;   height: 200px;
-    position: absolute;
-    top: 300px; right:490px;
-    border: ridge 6px;
-    background-color: #ffffff;
-    text-align: center;
-    padding-top: 15px;
+    header, main, nav, aside, article, section, footer {
+        display: block;
+    }
     
-}
-
-#theSuccessButton {
-    position: relative;
-    background-color: #606060;
-    border-color: transparent;
-    top: 30px;
-}
-
-
-/* .swal-button {
-    padding: 7px 19px;
-    border-radius: 2px;
-    background-color: rgb(136, 158, 230);
-    font-size: 12px;
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
-    position: relative;
-    right: 187px;
-  } */
-
-  
-.swal-button {
-    font-size: 14px;
-    position: relative;
-  }
-
-
-
-/*---------------------//contactUs---------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*---------------------NewGame---------------------*/
-
-#newGameMenu header {
-    width: 1024px;      height: 140px;
-    background-color: #606060;
-}
-
-#newGameMenu #logo {
-    width: 95px;    height: 80px;
-    background: url(../images/logo.svg);
-    background-repeat: no-repeat;
-    display: inline-block;
-}
-
-#newGameMenu header > p {
-    display: inline;
-    color: #ffffff;
-    float: right;
-    position: relative;
-    top: 25px;   right: 100px;
-}
-#newGameMenu #reuven {
-    background: url(../images/reuven.png);
-    background-repeat: no-repeat;
-    display: block;
-    position: relative;
-    left: 100px;
-    width: 85px;    height: 85px;
-    float: right;
-}
-
-button {
-    background-color: transparent;
-    border: none;
-}
-
-button:focus {outline:0;}
-
-
-main {
-    position: relative;
-    height: 100%;
-    border: black solid 1px;
-    width: 1024px;  height: 560px;
-}
-
-#field {
-
-    position: absolute;
-    height: 505px;
-    width: 500px;
-    float: right;
-    left: 227px;
-    top: 0px;
-
-}
-
-#functions {
-    width: 227px;       height: 596px;
-    background-color: #f7f6f6;
-}
-
-
-.stopWatch {
-    height: 85px;
-    border-bottom: black solid 0.5px;
-    text-align: center;
-}
-
-.stopWatch h1 {
-    font-size: 18px;
-    margin-top: 3px
-}
-
-.myButton {
-    padding-top: 4px;
-    background-color: transparent;
-    border: none;
- }
-
- .myButton i {
-    font-size: 20px;        
- }
-
- button {
-    border: none;
-    align-content: center;
-}
-
-
-ul {
-    position: relative;
-    list-style-type: none;
-}
-
-
-
-#icons {
-    width: 84px;
-    height: 471px;
-    border-right: black solid 0.1px;
-    float: left;
-
-}
-
-#icons h4 {
-    position: relative;
-    font-size: 11.5px;
-    top: 5px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.iconsList {
-    position: relative;
-    bottom: 20px;
-    padding-top: 26px;
-    background-color: transparent;
-    border: none;
-    font-size: 32px;
-}
-
-
-
-#lists {
-    position: absolute;
-    width: 143px;
-    height: 474px;
-    left: 84px;
-    font-size: 10px;
-}
-
-#teams li {
-    position: relative;
-    float: left;
-    top: -32px;  left: 3px;
-    width: 180px;
-    height: 35px;
-    padding-top: 46px;
-    font-size: 12px;
+    #wrapper {
+        width: 1300px;
+        margin: 0px auto;
         font-family: 'Poppins', sans-serif;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*---------------------INDEX---------------------*/
+    
+    #index header {
+        width: 1300px;      height: 140px;
+        background-color: #606060;
+    }
+    
+    #index #logo {
+        width: 340px;    height: 110px;
+        background: url(../images/theNewLogo.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+        top: 30px;left: 450px;
+    }
+        
+    #index header > p {
+        display: inline;
+        color: #ffffff;
+        float: right;
+        position: relative;
+        top: 25px;   right: 100px;
+    }
+    #index #reuven {
+        background: url(../images/reuven.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        width: 85px;    height: 85px;
+        float: right;
+        left: 100px;
+    }
+    
+    #index main > section {
+        height: 700px;  width: 1370px;
+        background: url(../images/BackgroundPic.png);
+        background-repeat: no-repeat;
+        display: block;
+        opacity: 0.75;
+    }
+    
+    #index #self, #index #rival {
+        width: 390px;   height: 71px;
+        position: relative;
+        left: 470px;
+        border-radius: 7px;
+        background-color: #111111;
+        text-align: center;
+        color: #ffffff;
+        padding-top: 20px;
+        padding-left: 10px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+    }
+    
+    /* too long */
+    #index main > section >  article > a{   
+        text-decoration: none;
+        color: #d6dbda;
+    }
+    
+    #index #self{
+        top: 285px; 
+    }
+    
+    #index #rival{
+        top: 340px;
+    }
+    
+    /*---------------------//INDEX---------------------*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*---------------------MainMenu---------------------*/
+    
+    #selfMenu header {
+        width: 1300px;      height: 140px;
+        background-color: #606060;
+    }
+    
+    #selfMenu #logo {
+        width: 340px;    height: 110px;
+        background: url(../images/theNewLogo.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+        top: 30px;left: 450px;
+    }
+    
+    #selfMenu header > p {
+        display: inline;
+        color: #ffffff;
+        float: right;
+        position: relative;
+        top: 25px;   right: 100px;
+    }
+    #selfMenu #reuven {
+        background: url(../images/reuven.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        left: 100px;
+        width: 85px;    height: 85px;
+        float: right;
+        
+    }
+    
+    
+    .theNav {
+        width: 1300px;  height: 45px;
+        background-color: #606060 !important;
+    }
+    
+    #navMainOptions {
+        position: relative;
+        right: 10px;
+    }
+    
+    .theNav li {
+        list-style: none;
+        display: inline;
+        position: relative;
+        right: 14px;
+        bottom: 14px;
+    }
+    
+    .theNav li a {
+        text-decoration: none;
+        position: relative;
+        top: 15px;
+        padding-left: 50px;
+        padding-right: 35px;
+        font-size: 22px;
+        color: #ffffff;
+    }
+
+    #navMainOptions {
+        display: none;
+    }
+    
+    .dropDownMenu i {
+        font-size: 22px;
+        position: relative;
+        right: 18px;
+    }
+    
+    .dropdown-menu {
+        position: absolute;
+        border-radius: 10px;
+        height: 545px;
+    
+    }
+    
+    .hamburger i{
+        font-size: 32px;
+        position: relative;
+        bottom: 40px;   right: 17px;
+    }
+    
+    .dropDownMenu .dropdown-item { 
+        position: relative;
+        width: 250px;   height: 50px;
+        right: 10px;
+        padding-left: 45px;
+        padding-top: 0px;
+        color: #111111;
+    }
+    
+    .dropDownMenu a {
+        position: relative;
+    }
+    
+    .dropDownMenu .dropdown-item:hover {
+        width: 230px;   height: 48px;
+        background-color: transparent;
+    }
+    
+    .dropDownMenu {
+        position: absolute;
+        top: 48px;
+        left: 13px;
+    }
+    
+    .dropdown-divider {
+        position: relative;
+    }
+    
+    #selfMenu main > section {
+        width: 1300px;;height: 730px;
+        background-color: #f7f6f6;
+        border: solid 0.5px;
+        display: block;
+        position: relative;
+        opacity: 1;
+    }
+    
+    #selfMenu main > section > article > h3 {
+        width: 1150px;
+        padding-top: 29px;
+        padding-bottom: 7px;
+        padding-left: 55px;
+        font-size: 25px;
+        border-bottom: solid 1px;
+        position: relative;
+        left: 50px;
+    }
+    
+    
+    
+    /*First line of players*/
+    
+    #selfMenu .playerHeadFirstLine {
+        position: relative;
+        top: 40px;
+        float: left;
+    }
+    
+    #selfMenu  .playerHeadFirstLine p {
+        position: relative;
+        font-size: 14px;
+        right: 27px;
+    }
+    
+    #selfMenu #kadoshHead {
+        left: 140px;
+    }
+    
+    #selfMenu #setkusHead {
+        left: 260px;
+    }
+    
+    #selfMenu #tamasHead {
+        left: 380px;
+    }
+    
+    #selfMenu #resmusHead {
+        left: 510px;
+    }
+    
+    #selfMenu #kapilotoHead {
+     left: 640px;
+    }
+    
+    
+    
+    /*Second line of players*/
+    
+    #selfMenu .second {
+        float: left;
+    }
+    
+    
+    #selfMenu .second > .playerHeadSecondLine {
+        position: relative;
+        top: 200px;
+        font-size: 14px;    float: left;
+    }
+    
+    #selfMenu .playerHeadSecondLine p {
+        position: relative;
+        right: 27px;
+    }
+    
+    
+    #selfMenu #fishlerHead {
+        right: 450px;
+    }
+    
+    #selfMenu #malulHead {
+        right: 325px;
+    }
+    
+    #selfMenu #magrashviliHead {
+        right: 155px;
+    }
+    
+    #selfMenu #sardalHead {
+        right: 35px;
+    }
+    
+    #selfMenu #shaimanHead {
+        left: 120px;
+    }
+    
+    
+    /*Third line of players*/
+    
+    #selfMenu .third {
+        float: left;
+    }
+    
+    #selfMenu .third > .playerHeadThirdLine {
+        position: relative;
+        top: 255px;
+        float: left;
+    }
+    
+    #selfMenu .playerHeadThirdLine p {
+        position: relative;
+        font-size: 14px;
+        right: 27px;
+    }
+    
+    #selfMenu #maximHead p {
+        right: 39px;
+    }
+    
+    
+    #selfMenu #barskiHead {
+        left: 136px;
+        position: relative;
+    }
+    
+    #selfMenu #MamanHead {
+        left: 241px;
+        position: relative;
+    }
+    
+    #selfMenu #shchterHead {
+        left: 370px;
+        position: relative;
+    }
+    
+    #selfMenu #CiwanHead {
+        left: 502px;
+        position: relative;
+    }
+    
+    #selfMenu #maximHead {
+         left: 653px;
+         position: relative;
+    }
+    
+    
+    
+    /*Fourth line of players*/
+    
+    #selfMenu .fourth {
+        float: left;
+    }
+    
+    
+    #selfMenu .fourth > .playerHeadFourthLine {
+        position: relative;
+        top: 410px;
+        float: left;
+    }
+    
+    #selfMenu .playerHeadFourthLine p {
+        position: relative;
+        font-size: 14px;
+        right: 27px;
+    }
+    
+    #selfMenu #arelHead p {
+        right: 10px;
+    }
+    
+    #selfMenu #arelHead {
+        right: 470px;
+        position: relative;
+    }
+    
+    #selfMenu #edanHead {
+        right: 320px;
+        position: relative;
+    }
+    
+    #selfMenu #ginsariHead {
+        right: 195px;
+        position: relative;
+    }
+    
+    #selfMenu #turjemanHead {
+        right: 55px;
+        position: relative;
+    }
+    
+    #selfMenu #lahlaHead {
+         left: 92px;
+         position: relative;
+    }
+    
+    
+    /*---------------------//MainMenu---------------------*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*---------------------contactUs---------------------*/
+    
+    
+    #theForm {
+        width: 790px;   height: 600px;
+        margin: 0 auto;
+        position: relative;
+        background-color: #ffffff;
+        border: ridge;
+        border-radius: 15px;
+        padding: 30px;
+        top: 20px;
+        /* overflow-y: scroll; */
+
+    }
+    
+    form {
+        position: relative;
+        left: 65px; 
+    }
+    
+    .form-control {
+        display: inline;
+        width: 180%;
+    }
+    
+    form label .formDesign {
+        border: none;
+        border-bottom: solid 1px #a5a1a1;
+        display: inline;
+        height: 45px;
+        width: 600px;
+    }
+    
+    #comment {
+        display: block;
+        position: relative;
+        top: 25px;
+        width: 600px;
+    }
+    #theButton {
+        width: 150px;   height: 55px;
+        position: relative;
+        top: 120px;  left: 230px;
+        background-color: #606060;
+        border-color: transparent;
+    }
+    
+    #theButton:hover {
+        background-color: #252525;
+    }
+    
+    #successMessage {
+        display: none;
+        width: 450px;   height: 200px;
+        position: absolute;
+        top: 300px; right:490px;
+        border: ridge 6px;
+        background-color: #ffffff;
+        text-align: center;
+        padding-top: 15px;
+        
+    }
+    
+    #theSuccessButton {
+        position: relative;
+        background-color: #606060;
+        border-color: transparent;
+        top: 130px;
+    }
+    
+    
+    /* .swal-button {
+        padding: 7px 19px;
+        border-radius: 2px;
+        background-color: rgb(136, 158, 230);
+        font-size: 12px;
+        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+        position: relative;
+        right: 187px;
+      } */
+    
+      
+    .swal-button {
+        font-size: 14px;
+        position: relative;
+      }
+    
+    
+    
+    /*---------------------//contactUs---------------------*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*---------------------NewGame---------------------*/
+    
+    #newGameMenu header {
+        width: 1300;      height: 140px;
+        background-color: #606060;
+    }
+    
+    #newGameMenu #logo {
+        width: 340px;    height: 110px;
+        background: url(../images/theNewLogo.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+        top: 30px;left: 450px;
+    }
+    
+    #newGameMenu header > p {
+        display: inline;
+        color: #ffffff;
+        float: right;
+        position: relative;
+        top: 25px;   right: 100px;
+    }
+    #newGameMenu #reuven {
+        background: url(../images/reuven.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        left: 100px;
+        width: 85px;    height: 85px;
+        float: right;
+    }
+    
+    button {
+        background-color: transparent;
+        border: none;
+    }
+    
+    button:focus {outline:0;}
+    
+    
+    #newGameMenu main {
+        position: relative;
+        height: 100%;
+        /* border: black solid 1px; */
+        width: 1300px;  height: 560px;
+    }
+    
+    #field {
+    
+        position: absolute;
+        height: 505px;
+        width: 500px;
+        float: right;
+        left: 227px;
+        top: 0px;
+    
+    }
+    
+    #functions {
+        width: 227px;       height: 596px;
+        background-color: #f7f6f6;
+    }
+    
+    
+    .stopWatch {
+        height: 85px;
+        border-bottom: black solid 0.5px;
+        text-align: center;
+    }
+    
+    .stopWatch h1 {
+        font-size: 18px;
+        margin-top: 3px
+    }
+    
+    .myButton {
+        padding-top: 4px;
+        background-color: transparent;
+        border: none;
+     }
+    
+     .myButton i {
+        font-size: 20px;        
+     }
+    
+     button {
+        border: none;
+        align-content: center;
+    }
+    
+    
+    ul {
+        position: relative;
+        list-style-type: none;
+    }
+    
+    
+    
+    #icons {
+        width: 84px;
+        height: 471px;
+        border-right: black solid 0.1px;
+        float: left;
+    
+    }
+    
+    #icons h4 {
+        position: relative;
+        font-size: 11.5px;
+        top: 5px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .iconsList {
+        position: relative;
+        bottom: 20px;
+        padding-top: 26px;
+        background-color: transparent;
+        border: none;
+        font-size: 32px;
+    }
+    
+    
+    
+    #lists {
+        position: absolute;
+        width: 143px;
+        height: 474px;
+        left: 84px;
+        font-size: 10px;
+    }
+    
+    #teams li {
+        position: relative;
+        float: left;
+        top: -32px;  left: 3px;
+        width: 180px;
+        height: 35px;
+        padding-top: 46px;
+        font-size: 12px;
+            font-family: 'Poppins', sans-serif;
+    }
+    
+     .iconsList {
+         position: relative;
+         padding-top:28px;
+         background-color: transparent;
+         border: none;
+     }
+    
+     button {
+         border: none;
+         align-content: center;
+     }
+    
+    #icons h4 {
+        position: relative;
+        font-size: 11.5px;
+        top: 5px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .fa-futbol-o {
+        position: relative;
+        left: 10px;
+    }
+    .fa-braille {
+        position: relative;
+        left: 14px;
+    }
+    .fa-male {
+        position: relative;
+        left: 21px;
+    }
+    .fa-exchange {
+        position: relative;
+        left: 11px;
+    }
+    .fa-comment {
+        position: relative;
+        left: 12px;
+    }
+    .fa-pencil {
+        position: relative;
+        left: 12px;
+    }
+    
+    #formation-list {
+        height: 474px;
+        overflow-y: scroll;
+    }
+    
+    
+    #formation-list h6 {
+        width: 130px;
+        height: 10px;
+        margin-top: 23px;
+        margin-left: 10px;
+        font-size: 11.5px;
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    #players-list {
+        height: 475px;
+        overflow-y: scroll;
+    }
+    
+    #players-list img {
+        position: relative;
+        top: 6px;
+        left: 5px;
+    }
+    
+    #players-list h5 {
+        position: relative;
+        left: 47px;
+        font-size: 11.5px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    
+    
+    
+    /*TeanFormations..*/
+    
+    /*-4-3-3-*/
+    
+    #formation4_3_3 {
+        /* display: none;             NOTICE NONE!!!! */
+    }
+    
+    #formation4_3_3 article {
+        position: relative;
+    }
+    
+    #formation4_3_3 .goalKeeper {
+        bottom: 310px; left: 15px;
+    }
+    
+    #formation4_3_3 .fieldPlayer1 {
+        bottom: 600px;  left: 170px
+    }
+    
+    #formation4_3_3 .fieldPlayer2 {
+        bottom: 530px;  left: 120px
+    }
+    
+    #formation4_3_3 .fieldPlayer3 {
+        bottom: 430px;  left: 120px
+    }
+    
+    #formation4_3_3 .fieldPlayer4 {
+        bottom: 365px;  left: 170px
+    }
+    
+    
+    
+    #formation4_3_3 .fieldPlayer5 {
+        bottom: 760px;  left: 370px
+    }
+    
+    #formation4_3_3 .fieldPlayer6 {
+        bottom: 710px;  left: 310px
+    }
+    
+    #formation4_3_3 .fieldPlayer7 {
+        bottom: 650px;  left: 370px
+    }
+    
+    
+    
+    #formation4_3_3 .fieldPlayer8 {
+        bottom: 1010px;  left: 590px;
+    }
+    
+    #formation4_3_3 .fieldPlayer9 {
+        bottom: 910px;  left: 645px;
+    }
+    
+    #formation4_3_3 .fieldPlayer10 {
+        bottom: 810px;  left: 590px
+    }
+    
+    
+    
+    /*-3-5-2-*/
+    
+    #formation3_5_2 {
+        display: none;           /*NOTICE NONE!!!!*/
+    }
+    
+    #formation3_5_2 article {
+        position: relative;
+    }
+    
+    #formation3_5_2 .goalKeeper {
+        bottom: 310px; left: 15px;
+    }
+    
+    #formation3_5_2 .fieldPlayer1 {
+        bottom: 540px;  left: 140px
+    }
+    
+    #formation3_5_2 .fieldPlayer2 {
+        bottom: 442px;  left: 120px
+    }
+    
+    #formation3_5_2 .fieldPlayer3 {
+        bottom: 355px;  left: 140px
+    }
+    
+    
+    
+    
+    #formation3_5_2 .fieldPlayer4 {
+        bottom: 785px;  left: 340px
+    }
+    
+    #formation3_5_2 .fieldPlayer5 {
+        bottom: 725px;  left: 280px
+    }
+    
+    #formation3_5_2 .fieldPlayer6 {
+        bottom: 630px;  left: 280px
+    }
+    
+    #formation3_5_2 .fieldPlayer7 {
+        bottom: 570px;  left: 340px
+    }
+    
+    #formation3_5_2 .fieldPlayer8 {
+        bottom: 840px;  left: 400px;
+    }
+    
+    
+    
+    
+    #formation3_5_2 .fieldPlayer9 {
+        bottom: 1020px;  left: 525px;
+    }
+    
+    #formation3_5_2 .fieldPlayer10 {
+        bottom: 850px;  left: 525px
+    } 
+    
+     
+    
+    
+    /*---------------------//NewGame---------------------*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*---------------------matchReport---------------------*/
+    
+    
+    #matchReport header {
+        width: 1300px;      height: 140px;
+        background-color: #606060;
+    }
+    
+    #matchReport #logo {
+        width: 340px;    height: 110px;
+        background: url(../images/theNewLogo.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+        top: 30px;left: 450px;
+    }
+    
+    #matchReport header > p {
+        display: inline;
+        color: #ffffff;
+        float: right;
+        position: relative;
+        top: 25px;   right: 100px;
+    }
+    #matchReport #reuven {
+        background: url(../images/reuven.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        left: 100px;
+        width: 85px;    height: 85px;
+        float: right;
+    }
+    
+    #matchReport main > section {
+        width: 1300px;  height: 700px;
+        background-color: #f7f6f6;
+        border: solid 0.5px;
+        display: block;
+        position: relative;
+        opacity: 1;
+    }
+    
+    #matchReport main > section > article > h3 {
+        width: 1150px;
+        padding-top: 37px;
+        padding-bottom: 17px;
+        padding-left: 55px;
+        font-size: 25px;
+        border-bottom: solid 1px;
+        position: relative;
+        left: 50px;
+    }
+    
+    #matchReport button {
+        width: 180px;   height: 30px;
+        position: relative;
+        float: right;
+        top: 30px;  right: 70px;
+        border: none;
+        border-radius: 4px;
+        background-color: #d6d6d6;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    
+    #theTeams {
+        position: relative;
+        top: 20px;  left: 454px;
+    }
+    
+    #theScore {
+        display: inline;
+        position: relative;
+        bottom: 60px;   left: 150px;
+    }
+    
+    
+    #beitarLogo {
+        position: relative;
+        bottom: 127px;  left: 290px;
+    }
+    
+    #gameDate {
+        width: 1150px;    height: 50px;
+        position: relative;
+        bottom: 75px;   left: 65px;
+        border-top: solid 1px;
+        border-bottom: solid 1px;
+        text-align: center;
+        padding-top: 13px;
+    }
+    
+    #theReport {
+        width: 1200px;  height: 280px; 
+        position: relative;
+        bottom: 45px;   left: 95px;
+        font-size: 19px;
+        overflow-y: scroll;
+    }
+    
+    #theReport p {
+        margin-top: 25px;
+    }
+    
+    
+    
+    
+    
+    /*---------------------//matchReport---------------------*/
+    
 }
 
- .iconsList {
-     position: relative;
-     padding-top:28px;
-     background-color: transparent;
-     border: none;
- }
-
- button {
-     border: none;
-     align-content: center;
- }
-
-#icons h4 {
-    position: relative;
-    font-size: 11.5px;
-    top: 5px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.fa-futbol-o {
-    position: relative;
-    left: 10px;
-}
-.fa-braille {
-    position: relative;
-    left: 14px;
-}
-.fa-male {
-    position: relative;
-    left: 21px;
-}
-.fa-exchange {
-    position: relative;
-    left: 11px;
-}
-.fa-comment {
-    position: relative;
-    left: 12px;
-}
-.fa-pencil {
-    position: relative;
-    left: 12px;
-}
-
-#formation-list {
-    height: 474px;
-    overflow-y: scroll;
-}
-
-
-#formation-list h6 {
-    width: 130px;
-    height: 10px;
-    margin-top: 23px;
-    margin-left: 10px;
-    font-size: 11.5px;
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-}
-
-#players-list {
-    height: 475px;
-    overflow-y: scroll;
-}
-
-#players-list img {
-    position: relative;
-    top: 6px;
-    left: 5px;
-}
-
-#players-list h5 {
-    position: relative;
-    left: 47px;
-    font-size: 11.5px;
-    font-family: 'Poppins', sans-serif;
-}
 
 
 
 
-/*TeanFormations..*/
-
-/*-4-3-3-*/
-
-#formation4_3_3 {
-    /* display: none;             NOTICE NONE!!!! */
-}
-
-#formation4_3_3 article {
-    position: relative;
-}
-
-#formation4_3_3 .goalKeeper {
-    bottom: 310px; left: 15px;
-}
-
-#formation4_3_3 .fieldPlayer1 {
-    bottom: 600px;  left: 170px
-}
-
-#formation4_3_3 .fieldPlayer2 {
-    bottom: 530px;  left: 120px
-}
-
-#formation4_3_3 .fieldPlayer3 {
-    bottom: 430px;  left: 120px
-}
-
-#formation4_3_3 .fieldPlayer4 {
-    bottom: 365px;  left: 170px
-}
-
-
-
-#formation4_3_3 .fieldPlayer5 {
-    bottom: 760px;  left: 370px
-}
-
-#formation4_3_3 .fieldPlayer6 {
-    bottom: 710px;  left: 310px
-}
-
-#formation4_3_3 .fieldPlayer7 {
-    bottom: 650px;  left: 370px
-}
-
-
-
-#formation4_3_3 .fieldPlayer8 {
-    bottom: 1010px;  left: 590px;
-}
-
-#formation4_3_3 .fieldPlayer9 {
-    bottom: 910px;  left: 645px;
-}
-
-#formation4_3_3 .fieldPlayer10 {
-    bottom: 810px;  left: 590px
-}
-
-
-
-/*-3-5-2-*/
-
-#formation3_5_2 {
-    display: none;           /*NOTICE NONE!!!!*/
-}
-
-#formation3_5_2 article {
-    position: relative;
-}
-
-#formation3_5_2 .goalKeeper {
-    bottom: 310px; left: 15px;
-}
-
-#formation3_5_2 .fieldPlayer1 {
-    bottom: 540px;  left: 140px
-}
-
-#formation3_5_2 .fieldPlayer2 {
-    bottom: 442px;  left: 120px
-}
-
-#formation3_5_2 .fieldPlayer3 {
-    bottom: 355px;  left: 140px
-}
 
 
 
 
-#formation3_5_2 .fieldPlayer4 {
-    bottom: 785px;  left: 340px
-}
-
-#formation3_5_2 .fieldPlayer5 {
-    bottom: 725px;  left: 280px
-}
-
-#formation3_5_2 .fieldPlayer6 {
-    bottom: 630px;  left: 280px
-}
-
-#formation3_5_2 .fieldPlayer7 {
-    bottom: 570px;  left: 340px
-}
-
-#formation3_5_2 .fieldPlayer8 {
-    bottom: 840px;  left: 400px;
-}
 
 
 
 
-#formation3_5_2 .fieldPlayer9 {
-    bottom: 1020px;  left: 525px;
-}
 
-#formation3_5_2 .fieldPlayer10 {
-    bottom: 850px;  left: 525px
-} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  
-
-
-/*---------------------//NewGame---------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*---------------------matchReport---------------------*/
-
-
-#matchReport header {
-    width: 1024px;      height: 140px;
-    background-color: #606060;
+@media screen and (min-width: 100px) and (max-width: 1031px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    header, main, nav, aside, article, section, footer {
+        display: block;
+    }
+    
+    #wrapper {
+        width: 1024px;
+        margin: 0px auto;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*---------------------INDEX---------------------*/
+    
+    #index header {
+        width: 1024px;      height: 140px;
+        background-color: #606060;
+    }
+    
+    #index #logo {
+        width: 95px;    height: 80px;
+        background: url(../images/logo.svg);
+        background-repeat: no-repeat;
+        display: inline-block;
+    
+    
+    }
+    
+    #index header > p {
+        display: inline;
+        color: #ffffff;
+        float: right;
+        position: relative;
+        top: 25px;   right: 100px;
+    }
+    #index #reuven {
+        background: url(../images/reuven.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        width: 85px;    height: 85px;
+        float: right;
+        left: 100px;
+    }
+    
+    #index main > section {
+        height: 560px;
+        border: solid 0.5px;
+        background: url(../images/background.svg);
+        background-repeat: no-repeat;
+        display: block;
+        opacity: 0.75;
+    }
+    
+    #index #self, #index #rival {
+        width: 390px;   height: 71px;
+        position: relative;
+        left: 340px;
+        border-radius: 7px;
+        background-color: #111111;
+        text-align: center;
+        color: #ffffff;
+        padding-top: 20px;
+        padding-left: 10px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+    }
+    
+    /* too long */
+    #index main > section >  article > a{   
+        text-decoration: none;
+        color: #d6dbda;
+    }
+    
+    #index #self{
+        top: 225px; 
+    }
+    
+    #index #rival{
+        top: 250px;
+    }
+    
+    /*---------------------//INDEX---------------------*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*---------------------MainMenu---------------------*/
+    
+    #selfMenu header {
+        width: 1024px;      height: 140px;
+        background-color: #606060;
+    }
+    
+    #selfMenu #logo {
+        width: 95px;    height: 80px;
+        background: url(../images/logo.svg);
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+    
+    #selfMenu header > p {
+        display: inline;
+        color: #ffffff;
+        float: right;
+        position: relative;
+        top: 25px;   right: 100px;
+    }
+    #selfMenu #reuven {
+        background: url(../images/reuven.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        left: 100px;
+        width: 85px;    height: 85px;
+        float: right;
+        
+    }
+    
+    
+    .theNav {
+        width: 1024px;  height: 45px;
+        background-color: #606060 !important;
+    }
+    
+    #navMainOptions {
+        position: relative;
+        right: 10px;
+    }
+    
+    .theNav li {
+        list-style: none;
+        display: inline;
+        position: relative;
+        right: 14px;
+        bottom: 14px;
+    }
+    
+    .theNav li a {
+        text-decoration: none;
+        position: relative;
+        top: 15px;
+        padding-left: 50px;
+        padding-right: 35px;
+        font-size: 22px;
+        color: #ffffff;
+    }
+    
+    .dropDownMenu i {
+        font-size: 22px;
+        position: relative;
+        right: 18px;
+    }
+    
+    .dropdown-menu {
+        position: absolute;
+        border-radius: 10px;
+        height: 545px;
+    
+    }
+    
+    .hamburger i{
+        font-size: 32px;
+        position: relative;
+        right: 17px;
+    }
+    
+    .dropDownMenu .dropdown-item { 
+        position: relative;
+        width: 250px;   height: 50px;
+        right: 10px;
+        padding-left: 45px;
+        padding-top: 0px;
+        color: #111111;
+    }
+    
+    .dropDownMenu a {
+        position: relative;
+    }
+    
+    .dropDownMenu .dropdown-item:hover {
+        width: 230px;   height: 48px;
+        background-color: transparent;
+    }
+    
+    .dropDownMenu {
+        position: absolute;
+        top: 48px;
+        left: 13px;
+    }
+    
+    .dropdown-divider {
+        position: relative;
+    }
+    
+    #selfMenu main > section {
+        height: 560px;
+        background-color: #f7f6f6;
+        border: solid 0.5px;
+        display: block;
+        position: relative;
+        opacity: 1;
+    }
+    
+    #selfMenu main > section > article > h3 {
+        width: 890px;
+        padding-top: 29px;
+        padding-bottom: 7px;
+        padding-left: 55px;
+        font-size: 25px;
+        border-bottom: solid 1px;
+        position: relative;
+        left: 50px;
+    }
+    
+    
+    
+    /*First line of players*/
+    
+    #selfMenu .playerHeadFirstLine {
+        position: relative;
+        top: 12px;
+        float: left;
+    }
+    
+    #selfMenu  .playerHeadFirstLine p {
+        position: relative;
+        font-size: 14px;
+        right: 27px;
+    }
+    
+    #selfMenu #kadoshHead {
+        left: 100px;
+    }
+    
+    #selfMenu #setkusHead {
+        left: 170px;
+    }
+    
+    #selfMenu #tamasHead {
+        left: 230px;
+    }
+    
+    #selfMenu #resmusHead {
+        left: 290px;
+    }
+    
+    #selfMenu #kapilotoHead {
+     left: 350px;
+    }
+    
+    
+    
+    /*Second line of players*/
+    
+    #selfMenu .second {
+        float: left;
+    }
+    
+    
+    #selfMenu .second > .playerHeadSecondLine {
+        position: relative;
+        top: 30px;
+        font-size: 14px;    float: left;
+    }
+    
+    #selfMenu .playerHeadSecondLine p {
+        position: relative;
+        right: 27px;
+    }
+    
+    
+    #selfMenu #fishlerHead {
+        left: 100px;
+    }
+    
+    #selfMenu #malulHead {
+        left: 170px;
+    }
+    
+    #selfMenu #magrashviliHead {
+        left: 275px;
+    }
+    
+    #selfMenu #sardalHead {
+        left: 330px;
+    }
+    
+    #selfMenu #shaimanHead {
+         left: 410px;
+    }
+    
+    
+    /*Third line of players*/
+    
+    #selfMenu .third {
+        float: left;
+    }
+    
+    
+    #selfMenu .third > .playerHeadThirdLine {
+        position: relative;
+        top: 55px;
+        float: left;
+    }
+    
+    #selfMenu .playerHeadThirdLine p {
+        position: relative;
+        font-size: 14px;
+        right: 27px;
+    }
+    
+    #selfMenu #maximHead p {
+        right: 39px;
+    }
+    
+    
+    #selfMenu #barskiHead {
+        left: 100px;
+        position: relative;
+    }
+    
+    #selfMenu #MamanHead {
+        left: 155px;
+        position: relative;
+    }
+    
+    #selfMenu #shchterHead {
+        left: 223px;
+        position: relative;
+    }
+    
+    #selfMenu #CiwanHead {
+        left: 290px;
+        position: relative;
+    }
+    
+    #selfMenu #maximHead {
+         left: 365px;
+         position: relative;
+    }
+    
+    
+    
+    /*Fourth line of players*/
+    
+    #selfMenu .fourth {
+        float: left;
+    }
+    
+    
+    #selfMenu .fourth > .playerHeadFourthLine {
+        position: relative;
+        top: 70px;
+        float: left;
+    }
+    
+    #selfMenu .playerHeadFourthLine p {
+        position: relative;
+        font-size: 14px;
+        right: 27px;
+    }
+    
+    #selfMenu #arelHead p {
+        right: 10px;
+    }
+    
+    #selfMenu #arelHead {
+        left: 100px;
+        position: relative;
+    }
+    
+    #selfMenu #edanHead {
+        left: 202px;
+        position: relative;
+    }
+    
+    #selfMenu #ginsariHead {
+        left: 263px;
+        position: relative;
+    }
+    
+    #selfMenu #turjemanHead {
+        left: 338px;
+        position: relative;
+    }
+    
+    #selfMenu #lahlaHead {
+         left: 410px;
+         position: relative;
+    }
+    
+    
+    /*---------------------//MainMenu---------------------*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*---------------------contactUs---------------------*/
+    
+    
+    #theForm {
+        width: 590px;   height: 450px;
+        margin: 0 auto;
+        position: relative;
+        background-color: #ffffff;
+        border: ridge;
+        border-radius: 15px;
+        padding: 30px;
+        top: 10px;
+    }
+    
+    form {
+        position: relative;
+        left: 100px;
+    }
+    
+    .form-control {
+        display: inline;
+        width: 180%;
+    }
+    
+    form label .formDesign {
+        border: none;
+        border-bottom: solid 1px #a5a1a1;
+        display: inline;
+        height: 35px;
+        width: 350px;
+    }
+    
+    #comment {
+        display: block;
+    }
+    #theButton {
+        position: relative;
+        top: 30px;  left: 130px;
+        background-color: #606060;
+        border-color: transparent;
+    }
+    
+    #theButton:hover {
+        background-color: #252525;
+    }
+    
+    #successMessage {
+        display: none;
+        width: 450px;   height: 200px;
+        position: absolute;
+        top: 300px; right:490px;
+        border: ridge 6px;
+        background-color: #ffffff;
+        text-align: center;
+        padding-top: 15px;
+        
+    }
+    
+    #theSuccessButton {
+        position: relative;
+        background-color: #606060;
+        border-color: transparent;
+        top: 30px;
+    }
+    
+    
+    /* .swal-button {
+        padding: 7px 19px;
+        border-radius: 2px;
+        background-color: rgb(136, 158, 230);
+        font-size: 12px;
+        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+        position: relative;
+        right: 187px;
+      } */
+    
+      
+    .swal-button {
+        font-size: 14px;
+        position: relative;
+      }
+    
+    
+    
+    /*---------------------//contactUs---------------------*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*---------------------NewGame---------------------*/
+    
+    #newGameMenu header {
+        width: 1024px;      height: 140px;
+        background-color: #606060;
+    }
+    
+    #newGameMenu #logo {
+        width: 95px;    height: 80px;
+        background: url(../images/logo.svg);
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+    
+    #newGameMenu header > p {
+        display: inline;
+        color: #ffffff;
+        float: right;
+        position: relative;
+        top: 25px;   right: 100px;
+    }
+    #newGameMenu #reuven {
+        background: url(../images/reuven.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        left: 100px;
+        width: 85px;    height: 85px;
+        float: right;
+    }
+    
+    button {
+        background-color: transparent;
+        border: none;
+    }
+    
+    button:focus {outline:0;}
+    
+    
+    main {
+        position: relative;
+        height: 100%;
+        border: black solid 1px;
+        width: 1024px;  height: 560px;
+    }
+    
+    #field {
+    
+        position: absolute;
+        height: 505px;
+        width: 500px;
+        float: right;
+        left: 227px;
+        top: 0px;
+    
+    }
+    
+    #functions {
+        width: 227px;       height: 596px;
+        background-color: #f7f6f6;
+    }
+    
+    
+    .stopWatch {
+        height: 85px;
+        border-bottom: black solid 0.5px;
+        text-align: center;
+    }
+    
+    .stopWatch h1 {
+        font-size: 18px;
+        margin-top: 3px
+    }
+    
+    .myButton {
+        padding-top: 4px;
+        background-color: transparent;
+        border: none;
+     }
+    
+     .myButton i {
+        font-size: 20px;        
+     }
+    
+     button {
+        border: none;
+        align-content: center;
+    }
+    
+    
+    ul {
+        position: relative;
+        list-style-type: none;
+    }
+    
+    
+    
+    #icons {
+        width: 84px;
+        height: 471px;
+        border-right: black solid 0.1px;
+        float: left;
+    
+    }
+    
+    #icons h4 {
+        position: relative;
+        font-size: 11.5px;
+        top: 5px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .iconsList {
+        position: relative;
+        bottom: 20px;
+        padding-top: 26px;
+        background-color: transparent;
+        border: none;
+        font-size: 32px;
+    }
+    
+    
+    
+    #lists {
+        position: absolute;
+        width: 143px;
+        height: 474px;
+        left: 84px;
+        font-size: 10px;
+    }
+    
+    #teams li {
+        position: relative;
+        float: left;
+        top: -32px;  left: 3px;
+        width: 180px;
+        height: 35px;
+        padding-top: 46px;
+        font-size: 12px;
+            font-family: 'Poppins', sans-serif;
+    }
+    
+     .iconsList {
+         position: relative;
+         padding-top:28px;
+         background-color: transparent;
+         border: none;
+     }
+    
+     button {
+         border: none;
+         align-content: center;
+     }
+    
+    #icons h4 {
+        position: relative;
+        font-size: 11.5px;
+        top: 5px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .fa-futbol-o {
+        position: relative;
+        left: 10px;
+    }
+    .fa-braille {
+        position: relative;
+        left: 14px;
+    }
+    .fa-male {
+        position: relative;
+        left: 21px;
+    }
+    .fa-exchange {
+        position: relative;
+        left: 11px;
+    }
+    .fa-comment {
+        position: relative;
+        left: 12px;
+    }
+    .fa-pencil {
+        position: relative;
+        left: 12px;
+    }
+    
+    #formation-list {
+        height: 474px;
+        overflow-y: scroll;
+    }
+    
+    
+    #formation-list h6 {
+        width: 130px;
+        height: 10px;
+        margin-top: 23px;
+        margin-left: 10px;
+        font-size: 11.5px;
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    #players-list {
+        height: 475px;
+        overflow-y: scroll;
+    }
+    
+    #players-list img {
+        position: relative;
+        top: 6px;
+        left: 5px;
+    }
+    
+    #players-list h5 {
+        position: relative;
+        left: 47px;
+        font-size: 11.5px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    
+    
+    
+    /*TeanFormations..*/
+    
+    /*-4-3-3-*/
+    
+    #formation4_3_3 {
+        /* display: none;             NOTICE NONE!!!! */
+    }
+    
+    #formation4_3_3 article {
+        position: relative;
+    }
+    
+    #formation4_3_3 .goalKeeper {
+        bottom: 310px; left: 15px;
+    }
+    
+    #formation4_3_3 .fieldPlayer1 {
+        bottom: 600px;  left: 170px
+    }
+    
+    #formation4_3_3 .fieldPlayer2 {
+        bottom: 530px;  left: 120px
+    }
+    
+    #formation4_3_3 .fieldPlayer3 {
+        bottom: 430px;  left: 120px
+    }
+    
+    #formation4_3_3 .fieldPlayer4 {
+        bottom: 365px;  left: 170px
+    }
+    
+    
+    
+    #formation4_3_3 .fieldPlayer5 {
+        bottom: 760px;  left: 370px
+    }
+    
+    #formation4_3_3 .fieldPlayer6 {
+        bottom: 710px;  left: 310px
+    }
+    
+    #formation4_3_3 .fieldPlayer7 {
+        bottom: 650px;  left: 370px
+    }
+    
+    
+    
+    #formation4_3_3 .fieldPlayer8 {
+        bottom: 1010px;  left: 590px;
+    }
+    
+    #formation4_3_3 .fieldPlayer9 {
+        bottom: 910px;  left: 645px;
+    }
+    
+    #formation4_3_3 .fieldPlayer10 {
+        bottom: 810px;  left: 590px
+    }
+    
+    
+    
+    /*-3-5-2-*/
+    
+    #formation3_5_2 {
+        display: none;           /*NOTICE NONE!!!!*/
+    }
+    
+    #formation3_5_2 article {
+        position: relative;
+    }
+    
+    #formation3_5_2 .goalKeeper {
+        bottom: 310px; left: 15px;
+    }
+    
+    #formation3_5_2 .fieldPlayer1 {
+        bottom: 540px;  left: 140px
+    }
+    
+    #formation3_5_2 .fieldPlayer2 {
+        bottom: 442px;  left: 120px
+    }
+    
+    #formation3_5_2 .fieldPlayer3 {
+        bottom: 355px;  left: 140px
+    }
+    
+    
+    
+    
+    #formation3_5_2 .fieldPlayer4 {
+        bottom: 785px;  left: 340px
+    }
+    
+    #formation3_5_2 .fieldPlayer5 {
+        bottom: 725px;  left: 280px
+    }
+    
+    #formation3_5_2 .fieldPlayer6 {
+        bottom: 630px;  left: 280px
+    }
+    
+    #formation3_5_2 .fieldPlayer7 {
+        bottom: 570px;  left: 340px
+    }
+    
+    #formation3_5_2 .fieldPlayer8 {
+        bottom: 840px;  left: 400px;
+    }
+    
+    
+    
+    
+    #formation3_5_2 .fieldPlayer9 {
+        bottom: 1020px;  left: 525px;
+    }
+    
+    #formation3_5_2 .fieldPlayer10 {
+        bottom: 850px;  left: 525px
+    } 
+    
+     
+    
+    
+    /*---------------------//NewGame---------------------*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*---------------------matchReport---------------------*/
+    
+    
+    #matchReport header {
+        width: 1024px;      height: 140px;
+        background-color: #606060;
+    }
+    
+    #matchReport #logo {
+        width: 95px;    height: 80px;
+        background: url(../images/logo.svg);
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+    
+    #matchReport header > p {
+        display: inline;
+        color: #ffffff;
+        float: right;
+        position: relative;
+        top: 25px;   right: 100px;
+    }
+    #matchReport #reuven {
+        background: url(../images/reuven.png);
+        background-repeat: no-repeat;
+        display: block;
+        position: relative;
+        left: 100px;
+        width: 85px;    height: 85px;
+        float: right;
+    }
+    
+    #matchReport main > section {
+        height: 560px;
+        background-color: #f7f6f6;
+        border: solid 0.5px;
+        display: block;
+        position: relative;
+        opacity: 1;
+    }
+    
+    #matchReport main > section > article > h3 {
+        width: 890px;
+        padding-top: 29px;
+        padding-bottom: 7px;
+        padding-left: 55px;
+        font-size: 25px;
+        border-bottom: solid 1px;
+        position: relative;
+        left: 50px;
+    }
+    
+    #matchReport button {
+        width: 180px;   height: 30px;
+        position: relative;
+        float: right;
+        top: 20px;  right: 70px;
+        border: none;
+        border-radius: 4px;
+        background-color: #d6d6d6;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    
+    #theTeams {
+        position: relative;
+        top: 20px;  left: 330px;
+    }
+    
+    #theScore {
+        display: inline;
+        position: relative;
+        bottom: 60px;   left: 150px;
+    }
+    
+    
+    #beitarLogo {
+        position: relative;
+        bottom: 127px;  left: 290px;
+    }
+    
+    #gameDate {
+        width: 888px;    height: 50px;
+        position: relative;
+        bottom: 85px;   left: 65px;
+        border-top: solid 1px;
+        border-bottom: solid 1px;
+        text-align: center;
+        padding-top: 13px;
+    }
+    
+    #theReport {
+        width: 945px;  height: 280px; 
+        position: relative;
+        bottom: 65px;   left: 75px;
+        font-size: 19px;
+        overflow-y: scroll;
+    }
+    
+    #theReport p {
+        margin-top: 25px;
+    }
+    
+    
+    
+    
+    
+    /*---------------------//matchReport---------------------*/
+    
 }
-
-#matchReport #logo {
-    width: 95px;    height: 80px;
-    background: url(../images/logo.svg);
-    background-repeat: no-repeat;
-    display: inline-block;
-}
-
-#matchReport header > p {
-    display: inline;
-    color: #ffffff;
-    float: right;
-    position: relative;
-    top: 25px;   right: 100px;
-}
-#matchReport #reuven {
-    background: url(../images/reuven.png);
-    background-repeat: no-repeat;
-    display: block;
-    position: relative;
-    left: 100px;
-    width: 85px;    height: 85px;
-    float: right;
-}
-
-#matchReport main > section {
-    height: 560px;
-    background-color: #f7f6f6;
-    border: solid 0.5px;
-    display: block;
-    position: relative;
-    opacity: 1;
-}
-
-#matchReport main > section > article > h3 {
-    width: 890px;
-    padding-top: 29px;
-    padding-bottom: 7px;
-    padding-left: 55px;
-    font-size: 25px;
-    border-bottom: solid 1px;
-    position: relative;
-    left: 50px;
-}
-
-#matchReport button {
-    width: 180px;   height: 30px;
-    position: relative;
-    float: right;
-    top: 20px;  right: 70px;
-    border: none;
-    border-radius: 4px;
-    background-color: #d6d6d6;
-    font-family: 'Poppins', sans-serif;
-}
-
-
-#theTeams {
-    position: relative;
-    top: 20px;  left: 330px;
-}
-
-#theScore {
-    display: inline;
-    position: relative;
-    bottom: 60px;   left: 150px;
-}
-
-
-#beitarLogo {
-    position: relative;
-    bottom: 127px;  left: 290px;
-}
-
-#gameDate {
-    width: 888px;    height: 50px;
-    position: relative;
-    bottom: 85px;   left: 65px;
-    border-top: solid 1px;
-    border-bottom: solid 1px;
-    text-align: center;
-    padding-top: 13px;
-}
-
-#theReport {
-    width: 945px;  height: 280px; 
-    position: relative;
-    bottom: 65px;   left: 75px;
-    font-size: 19px;
-    overflow-y: scroll;
-}
-
-#theReport p {
-    margin-top: 25px;
-}
-
-
-
-
-
-/*---------------------//matchReport---------------------*/
-
-
-
-
-/* @media(min-width: 1200px) {
-
-}
-
-@media(min-width: 768px) and (max-width: 979px) {
-
-}
-
-@media(max-width: 767px) {
-
-
-}
-
-@media(max-width:480px) {
-
-} */
