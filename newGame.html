@@ -35,7 +35,7 @@
         <section id="selfMenu">
                 <header>
                     <p>Hello Reuven!</p>
-                    <a href="index.html"><img id="logo" src="images/logo.svg"></a>
+                    <a id="logo" href="index.html"></a>
                     <article id="reuven"></article>      
 
                     <nav class="navbar navbar-expand-lg navbar-light bg-light theNav">
@@ -44,21 +44,21 @@
                                 <i class="fas fa-bars"></i>
                             </a>
                             <div class="dropdown-menu dropDownMenu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item first" href="#"><i class="far fa-futbol"></i> &nbsp New Game</a>
+                                <a class="dropdown-item first" href="#"><i class="far fa-futbol"></i>New Game</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"><i class="fas fa-arrow-left"></i> &nbsp Previous Games</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-arrow-left"></i>Previous Games</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"><i class="fab fa-stack-exchange"></i> &nbsp Statistics</a>
+                                <a class="dropdown-item" href="#"><i class="fab fa-stack-exchange"></i>Statistics</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"><i class="fas fa-male"></i> &nbsp Player Analysis</a>
+                                <a class="dropdown-item" href="#"><i class="far fa-chart-bar"></i>Player Analysis</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"><i class="fas fa-table"></i>&nbsp League Table</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-table"></i>League Table</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"><i class="fas fa-cog"></i>&nbsp Settings</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-cog"></i>Settings</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="contactUs.html"><i class="fas fa-phone"></i>&nbsp Contact Us</a>
+                                <a class="dropdown-item" href="contactUs.html"><i class="fas fa-phone"></i>Contact Us</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item logout" href="#"><i class="fas fa-sign-out-alt"></i>&nbsp Logout</a>
+                                <a class="dropdown-item logout" href="#"><i class="fas fa-sign-out-alt"></i>Logout</a>
                             </div>
                         </li>
                     </nav>
@@ -8144,7 +8144,21 @@
                     </svg>
 
 
-                    <section id="formation4_3_3">
+                    <div id="formation4_3_3">
+                        <article class="goalKeeper"><img src="images/circle.svg"></article>
+                        <article class="fieldPlayer1"><img src="images/circle.svg"></article>
+                        <article class="fieldPlayer2"><img src="images/circle.svg"></article>
+                        <article class="fieldPlayer3"><img src="images/circle.svg"></article>
+                        <article class="fieldPlayer4"><img src="images/circle.svg"></article>
+                        <article class="fieldPlayer5"><img src="images/circle.svg"></article>
+                        <article class="fieldPlayer6"><img src="images/circle.svg"></article>
+                        <article class="fieldPlayer7"><img src="images/circle.svg"></article>
+                        <article class="fieldPlayer8"><img src="images/circle.svg"></article>
+                        <article class="fieldPlayer9"><img src="images/circle.svg"></article>
+                        <article class="fieldPlayer10"><img src="images/circle.svg"></article>
+                    </div>
+
+                    <section id="formation3_5_2">
                         <article class="goalKeeper"><img src="images/circle.svg"></article>
                         <article class="fieldPlayer1"><img src="images/circle.svg"></article>
                         <article class="fieldPlayer2"><img src="images/circle.svg"></article>
@@ -8157,20 +8171,6 @@
                         <article class="fieldPlayer9"><img src="images/circle.svg"></article>
                         <article class="fieldPlayer10"><img src="images/circle.svg"></article>
                     </sectione>
-
-                    <section id="formation3_5_2">
-                            <article class="goalKeeper"><img src="images/circle.svg"></article>
-                            <article class="fieldPlayer1"><img src="images/circle.svg"></article>
-                            <article class="fieldPlayer2"><img src="images/circle.svg"></article>
-                            <article class="fieldPlayer3"><img src="images/circle.svg"></article>
-                            <article class="fieldPlayer4"><img src="images/circle.svg"></article>
-                            <article class="fieldPlayer5"><img src="images/circle.svg"></article>
-                            <article class="fieldPlayer6"><img src="images/circle.svg"></article>
-                            <article class="fieldPlayer7"><img src="images/circle.svg"></article>
-                            <article class="fieldPlayer8"><img src="images/circle.svg"></article>
-                            <article class="fieldPlayer9"><img src="images/circle.svg"></article>
-                            <article class="fieldPlayer10"><img src="images/circle.svg"></article>
-                        </sectione>
     
             
 
@@ -8191,12 +8191,11 @@
                             <li><button id="rival-team" class="fa fa-futbol-o fa-2x iconsList" aria-hidden="true"><h4>Rival Team</h4></button></li>
                             <li><button id="formation" class="fa fa-braille fa-2x iconsList" aria-hidden="true"><h4>formation</h4></button></li>
                             <li><button id="players" class="fa fa-male fa-2x iconsList" aria-hidden="true"><h4>Players</h4></button></li>
-                            <li><button id="subtitution" class="fa fa-exchange fa-2x iconsList" aria-hidden="true"><h4>Subtitution</h4></button></li>
+                            <li><button id="subtitution" class="fas fa-exchange-alt fa-2x iconsList" aria-hidden="true"><h4>Subtitution</h4></button></li>
                             <li><button id="Comments" class="fa fa-comment fa-2x iconsList" aria-hidden="true"><h4>Comments</h4></button></li>
-                            <li><button id="area-Select" class="fa fa-pencil fa-2x iconsList" aria-hidden="true"><h4>Area Select</h4></button></li>
+                            <li><button id="area-Select" class="fas fa-pencil-alt fa-2x iconsList" aria-hidden="true"><h4>Area Select</h4></button></li>
                         </ul>
                 </section>
-
                     <section id="lists">
                         <ul id="teams-list">
                             <li><img src="images/beer-sheva.png"> H. Beer-Sheva</li>
@@ -8211,39 +8210,39 @@
                             <li><img src="images/raanana.png"> H. Raanana</li>
                         </ul>
                         <div id="formation-list">
-                            <button class="f1" onclick="f1()"><h6>3-4-3</h6></button>
-                            <button class="f2" onclick="f2()"><h6>3-5-2</h6></button>
-                            <button class="f3" onclick="f3()"><h6>3-4-2-1</h6></button>
-                            <button class="f4" onclick="f4()"><h6>4-3-3</h6></button>
-                            <button class="f5" onclick="f5()"><h6>4-3-1</h6></button>
-                            <button class="f6" onclick="f6()"><h6>4-4-2</h6></button>
-                            <button class="f7" onclick="f7()"><h6>4-2-2-2</h6></button>
-                            <button class="f8" onclick="f8()"><h6>4-3-1-2</h6></button>
-                            <button class="f9" onclick="f9()"><h6>4-4-1-1</h6></button>
-                            <button class="f10" onclick="f10()"><h6>4-2-3-1</h6></button>
-                            <button class="f11" onclick="f11()"><h6>5-3-2</h6></button>
-                            <button class="f11" onclick="f11()"><h6>5-4-1</h6></button>
-                            <button class="f11" onclick="f11()"><h6>5-3-1-1</h6></button>
-                            <button class="f11" onclick="f11()"><h6>5-2-2-1</h6></button>
-                        </div>
-                        <div id="players-list">
-                            <img src="images/smallHeads/Tamas.png"><h5>#30 G. Tamas</h5>
-                            <img src="images/smallHeads/kapiloto.png"><h5>#55 N. Kapiloto</h5>
-                            <img src="images/smallHeads/Fishler.png"><h5>#5 O. Fishler</h5>
-                            <img src="images/smallHeads/Sardal.png"><h5>#24 L. Sardal</h5>
-                            <img src="images/smallHeads/Malul.png"><h5>#4 D. Malul</h5>
-                            <img src="images/smallHeads/Magrashvili.png"><h5>#3 H. Magrashvil</h5>
-                            <img src="images/smallHeads/Barski.png"><h5>#77 R. Barski </h5>
-                            <img src="images/smallHeads/mamanHead.png"><h5>#15 H. Maman </h5>
-                            <img src="images/smallHeads/shchterHead.png"><h5>#12 A. Shechter</h5>
-                            <img src="images/smallHeads/ciwanHead.png"><h5>#8 H. Ciwan </h5>
-                            <img src="images/smallHeads/maximHead.png"><h5>#7 M. Flaku</h5>
-                            <img src="images/smallHeads/arelHead.png"><h5>#6 G. Arel</h5>
-                            <img src="images/smallHeads/edenHead.png"><h5>#9 E. Ben-Basat</h5>
-                            <img src="images/smallHeads/ginsariHead.png"><h5>#14 R. Ginsari</h5>
-                            <img src="images/smallHeads/turjemanHead.png"><h5>#17 A. Turjeman</h5>
-                        </div>
+                            <button><h6>3-4-3</h6></button>
+                            <button id="f2"><h6>3-5-2</h6></button>
+                            <button><h6>3-4-2-1</h6></button>
+                            <button id="f1"><h6>4-3-3</h6></button>
+                            <button><h6>4-3-1</h6></button>
+                            <button><h6>4-4-2</h6></button>
+                            <button><h6>4-2-2-2</h6></button>
+                            <button><h6>4-3-1-2</h6></button>
+                            <button><h6>4-4-1-1</h6></button>
+                            <button><h6>4-2-3-1</h6></button>
+                            <button><h6>5-3-2</h6></button>
+                            <button><h6>5-4-1</h6></button>
+                            <button><h6>5-3-1-1</h6></button>
+                            <button><h6>5-2-2-1</h6></button>
+                        </div>                        
                         
+                        <div id="players-list">
+                            <img  src="images/smallHeads/Tamas.png" id="dragElement"><h5>#30 G. Tamas</h5>
+                            <img  src="images/smallHeads/kapiloto.png"><h5>#55 N. Kapiloto</h5>
+                            <img  src="images/smallHeads/Fishler.png"><h5>#5 O. Fishler</h5>
+                            <img  src="images/smallHeads/Sardal.png"><h5>#24 L. Sardal</h5>
+                            <img  src="images/smallHeads/Malul.png"><h5>#4 D. Malul</h5>
+                            <img  src="images/smallHeads/Magrashvili.png"><h5>#3 H. Magrashvil</h5>
+                            <img  src="images/smallHeads/Barski.png"><h5>#77 R. Barski </h5>
+                            <img  src="images/smallHeads/mamanHead.png"><h5>#15 H. Maman </h5>
+                            <img  src="images/smallHeads/shchterHead.png"><h5>#12 A. Shechter</h5>
+                            <img  src="images/smallHeads/ciwanHead.png"><h5>#8 H. Ciwan </h5>
+                            <img  src="images/smallHeads/maximHead.png"><h5>#7 M. Flaku</h5>
+                            <img  src="images/smallHeads/arelHead.png"><h5>#6 G. Arel</h5>
+                            <img  src="images/smallHeads/edenHead.png"><h5>#9 E. Ben-Basat</h5>
+                            <img  src="images/smallHeads/ginsariHead.png"><h5>#14 R. Ginsari</h5>
+                            <img  src="images/smallHeads/turjemanHead.png"><h5>#17 A. Turjeman</h5>
+                        </div>                        
                     </section>
 
                 </section>

@@ -34,6 +34,11 @@ header, main, nav, aside, article, section, footer {
 
 #index #logo {
     width: 95px;    height: 80px;
+    background: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+
+
 }
 
 #index header > p {
@@ -116,6 +121,9 @@ header, main, nav, aside, article, section, footer {
 
 #selfMenu #logo {
     width: 95px;    height: 80px;
+    background: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
 }
 
 #selfMenu header > p {
@@ -151,7 +159,7 @@ header, main, nav, aside, article, section, footer {
     list-style: none;
     display: inline;
     position: relative;
-    right: 0px;
+    right: 14px;
     bottom: 14px;
 }
 
@@ -165,36 +173,41 @@ header, main, nav, aside, article, section, footer {
     color: #ffffff;
 }
 
-.hamburger i {
-    color: white;
-    font-size: 32px;    
+.dropDownMenu i {
+    font-size: 22px;
     position: relative;
-    float: left;
-    right: 33px;
-    bottom: 6px;
+    right: 18px;
 }
 
 .dropdown-menu {
     position: absolute;
     border-radius: 10px;
     height: 545px;
+
 }
 
-.dropDownMenu .dropdown-item {
+.hamburger i{
+    font-size: 32px;
+    position: relative;
+    right: 17px;
+}
+
+.dropDownMenu .dropdown-item { 
     position: relative;
     width: 250px;   height: 50px;
-    right: 30px;
+    right: 10px;
     padding-left: 45px;
     padding-top: 0px;
     color: #111111;
 }
 
+.dropDownMenu a {
+    position: relative;
+}
+
 .dropDownMenu .dropdown-item:hover {
     width: 230px;   height: 48px;
-    position: relative;
-    left: 0.5px;
-    top:15px;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .dropDownMenu {
@@ -220,6 +233,7 @@ header, main, nav, aside, article, section, footer {
     width: 890px;
     padding-top: 29px;
     padding-bottom: 7px;
+    padding-left: 55px;
     font-size: 25px;
     border-bottom: solid 1px;
     position: relative;
@@ -532,6 +546,9 @@ form label .formDesign {
 
 #newGameMenu #logo {
     width: 95px;    height: 80px;
+    background: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
 }
 
 #newGameMenu header > p {
@@ -661,18 +678,6 @@ ul {
     font-size: 12px;
         font-family: 'Poppins', sans-serif;
 }
-
-
-
- /* h5 {
-    position: relative;
-    height: 5px;
-    width: fit-content;
-    left: 35px;
-    bottom: 23px;
-    font-size: 12px
- } */
-
 
  .iconsList {
      position: relative;
@@ -908,6 +913,9 @@ ul {
 
 #matchReport #logo {
     width: 95px;    height: 80px;
+    background: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
 }
 
 #matchReport header > p {
@@ -940,11 +948,11 @@ ul {
     width: 890px;
     padding-top: 29px;
     padding-bottom: 7px;
+    padding-left: 55px;
     font-size: 25px;
     border-bottom: solid 1px;
     position: relative;
-    /* left: 50px; */
-    margin: 0 auto;
+    left: 50px;
 }
 
 #matchReport button {
@@ -1003,3 +1011,23 @@ ul {
 
 
 /*---------------------//matchReport---------------------*/
+
+
+
+
+/* @media(min-width: 1200px) {
+
+}
+
+@media(min-width: 768px) and (max-width: 979px) {
+
+}
+
+@media(max-width: 767px) {
+
+
+}
+
+@media(max-width:480px) {
+
+} */
