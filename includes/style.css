@@ -754,7 +754,7 @@ ul {
 /*-4-3-3-*/
 
 #formation4_3_3 {
-    display: none;              /*NOTICE NONE!!!!*/
+    /* display: none;             NOTICE NONE!!!! */
 }
 
 #formation4_3_3 article {
@@ -980,7 +980,7 @@ ul {
 }
 
 #theReport {
-    height: 280px;
+    width: 940px;  height: 280px; 
     position: relative;
     bottom: 65px;   left: 80px;
     font-size: 19px;
