@@ -62,10 +62,9 @@ ul {
 
 #icons {
     width: 84px;
-    height: 510px;
+    height: 473px;
     border-right: black solid 0.1px;
     float: left;
-
 }
 
 #functions {
@@ -81,15 +80,22 @@ ul {
     left: 84px;
 }
 
+#teams-list {
+    display: none;
+}
 
-#teams li {
+#players-list {
+    display: none;
+}
+
+#teams-list li {
     position: relative;
-    width: 100px;
+    width: 130px;
     height: 35px;
     float: left;
-    top: 3px;
+    bottom: 32px;
     left: 3px;
-    padding-top: 15px;
+    padding-top: 46px;
     font-family: 'Poppins', sans-serif;
 
 }
@@ -154,6 +160,7 @@ ul {
 #formation-list {
     height: 510px;
     overflow-y: scroll;
+    display: none;
 }
 
 
@@ -184,5 +191,3 @@ ul {
     font-size: 11.5px;
     font-family: 'Poppins', sans-serif;
 }
-
-
