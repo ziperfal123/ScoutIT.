@@ -16,8 +16,12 @@ window.onload = function () {
     var players_list = document.getElementById("players-list");
     var formation1 = document.getElementById("formation3_5_2");
     var formation2 = document.getElementById("formation4_3_3");
-    var dragItem = document.getElementById("dragElement");
-    var dropItem = document.getElementById("dropElement");
+    const fills = document.querySelectorAll ('.fill');
+    const empties = document.querySelectorAll ('.empty');
+
+    
+    // var dragItem = document.getElementsByClassName("dragElement");
+    // var dropItem = document.getElementsByClassName("dropElement");
 
 
 
@@ -96,24 +100,77 @@ window.onload = function () {
         }
     }
 
-    // dropItem.ondragover = function (evt) {
-    //     evt.preventDefault();
-    // }
-    // dragItem.ondragstart = function (evt) {
-    //     evt.dataTransfer.setData('key', evt.target.id);
-    // }
-    //
-    //
-    // document.getElementById("dropElement").ondrop = function (evt) {
-    //     var dropElm = evt.dataTransfer.getData('key');
-    //     evt.preventDefault();
-    //     var myElement = document.getElementsByClassName("dropElement");
-    //     var myNewElement = document.createElement('img');
-    //     myNewElement.src = myElement.src;
-    //     dropItem.appendChild(myNewElement);
+    // for (const fill of fills) {
+    //     ondragstart = function (evt) {
+    //         evt.dataTransfer.setData('key', evt.target.className);
     // }
 
+    // for (const empty of empties) {
+    //     ondragover = function (evt) {
+    //         evt.preventDefault();  
+    //     }
+    
+    //     ondrop = function (evt) {
+    //         var dropElm = evt.dataTransfer.getData('key');
+    //         evt.preventDefault();
+    //         var myElement = empty;   
+    //         var myNewElement = document.createElement('img');
+    //         myNewElement.src = dropElm.src;
+    //         myElement.appendChild(myNewElement);
+    //     }
+    // }
+
+
+    for (const fill of fills){
+        fill.addEventListener ('dragstart', dragStart);
+        fill.addEventListener ('dragend', dragEnd);
+    }
+
+
+    for (const empty of empties){
+        empty.addEventListener ('dragover' , dragOver);
+        empty.addEventListener ('dragenter' , dragEnter);
+        empty.addEventListener ('dragleave' , dragLeave);
+        empty.addEventListener ('drop' , dragDrop);
+    }
+
+    function dragStart () {
+        this.className += 'hold';
+    }
+
+    function dragEnd() {
+        this.className = 'fill';
+    }
+
+    function dragOver (e) {
+        e.preverntDefault();
+        console.log ('over'); 
+    }
+    
+    function dragEnter(e) {
+        e.preverntDefault();
+        console.log ('enter');
+    }
+    
+    function dragLeave() {
+        this.className = 'empty';
+        console.log ('leave');
+    }
+    
+    function dragDrop() {
+    console.log ('drop');
+       this.className = 'fill';
+       this.append(fill);
+    }
+
+
+    
+
     // game clock //
+
+
+    
+
 
     document.getElementById("startBtn").onclick = function ()  {
         status = 1;
@@ -158,10 +215,8 @@ window.onload = function () {
         }
     }
 
-
-    document.getElementById("beitar").onclick = function () {
-        beitar.style.fontWeight = "bold";
-    };
-
-
+    
+    // document.getElementById("beitar").onclick = function () {
+    //     beitar.style.fontWeight = "bold";
+    // };
 }

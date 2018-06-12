@@ -40,11 +40,11 @@
     
     #index #logo {
         width: 340px;    height: 110px;
-        background: url(../images/theNewLogo.png);
+        background: url(../images/scoutITLogo.png);
         background-repeat: no-repeat;
         display: inline-block;
         position: relative;
-        top: 30px;left: 450px;
+        top: 45px;left: 515px;
     }
         
     #index header > p {
@@ -126,11 +126,11 @@
     
     #selfMenu #logo {
         width: 340px;    height: 110px;
-        background: url(../images/theNewLogo.png);
+        background: url(../images/scoutITLogo.png);
         background-repeat: no-repeat;
         display: inline-block;
         position: relative;
-        top: 30px;left: 450px;
+        top: 45px;left: 515px;
     }
     
     #selfMenu header > p {
@@ -555,18 +555,16 @@
     
     /*---------------------NewGame---------------------*/
     
-    #newGameMenu header {
-        width: 1300;      height: 140px;
+    /* #newGameMenu header {
+        width: 1024px;      height: 140px;
         background-color: #606060;
     }
     
     #newGameMenu #logo {
-        width: 340px;    height: 110px;
-        background: url(../images/theNewLogo.png);
+        width: 95px;    height: 80px;
+        background: url(../images/logo.svg);
         background-repeat: no-repeat;
         display: inline-block;
-        position: relative;
-        top: 30px;left: 450px;
     }
     
     #newGameMenu header > p {
@@ -594,11 +592,11 @@
     button:focus {outline:0;}
     
     
-    #newGameMenu main {
+    main {
         position: relative;
         height: 100%;
-        /* border: black solid 1px; */
-        width: 1300px;  height: 560px;
+        border: black solid 1px;
+        width: 1024px;  height: 560px;
     }
     
     #field {
@@ -619,7 +617,7 @@
     
     
     .stopWatch {
-        height: 85px;
+        height: 90px;
         border-bottom: black solid 0.5px;
         text-align: center;
     }
@@ -627,6 +625,10 @@
     .stopWatch h1 {
         font-size: 18px;
         margin-top: 3px
+    }
+
+    .stopWatch h2 {
+        font-size: 18px;
     }
     
     .myButton {
@@ -681,7 +683,7 @@
     #lists {
         position: absolute;
         width: 143px;
-        height: 474px;
+        height: 459px;
         left: 84px;
         font-size: 10px;
     }
@@ -742,7 +744,7 @@
     }
     
     #formation-list {
-        height: 474px;
+        height: 465px;
         overflow-y: scroll;
     }
     
@@ -758,14 +760,23 @@
     }
     
     #players-list {
-        height: 475px;
+        height: 465px;
         overflow-y: scroll;
+        list-style: none;
+        position: relative;
+        bottom: 0px;
+    }
+
+    #players-list li{
+        position: relative;
+        left: 14px;
+        padding-top: 17px;
     }
     
-    #players-list img {
+    #players-list li img {
         position: relative;
         top: 6px;
-        left: 5px;
+        left: -7px;
     }
     
     #players-list h5 {
@@ -778,15 +789,17 @@
     
     
     
-    /*TeanFormations..*/
-    
-    /*-4-3-3-*/
+
     
     #formation4_3_3 {
-        /* display: none;             NOTICE NONE!!!! */
+        display: none;
     }
     
     #formation4_3_3 article {
+        height: 60px; width: 60px;
+        background-color: #d6d6d6;
+        border-radius: 50%;
+        border: #000000 0.5px solid;
         position: relative;
     }
     
@@ -795,58 +808,60 @@
     }
     
     #formation4_3_3 .fieldPlayer1 {
-        bottom: 600px;  left: 170px
+        bottom: 580px;  left: 170px
     }
     
     #formation4_3_3 .fieldPlayer2 {
-        bottom: 530px;  left: 120px
+        bottom: 510px;  left: 120px
     }
     
     #formation4_3_3 .fieldPlayer3 {
-        bottom: 430px;  left: 120px
+        bottom: 410px;  left: 120px
     }
     
     #formation4_3_3 .fieldPlayer4 {
-        bottom: 365px;  left: 170px
+        bottom: 345px;  left: 170px
     }
     
     
     
     #formation4_3_3 .fieldPlayer5 {
-        bottom: 760px;  left: 370px
+        bottom: 720px;  left: 370px
     }
     
     #formation4_3_3 .fieldPlayer6 {
-        bottom: 710px;  left: 310px
+        bottom: 670px;  left: 310px
     }
     
     #formation4_3_3 .fieldPlayer7 {
-        bottom: 650px;  left: 370px
+        bottom: 610px;  left: 370px
     }
     
     
     
     #formation4_3_3 .fieldPlayer8 {
-        bottom: 1010px;  left: 590px;
+        bottom: 930px;  left: 590px;
     }
     
     #formation4_3_3 .fieldPlayer9 {
-        bottom: 910px;  left: 645px;
+        bottom: 855px;  left: 645px;
     }
     
     #formation4_3_3 .fieldPlayer10 {
-        bottom: 810px;  left: 590px
+        bottom: 780px;  left: 590px
     }
     
     
-    
-    /*-3-5-2-*/
-    
+
     #formation3_5_2 {
-        display: none;           /*NOTICE NONE!!!!*/
+        display: none;
     }
     
     #formation3_5_2 article {
+        height: 60px; width: 60px;
+        background-color: #d6d6d6;
+        border-radius: 50%;
+        border: #000000 0.5px solid;
         position: relative;
     }
     
@@ -855,52 +870,60 @@
     }
     
     #formation3_5_2 .fieldPlayer1 {
-        bottom: 540px;  left: 140px
+        bottom: 510px;  left: 140px
     }
     
     #formation3_5_2 .fieldPlayer2 {
-        bottom: 442px;  left: 120px
+        bottom: 422px;  left: 120px
     }
     
     #formation3_5_2 .fieldPlayer3 {
         bottom: 355px;  left: 140px
     }
     
-    
-    
-    
+
     #formation3_5_2 .fieldPlayer4 {
-        bottom: 785px;  left: 340px
+        bottom: 745px;  left: 340px
     }
     
     #formation3_5_2 .fieldPlayer5 {
-        bottom: 725px;  left: 280px
+        bottom: 685px;  left: 280px
     }
     
     #formation3_5_2 .fieldPlayer6 {
-        bottom: 630px;  left: 280px
+        bottom: 590px;  left: 280px
     }
     
     #formation3_5_2 .fieldPlayer7 {
-        bottom: 570px;  left: 340px
+        bottom: 520px;  left: 340px
     }
     
     #formation3_5_2 .fieldPlayer8 {
-        bottom: 840px;  left: 400px;
+        bottom: 800px;  left: 400px;
     }
     
     
     
     
     #formation3_5_2 .fieldPlayer9 {
-        bottom: 1020px;  left: 525px;
+        bottom: 970px;  left: 525px;
     }
     
     #formation3_5_2 .fieldPlayer10 {
-        bottom: 850px;  left: 525px
+        bottom: 800px;  left: 525px
     } 
     
+
+
+     #formation4-3-3 article > img {
+        width: 100%;    height: 100%;
+    }
      
+    #formation3-5-2 article > img {
+        width: 100%;    height: 100%;
+    } */
+    
+    
     
     
     /*---------------------//NewGame---------------------*/
@@ -931,11 +954,11 @@
     
     #matchReport #logo {
         width: 340px;    height: 110px;
-        background: url(../images/theNewLogo.png);
+        background: url(../images/scoutITLogo.png);
         background-repeat: no-repeat;
         display: inline-block;
         position: relative;
-        top: 30px;left: 450px;
+        top: 45px;left: 515px;
     }
     
     #matchReport header > p {
@@ -1015,15 +1038,16 @@
     }
     
     #theReport {
-        width: 1200px;  height: 280px; 
+        width: 1170px;  height: 380px; 
         position: relative;
-        bottom: 45px;   left: 95px;
+        bottom: 45px;   left: 75px;
         font-size: 19px;
         overflow-y: scroll;
     }
     
-    #theReport p {
+    #theReport ul li {
         margin-top: 25px;
+        list-style: square
     }
     
     
@@ -1216,7 +1240,6 @@
         left: 100px;
         width: 85px;    height: 85px;
         float: right;
-        
     }
     
     
@@ -1531,7 +1554,6 @@
     
     .form-control {
         display: inline;
-        width: 180%;
     }
     
     form label .formDesign {
@@ -1621,14 +1643,14 @@
         display: inline-block;
     }
     
-    #newGameMenu header > p {
+    #selfMenu header > p {
         display: inline;
         color: #ffffff;
         float: right;
         position: relative;
         top: 25px;   right: 100px;
     }
-    #newGameMenu #reuven {
+    #selfMenu #reuven {
         background: url(../images/reuven.png);
         background-repeat: no-repeat;
         display: block;
@@ -1671,7 +1693,7 @@
     
     
     .stopWatch {
-        height: 85px;
+        height: 90px;
         border-bottom: black solid 0.5px;
         text-align: center;
     }
@@ -1679,6 +1701,10 @@
     .stopWatch h1 {
         font-size: 18px;
         margin-top: 3px
+    }
+
+    .stopWatch h2 {
+        font-size: 18px;
     }
     
     .myButton {
@@ -1706,7 +1732,7 @@
     
     #icons {
         width: 84px;
-        height: 471px;
+        height: 465px;
         border-right: black solid 0.1px;
         float: left;
     
@@ -1732,8 +1758,8 @@
     
     #lists {
         position: absolute;
-        width: 143px;
-        height: 474px;
+        width: 140px;
+        height: 459px;
         left: 84px;
         font-size: 10px;
     }
@@ -1746,7 +1772,7 @@
         height: 35px;
         padding-top: 46px;
         font-size: 12px;
-            font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins', sans-serif;
     }
     
      .iconsList {
@@ -1794,7 +1820,7 @@
     }
     
     #formation-list {
-        height: 474px;
+        height: 465px;
         overflow-y: scroll;
     }
     
@@ -1810,14 +1836,23 @@
     }
     
     #players-list {
-        height: 475px;
+        height: 465px;
         overflow-y: scroll;
+        list-style: none;
+        position: relative;
+        bottom: 0px;
+    }
+
+    #players-list fill{
+        position: relative;
+        left: 14px;
+        padding-top: 17px;
     }
     
     #players-list img {
         position: relative;
         top: 6px;
-        left: 5px;
+        left: -7px;
     }
     
     #players-list h5 {
@@ -1828,66 +1863,223 @@
     }
     
     
-    
+    #personalComments {
+        width: 140px;   height: 459px;
+        overflow-y: scroll;
+    }
+
+    #personalComments ul li {
+        font-size: 16px;
+        padding-top: 15px;
+        padding-left: 3px;
+    }
+
+    #empty {
+        width: 20px;    height: 20px;
+        border: solid 2px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    #full {
+        width: 20px;    height: 20px;
+        border: solid 2px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    form{
+        font-size: 13px;
+    }
+
+    form label {
+        position: relative;
+        right: 93px;
+    }
+
     
     /*TeanFormations..*/
     
     /*-4-3-3-*/
     
     #formation4_3_3 {
-        /* display: none;             NOTICE NONE!!!! */
+        display: none;
     }
     
-    #formation4_3_3 article {
-        position: relative;
+    #formation4_3_3 .empty {
+        height: 60px; width: 60px;
+        background-color: #d6d6d6;
+        border-radius: 50%;
+        border: #000000 0.5px solid;
+        position: absolute;
     }
     
     #formation4_3_3 .goalKeeper {
-        bottom: 310px; left: 15px;
+        /* background-image: url(../images/playersProfile/kadoshHead.png); */
+        display: block;
+        top: 250px; left: 15px;
     }
     
     #formation4_3_3 .fieldPlayer1 {
-        bottom: 600px;  left: 170px
+        /* background-image: url(../images/playersProfile/shaimanHead.png); */
+        display: block;
+        top: 60px;  left: 170px
     }
     
     #formation4_3_3 .fieldPlayer2 {
-        bottom: 530px;  left: 120px
+        /* background-image: url(../images/playersProfile/tamasHead.png); */
+        display: block;
+        top: 160px;  left: 120px
     }
     
     #formation4_3_3 .fieldPlayer3 {
-        bottom: 430px;  left: 120px
+        /* background-image: url(../images/playersProfile/kapilotoHead.png); */
+        display: block;
+        top: 330px;  left: 120px
     }
     
     #formation4_3_3 .fieldPlayer4 {
-        bottom: 365px;  left: 170px
+        /* background-image: url(../images/playersProfile/malulHead.png); */
+        display: block;
+        top: 445px;  left: 170px
     }
     
     
     
     #formation4_3_3 .fieldPlayer5 {
-        bottom: 760px;  left: 370px
+        /* background-image: url(../images/playersProfile/mamanHead.png); */
+        display: block;
+        top: 120px;  left: 370px
     }
     
     #formation4_3_3 .fieldPlayer6 {
-        bottom: 710px;  left: 310px
+        /* background-image: url(../images/playersProfile/barskiHead.png); */
+        display: block;
+        top: 250px;  left: 310px
     }
     
     #formation4_3_3 .fieldPlayer7 {
-        bottom: 650px;  left: 370px
+        /* background-image: url(../images/playersProfile/arelHead.png); */
+        display: block;
+        top: 380px;  left: 370px
     }
     
     
     
     #formation4_3_3 .fieldPlayer8 {
-        bottom: 1010px;  left: 590px;
+        /* background-image: url(../images/playersProfile/edenHead.png); */
+        display: block;
+        top: 130px;  left: 590px;
     }
     
     #formation4_3_3 .fieldPlayer9 {
-        bottom: 910px;  left: 645px;
+        /* background-image: url(../images/playersProfile/turjemanHead.png); */
+        display: block;
+        top: 255px;  left: 645px;
     }
     
     #formation4_3_3 .fieldPlayer10 {
-        bottom: 810px;  left: 590px
+        /* background-image: url(../images/playersProfile/ginsariHead.png); */
+        display: block;
+        top: 380px;  left: 590px
+
+    }
+
+    /*Try for JS*/
+
+    .hold {
+        border: solid black 0.5 px;
+    }
+
+    .hovered {
+        background-color: #f4f4f4;
+    }
+
+    /* .invisible {
+        display: block;
+    } */
+
+
+
+
+
+
+    /*GAME_ON.....*/
+
+    #gameOn4_3_3 article {
+        height: 60px; width: 60px;
+        background-color: #8b8a8a;
+        border-radius: 50%;
+        border: #000000 0.5px solid;
+        position: absolute;
+        display: block;
+        font-size:26px;
+        color: #dfdede;
+        padding-top: 8px;
+        padding-left: 3px;
+    }
+
+
+
+    #gameOn4_3_3 .goalKeeper {
+        display: block;
+        top: 250px; left: 15px;
+        padding-left: 10px;
+    }
+    
+    #gameOn4_3_3 .fieldPlayer1 {
+        display: block;
+        top: 60px;  left: 170px
+    }
+    
+    #gameOn4_3_3 .fieldPlayer2 {
+        display: block;
+        top: 160px;  left: 120px
+
+    }
+    
+    #gameOn4_3_3 .fieldPlayer3 {
+        display: block;
+        top: 330px;  left: 120px
+    }
+    
+    #gameOn4_3_3 .fieldPlayer4 {
+        display: block;
+        top: 445px;  left: 170px
+    }
+    
+    
+    
+    #gameOn4_3_3 .fieldPlayer5 {
+        display: block;
+        top: 120px;  left: 370px
+    }
+    
+    #gameOn4_3_3 .fieldPlayer6 {
+        display: block;
+        top: 250px;  left: 310px
+    }
+    
+    #gameOn4_3_3 .fieldPlayer7 {
+        display: block;
+        top: 380px;  left: 370px
+    }
+    
+    
+    
+    #gameOn4_3_3 .fieldPlayer8 {
+        display: block;
+        top: 130px;  left: 590px;
+    }
+    
+    #gameOn4_3_3 .fieldPlayer9 {
+        display: block;
+        top: 255px;  left: 645px;
+    }
+    
+    #gameOn4_3_3 .fieldPlayer10 {
+        display: block;
+        top: 380px;  left: 590px
     }
     
     
@@ -1895,64 +2087,74 @@
     /*-3-5-2-*/
     
     #formation3_5_2 {
-        display: none;           /*NOTICE NONE!!!!*/
+        display: none;
     }
     
     #formation3_5_2 article {
-        position: relative;
+        height: 60px; width: 60px;
+        background-color: #d6d6d6;
+        border-radius: 50%;
+        border: #000000 0.5px solid;
+        position: absolute;
     }
     
     #formation3_5_2 .goalKeeper {
-        bottom: 310px; left: 15px;
+        bottom: 200px; left: 15px;
     }
     
     #formation3_5_2 .fieldPlayer1 {
-        bottom: 540px;  left: 140px
+        bottom: 310px;  left: 140px
     }
     
     #formation3_5_2 .fieldPlayer2 {
-        bottom: 442px;  left: 120px
+        bottom: 200px;  left: 120px
     }
     
     #formation3_5_2 .fieldPlayer3 {
-        bottom: 355px;  left: 140px
+        bottom: 80px;  left: 140px
     }
     
-    
-    
-    
+
     #formation3_5_2 .fieldPlayer4 {
-        bottom: 785px;  left: 340px
+        bottom: 400px;  left: 340px
     }
     
     #formation3_5_2 .fieldPlayer5 {
-        bottom: 725px;  left: 280px
+        bottom: 250px;  left: 280px
     }
     
     #formation3_5_2 .fieldPlayer6 {
-        bottom: 630px;  left: 280px
+        bottom: 120px;  left: 280px
     }
     
     #formation3_5_2 .fieldPlayer7 {
-        bottom: 570px;  left: 340px
+        bottom: 190px;  left: 380px
     }
     
     #formation3_5_2 .fieldPlayer8 {
-        bottom: 840px;  left: 400px;
+        top: 450px;  left: 340px;
     }
     
     
     
     
     #formation3_5_2 .fieldPlayer9 {
-        bottom: 1020px;  left: 525px;
+        bottom: 70px;  left: 525px;
     }
     
     #formation3_5_2 .fieldPlayer10 {
-        bottom: 850px;  left: 525px
+        bottom: 290px;  left: 525px
     } 
     
+
+
+     #formation4-3-3 div > img {
+        width: 100%;    height: 100%;
+    }
      
+    #formation3-5-2 div > img {
+        width: 100%;    height: 100%;
+    }
     
     
     /*---------------------//NewGame---------------------*/
@@ -2065,18 +2267,18 @@
     }
     
     #theReport {
-        width: 945px;  height: 280px; 
+        width: 900px;  height: 280px; 
         position: relative;
         bottom: 65px;   left: 75px;
         font-size: 19px;
         overflow-y: scroll;
     }
-    
-    #theReport p {
+
+    #theReport ul li {
         margin-top: 25px;
+        list-style: square
     }
-    
-    
+        
     
     
     
