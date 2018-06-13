@@ -1,10 +1,3 @@
-// swal({
-//     title: "Good job!",
-//     text: "Comment has been succesfully sent!",
-//     icon: "success",
-//   });
-//
-
 
 
 window.onload = function () {
@@ -16,13 +9,12 @@ window.onload = function () {
     var players_list = document.getElementById("players-list");
     var formation1 = document.getElementById("formation3_5_2");
     var formation2 = document.getElementById("formation4_3_3");
-    const fills = document.querySelectorAll ('.fill');
+    const fills = document.querySelectorAll('.fill');
     const empties = document.querySelectorAll ('.empty');
-
+    var dataClass;
+    var dataSrc;
+    var dropArea;
     
-    // var dragItem = document.getElementsByClassName("dragElement");
-    // var dropItem = document.getElementsByClassName("dropElement");
-
 
 
     document.getElementById("rival-team").onclick = function () {
@@ -100,26 +92,6 @@ window.onload = function () {
         }
     }
 
-    // for (const fill of fills) {
-    //     ondragstart = function (evt) {
-    //         evt.dataTransfer.setData('key', evt.target.className);
-    // }
-
-    // for (const empty of empties) {
-    //     ondragover = function (evt) {
-    //         evt.preventDefault();  
-    //     }
-    
-    //     ondrop = function (evt) {
-    //         var dropElm = evt.dataTransfer.getData('key');
-    //         evt.preventDefault();
-    //         var myElement = empty;   
-    //         var myNewElement = document.createElement('img');
-    //         myNewElement.src = dropElm.src;
-    //         myElement.appendChild(myNewElement);
-    //     }
-    // }
-
 
     for (const fill of fills){
         fill.addEventListener ('dragstart', dragStart);
@@ -127,49 +99,55 @@ window.onload = function () {
     }
 
 
-    for (const empty of empties){
-        empty.addEventListener ('dragover' , dragOver);
-        empty.addEventListener ('dragenter' , dragEnter);
-        empty.addEventListener ('dragleave' , dragLeave);
-        empty.addEventListener ('drop' , dragDrop);
+    for (const empty of empties) {
+        empty.addEventListener ('dragover', dragOver);
+        empty.addEventListener ('dragenter', dragEnter);
+        empty.addEventListener ('dragleave', dragLeave);
+        empty.addEventListener ('drop', dragDrop);
     }
 
-    function dragStart () {
-        this.className += 'hold';
+    function dragStart (e) {
+        this.className += ' hold';
+        dataSrc = this.getAttribute("src");
+        console.log (dataSrc);
     }
 
     function dragEnd() {
         this.className = 'fill';
+        console.log ('End'); 
     }
 
-    function dragOver (e) {
-        e.preverntDefault();
-        console.log ('over'); 
+    function dragOver(e) {
+        e.preventDefault();
+        console.log ('Over');  
     }
     
     function dragEnter(e) {
-        e.preverntDefault();
-        console.log ('enter');
+        e.preventDefault();
+        dropArea = this.className[11];
+        console.log (dropArea);
+        console.log ("Enter");
     }
     
     function dragLeave() {
-        this.className = 'empty';
-        console.log ('leave');
+        /* this.className = 'empty'; */
+        console.log ('Leave');
     }
     
     function dragDrop() {
-    console.log ('drop');
-       this.className = 'fill';
-       this.append(fill);
+       var newImg = document.createElement("img");
+       newImg.src = dataSrc;
+       newImg.draggable = "true";
+       newImg.className = "largeFace";
+       $(newImg).clone().appendTo(".fieldPlayer" + dropArea);
+       console.log ("fieldPlayer" + dropArea);
+       console.log (newImg.src); 
     }
 
 
     
 
     // game clock //
-
-
-    
 
 
     document.getElementById("startBtn").onclick = function ()  {
@@ -188,9 +166,14 @@ window.onload = function () {
         time = 0;
         document.getElementById("startBtn").disabled = true;
 
-        swal("The information has been succesfully saved to the game report", {
-            buttons: ["OK", "Open Report"],
-          });
+        swal({
+            title: "The information has been succesfully saved to the game report",
+            text: "click OK to open report",
+            type: "success",
+        }).then(function() {
+            window.location = "matchReport.html";
+        });
+         
     };
 
 
@@ -216,7 +199,5 @@ window.onload = function () {
     }
 
     
-    // document.getElementById("beitar").onclick = function () {
-    //     beitar.style.fontWeight = "bold";
-    // };
+
 }

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script> -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -18,7 +17,6 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstra.min.css"> -->
     <link rel="stylesheet" href="includes/Amitstyle 2.css">
     <link rel="stylesheet" href="includes/style.css">
 
@@ -33,7 +31,7 @@
 
 <body>
     <div id="wrapper">
-        <section id="selfMenu">
+        <section id="NewGame">
                 <header>
                     <p>Hello Reuven!</p>
                     <a id="logo" href="index.html"></a>
@@ -66,8 +64,10 @@
                 </header>
 
 
-                <main>
 
+
+                <main>
+                    <h1 id="notSupportingDesktopMessage"> You are trying to start a new game<br> on a non supporting device.</h1>
                 <div id="field">
                     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
                     <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -8143,23 +8143,8 @@
                     LTA3OjAw4imf4gAAAABJRU5ErkJggg==" />
                     </svg>
 
-                    <!-- <div id="gameOn4_3_3">
-                            <article class="goalKeeper dropElement">#1</article>
-                            <article class="fieldPlayer1 dropElement">#18</article>
-                            <article class="fieldPlayer2 dropElement">#30</article>
-                            <article class="fieldPlayer3 dropElement">#55</article>
-                            <article class="fieldPlayer4 dropElement">#4</article>
-                            <article class="fieldPlayer5 dropElement">#15</article>
-                            <article class="fieldPlayer6 dropElement">#77</article>
-                            <article class="fieldPlayer7 dropElement">#6</article>
-                            <article class="fieldPlayer8 dropElement">#9</article>
-                            <article class="fieldPlayer9 dropElement">#17</article>
-                            <article class="fieldPlayer10 dropElement">#14</article>
-                        </div> -->
-
-
                     <div id="formation4_3_3">
-                        <div class="goalKeeper empty"></div>
+                        <div class="fieldPlayer0 empty"></div>
                         <div class="fieldPlayer1 empty"></div>
                         <div class="fieldPlayer2 empty"></div>
                         <div class="fieldPlayer3 empty"></div>
@@ -8169,7 +8154,7 @@
                         <div class="fieldPlayer7 empty"></div>
                         <div class="fieldPlayer8 empty"></div>
                         <div class="fieldPlayer9 empty"></div>
-                        <div class="fieldPlayer10 empty"></div>
+                        <div class="fieldPlayerA empty"></div>
                     </div>
 
     
@@ -8216,7 +8201,7 @@
                         <ul id="teams-list">
                             <li><img src="images/beer-sheva.png">H. Beer-Sheva</li>
                             <li><img src="images/macabi-tlv.png"> M. Tel-Aviv</li>
-                            <li><img src="images/natania.png"> Beitar Jerusalem</li>
+                            <li ><img src="images/natania.png"> Beitar Jerusalem</li>
                             <li><img src="images/benei-yehuda.png"> Beni Yehuda</li>
                             <li><img src="images/kyriat-shemona.png"> H. K. Shemona</li>
                             <li><img src="images/benei-sakchnin.png"> Beni Sakhnin</li>
@@ -8227,82 +8212,42 @@
                         </ul>
 
                         <div id="formation-list">
-                            <button><h6>3-4-3</h6></button>
-                            <button id="f2"><h6>3-5-2</h6></button>
-                            <button><h6>3-4-2-1</h6></button>
-                            <button id="f1"><h6>4-3-3</h6></button>
-                            <button><h6>4-3-1</h6></button>
-                            <button><h6>4-4-2</h6></button>
-                            <button><h6>4-2-2-2</h6></button>
-                            <button><h6>4-3-1-2</h6></button>
-                            <button><h6>4-4-1-1</h6></button>
-                            <button><h6>4-2-3-1</h6></button>
-                            <button><h6>5-3-2</h6></button>
-                            <button><h6>5-4-1</h6></button>
-                            <button><h6>5-3-1-1</h6></button>
-                            <button><h6>5-2-2-1</h6></button>
+                            <ul>
+                                <li><button>3-4-3</button></li>
+                                <li><button id="f2">3-5-2</button></li>
+                                <li><button>3-4-2-1</button></li>
+                                <li><button id="f1">4-3-3</button></li>
+                                <li><button>4-4-2</button></li>
+                                <li><button>4-2-2-2</button></li>
+                                <li><button>4-3-1-2</button></li>
+                                <li><button>4-4-1-1</button></li>
+                                <li><button>4-2-3-1</button></li>
+                                <li><button>5-3-2</button></li>
+                                <li><button>5-4-1</button></li>
+                                <li><button>5-3-1-1</button></li>
+                                <li><button>5-2-2-1</button></li>
+                             </ul>
+
                         </div>                        
                         
                         <div id="players-list">
-                            <div><img  src="images/smallHeads/Tamas.png" class="fill" draggable="true">#30 G. Tamas</div>
-                            <div><img  src="images/smallHeads/kapiloto.png" class="fill" draggable="true">#55 N. Kapiloto</div>
-                            <div><img  src="images/smallHeads/Fishler.png" class="fill" draggable="true">#5 O. Fishler</div>
-                            <div><img  src="images/smallHeads/Sardal.png" class="fill" draggable="true">#24 L. Sardal</div>
-                            <div><img  src="images/smallHeads/Malul.png" class="fill" draggable="true">#4 D. Malul</div>
-                            <div><img  src="images/smallHeads/Magrashvili.png" class="fill" draggable="true">#3 H. Magrashvil</div>
-                            <div><img  src="images/smallHeads/Barski.png" class="fill" draggable="true">#77 R. Barski</div>
-                            <div><img  src="images/smallHeads/mamanHead.png" class="fill" draggable="true">#15 H. Maman</div>
-                            <div><img  src="images/smallHeads/shchterHead.png" class="fill" draggable="true">#12 A. Shechter</div>
-                            <div><img  src="images/smallHeads/ciwanHead.png" class="fill" draggable="true">#8 H. Ciwan</div>
-                            <div><img  src="images/smallHeads/ciwanHead.png" class="fill" draggable="true">#8 H. Ciwan</div>
-                            <div><img  src="images/smallHeads/maximHead.png" class="fill" draggable="true">#7 M. Flaku</div>
-                            <div><img  src="images/smallHeads/arelHead.png" class="fill" draggable="true">#6 G. Arel</div>
-                            <div><img  src="images/smallHeads/edenHead.png" class="fill" draggable="true">#9 E. Ben-Basat</div>
-                            <div><img  src="images/smallHeads/ginsariHead.png" class="fill" draggable="true">#14 R. Ginsari</div>
-                            <div><img  src="images/smallHeads/turjemanHead.png" class="fill" draggable="true">#17 A. Turjeman</div>
+                            <div><img  src="images/largeHeads/tamasHead.png" class="fill" draggable="true">#30 G. Tamas</div>
+                            <div><img  src="images/largeHeads/kapilotoHead.png" class="fill" draggable="true">#55 N. Kapiloto</div>
+                            <div><img  src="images/largeHeads/FishlerHead.png" class="fill" draggable="true">#5 O. Fishler</div>
+                            <div><img  src="images/largeHeads/sardalHead.png" class="fill" draggable="true">#24 L. Sardal</div>
+                            <div><img  src="images/largeHeads/malulHead.png" class="fill" draggable="true">#4 D. Malul</div>
+                            <div><img  src="images/largeHeads/magrashviHead.png" class="fill" draggable="true">#3 H. Magrashvil</div>
+                            <div><img  src="images/largeHeads/barskiHead.png" class="fill" draggable="true">#77 R. Barski</div>
+                            <div><img  src="images/largeHeads/mamanHead.png" class="fill" draggable="true">#15 H. Maman</div>
+                            <div><img  src="images/largeHeads/shchterHead.png" class="fill" draggable="true">#12 A. Shechter</div>
+                            <div><img  src="images/largeHeads/ciwanHead.png" class="fill" draggable="true">#8 H. Ciwan</div>
+                            <div><img  src="images/largeHeads/maximHead.png" class="fill" draggable="true">#7 M. Flaku</div>
+                            <div><img  src="images/largeHeads/arelHead.png" class="fill" draggable="true">#6 G. Arel</div>
+                            <div><img  src="images/largeHeads/edenHead.png" class="fill" draggable="true">#9 E. Ben-Basat</div>
+                            <div><img  src="images/largeHeads/ginsariHead.png" class="fill" draggable="true">#14 R. Ginsari</div>
+                            <div><img  src="images/largeHeads/turjemanHead.png" class="fill" draggable="true">#17 A. Turjeman</div>
                         </div>      
                         
-                        <!-- <div id="personalComments">
-                            <ul>
-                                <li>Advantages<br> +</li>
-                                <li>DisAdvantages<br> +</li>
-                                <li>Goals<br>
-                                    <article ="empty"></article>
-                                    <article id="empty"></article>
-                                    <article id="empty"></article>
-                                    <article id="empty"></article>
-                                    <article id="empty"></article>
-                                </li>
-                                <li>Assists<br>
-                                    <article id="empty"></article>
-                                    <article id="empty"></article>
-                                    <article id="empty"></article>
-                                    <article id="empty"></article>
-                                    <article id="empty"></article>
-                                </li>
-                                <li>Tackles<br>
-                                    <article id="full"></article>
-                                    <article id="full"></article>
-                                    <article id="empty"></article>
-                                    <article id="empty"></article>
-                                    <article id="empty"></article>
-                                </li>
-                            </ul>
-                            <form action="#" method="GET">
-                                <label> <input type="checkbox">Penelty Kicker</label>
-                                <label> <input type="checkbox">Corners Kicker</label>
-                                <label> <input type="checkbox">Free Kicks Kicker</label>
-                                <label> <input type="checkbox">Yellom Card</label>
-                                <label> <input type="checkbox">Red Card</label>
-                            </form>
-                        </div>
-
-                    </section>
-
-                </section>
-            <div class="clear"></div> -->
-
-
         </main>
     </section>
     </div>
