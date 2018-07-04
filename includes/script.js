@@ -11,6 +11,7 @@ window.onload = function () {
     var formation2 = document.getElementById("formation4_3_3");
     const fills = document.querySelectorAll('.fill');
     const empties = document.querySelectorAll ('.empty');
+    const teams = document.querySelectorAll ('.team');
     var dataClass;
     var dataSrc;
     var dropArea;
@@ -92,6 +93,13 @@ window.onload = function () {
         }
     }
 
+    for (const team of teams){
+        team.addEventListener ('click', onclick);
+    }
+
+    function click () {
+        this.style.fontWheight= "900";
+    }
 
     for (const fill of fills){
         fill.addEventListener ('dragstart', dragStart);

@@ -1,6 +1,26 @@
+@viewport {
+
+    zoom:1;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {outline:0;}
+
+#teams-list {
+    display: none;
+}
+
+#players-list {
+    display: none;
+}
+
 
 /*---------------------DESKTOP VIEW---------------------*/
-
 
 
 @media screen and (min-width: 1030px) {
@@ -16,14 +36,13 @@
     #wrapper {
         width: 1300px;
         margin: 0px auto;
+        height: 100%;
         font-family: 'Poppins', sans-serif;
     }
     
     .clear {
         clear: both;
     }
-    
-    
     
     
     /*---------------------INDEX---------------------*/
@@ -97,21 +116,6 @@
     }
     
     /*---------------------//INDEX---------------------*/
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-    
-    
-    
     
     
     
@@ -442,26 +446,9 @@
     }
     
 
-
-
-    
     /*---------------------//MainMenu---------------------*/
     
     
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
     /*---------------------NewGame---------------------*/
 
 
@@ -581,6 +568,12 @@
     
     #field {
         display: none;
+        position: absolute;
+        height: 505px;
+        width: 500px;
+        float: right;
+        left: 227px;
+        top: 0px;
     }
 
     #functions {
@@ -592,6 +585,14 @@
     }
 
     #lists {
+        display: none;
+    }
+
+    #teams-list {
+        display: none;
+    }
+    
+    #players-list {
         display: none;
     }
 
@@ -607,27 +608,27 @@
 
     }
 
+    #teams-list li {
+        position: relative;
+        width: 130px;
+        height: 35px;
+        float: left;
+        bottom: 32px;
+        left: 3px;
+        padding-top: 46px;
+        font-family: 'Poppins', sans-serif;
+    }
 
+
+    h5 {
+        position: relative;
+        height: 5px;
+        width: fit-content;
+        left: 35px;
+        bottom: 23px;
+     }
 
     /*---------------------//NewGame---------------------*/
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-    
-    
-    
     
     
     /*---------------------contactUs---------------------*/
@@ -827,35 +828,6 @@
     
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*------------------------------TABLET STARTING HERE------------------------------*/
 
 
@@ -955,19 +927,6 @@
     }
     
     /*---------------------//INDEX---------------------*/
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     /*---------------------MainMenu---------------------*/
@@ -1310,19 +1269,6 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     /*---------------------contactUs---------------------*/
     
     
@@ -1395,18 +1341,14 @@
         position: relative;
       }
     
+      button {
+        border: none;
+        align-content: center;
+    }
     
-    
+
+
     /*---------------------//contactUs---------------------*/
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
@@ -1468,8 +1410,9 @@
     }
     
     #functions {
-        width: 227px;       height: 596px;
+        width: 227px;       height: 555px;
         background-color: #f7f6f6;
+
     }
     
     
@@ -1544,16 +1487,28 @@
         left: 84px;
         font-size: 10px;
     }
+
     
-    #teams li {
+    
+    #teams-list li {
         position: relative;
         float: left;
-        top: -32px;  left: 3px;
+        left: 3px;
         width: 180px;
-        height: 35px;
-        padding-top: 46px;
+        height: 25px; 
+        margin-top: 20px;
         font-size: 12px;
         font-family: 'Poppins', sans-serif;
+        
+    }
+
+    #teams-list span {
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    #teams-list {
+        overflow-y: scroll;
     }
     
      .iconsList {
@@ -1587,7 +1542,7 @@
         position: relative;
         left: 21px;
     }
-    .fa-exchange {
+    .fa-exchange-alt {
         position: relative;
         left: 11px;
     }
@@ -1595,20 +1550,17 @@
         position: relative;
         left: 12px;
     }
-    .fa-pencil {
+    .fa-pencil-alt {
         position: relative;
         left: 12px;
     }
     
+    
     #formation-list {
         height: 465px;
         overflow-y: scroll;
-    }
-    
-    
-    #formation-list {
+        display: none;
         width: 130px;
-        height: 465px;
         margin-top: 1px;
         margin-left: 10px;
         font-size: 14px;
@@ -1619,6 +1571,16 @@
     #formation-list li{
         margin-top: 18px;
 
+    }
+
+    #formation-list h6 {
+        width: 130px;
+        height: 10px;
+        margin-top: 23px;
+        margin-left: 10px;
+        font-size: 11.5px;
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
     }
     
     #players-list {
@@ -1648,6 +1610,13 @@
         position: relative;
         padding-right: 20px;
         top: -8px;
+    }
+
+    #players-list h5 {
+        position: relative;
+        left: 47px;
+        font-size: 11.5px;
+        font-family: 'Poppins', sans-serif;
     }
     
     
