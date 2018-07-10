@@ -97,8 +97,9 @@ window.onload = function () {
         team.addEventListener ('click', onclick);
     }
 
-    function click () {
-        this.style.fontWheight= "900";
+    function onclick () {
+        console.log ('hiiiiii');
+        this.style.fontWeight = 'bold';
     }
 
     for (const fill of fills){

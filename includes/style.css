@@ -1502,11 +1502,6 @@ button:focus {outline:0;}
         
     }
 
-    #teams-list span {
-        font-weight: bold;
-        font-size: 10px;
-    }
-
     #teams-list {
         overflow-y: scroll;
     }
