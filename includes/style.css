@@ -1,57 +1,57 @@
 @viewport {
 
-    zoom:1;
+zoom:1;
 }
 
 button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+background-color: transparent;
+border: none;
+cursor: pointer;
 }
 
 button:focus {outline:0;}
 
 #teams-list {
-    display: none;
+display: none;
 }
 
 #players-list {
-    display: none;
+display: none;
 }
 
 
 /*---------------------DESKTOP VIEW---------------------*/
 
 
-@media screen and (min-width: 1030px) {
+@media screen and (min-width: 1038px) {
     * {
         margin: 0px;
         padding: 0px;
     }
-    
+
     header, main, nav, aside, article, section, footer {
         display: block;
     }
-    
+
     #wrapper {
         width: 1300px;
         margin: 0px auto;
         height: 100%;
         font-family: 'Poppins', sans-serif;
     }
-    
+
     .clear {
         clear: both;
     }
-    
-    
+
+
     /*---------------------INDEX---------------------*/
-    
+
     #index header {
         width: 1300px;      height: 140px;
         background-color: #606060;
     }
-    
+
     #index #logo {
         width: 340px;    height: 110px;
         background: url(../images/scoutITLogo.png);
@@ -77,7 +77,7 @@ button:focus {outline:0;}
         float: right;
         left: 100px;
     }
-    
+
     #index main > section {
         height: 730px;  width: 1370px;
         background: url(../images/BackgroundPic.png);
@@ -85,7 +85,7 @@ button:focus {outline:0;}
         display: block;
         opacity: 0.75;
     }
-    
+
     #index #self, #index #rival {
         width: 390px;   height: 71px;
         position: relative;
@@ -100,32 +100,32 @@ button:focus {outline:0;}
         font-family: 'Poppins', sans-serif;
         text-decoration: none;
     }
-    
+
     /* too long */
     #index main > section >  article > a{   
         text-decoration: none;
         color: #d6dbda;
     }
-    
+
     #index #self{
         top: 285px; 
     }
-    
+
     #index #rival{
         top: 340px;
     }
-    
+
     /*---------------------//INDEX---------------------*/
-    
-    
-    
+
+
+
     /*---------------------MainMenu---------------------*/
-    
+
     #selfMenu header {
         width: 1300px;      height: 140px;
         background-color: #606060;
     }
-    
+
     #selfMenu #logo {
         width: 340px;    height: 110px;
         background: url(../images/scoutITLogo.png);
@@ -134,7 +134,7 @@ button:focus {outline:0;}
         position: relative;
         top: 45px;left: 515px;
     }
-    
+
     #selfMenu header > p {
         display: inline;
         color: #ffffff;
@@ -152,18 +152,18 @@ button:focus {outline:0;}
         float: right;
         
     }
-    
-    
+
+
     .theNav {
         width: 1300px;  height: 45px;
         background-color: #606060 !important;
     }
-    
+
     #navMainOptions {
         position: relative;
         right: 10px;
     }
-    
+
     .theNav li {
         list-style: none;
         display: inline;
@@ -171,7 +171,7 @@ button:focus {outline:0;}
         right: 14px;
         bottom: 14px;
     }
-    
+
     .theNav li a {
         text-decoration: none;
         position: relative;
@@ -185,26 +185,26 @@ button:focus {outline:0;}
     #navMainOptions {
         display: none;
     }
-    
+
     .dropDownMenu i {
         font-size: 22px;
         position: relative;
         right: 18px;
     }
-    
+
     .dropdown-menu {
         position: absolute;
         border-radius: 10px;
         height: 545px;
-    
+
     }
-    
+
     .hamburger i{
         font-size: 32px;
         position: relative;
         bottom: 40px;   right: 17px;
     }
-    
+
     .dropDownMenu .dropdown-item { 
         position: relative;
         width: 250px;   height: 50px;
@@ -213,26 +213,26 @@ button:focus {outline:0;}
         padding-top: 0px;
         color: #111111;
     }
-    
+
     .dropDownMenu a {
         position: relative;
     }
-    
+
     .dropDownMenu .dropdown-item:hover {
         width: 230px;   height: 48px;
         background-color: transparent;
     }
-    
+
     .dropDownMenu {
         position: absolute;
         top: 48px;
         left: 13px;
     }
-    
+
     .dropdown-divider {
         position: relative;
     }
-    
+
     #selfMenu main > section {
         width: 1300px;;height: 730px;
         background-color: #f7f6f6;
@@ -241,7 +241,7 @@ button:focus {outline:0;}
         position: relative;
         opacity: 1;
     }
-    
+
     #selfMenu main > section > article > h3 {
         width: 1150px;
         padding-top: 29px;
@@ -252,68 +252,68 @@ button:focus {outline:0;}
         position: relative;
         left: 50px;
     }
-    
-    
-    
+
+
+
     /*First line of players*/
-    
+
     #selfMenu .playerHeadFirstLine {
         position: relative;
         top: 40px;
         float: left;
     }
-    
+
     #selfMenu  .playerHeadFirstLine p {
         position: relative;
         font-size: 14px;
         right: 27px;
     }
-    
+
     #selfMenu #kadoshHead {
         left: 130px;
     }
-    
+
     #selfMenu #setkusHead {
         left: 250px;
     }
-    
+
     #selfMenu #tamasHead {
         left: 375px;
     }
-    
+
     #selfMenu #resmusHead {
         left: 500px;
     }
-    
+
     #selfMenu #kapilotoHead {
-     left: 630px;
+        left: 630px;
     }
-    
-    
-    
+
+
+
     /*Second line of players*/
-    
+
     #selfMenu .second {
         float: left;
     }
-    
-    
+
+
     #selfMenu .second > .playerHeadSecondLine {
         position: relative;
         top: 200px;
         font-size: 14px;    float: left;
     }
-    
+
     #selfMenu .playerHeadSecondLine p {
         position: relative;
         right: 27px;
     }
-    
-    
+
+
     #selfMenu #fishlerHead {
         right: 502px;
     }
-    
+
     #selfMenu #malulHead {
         right: 382px;
     }
@@ -322,7 +322,7 @@ button:focus {outline:0;}
         position: relative;
         right: 11px;
     }
-    
+
     #selfMenu #magrashviliHead {
         right: 212px;
     }
@@ -331,11 +331,11 @@ button:focus {outline:0;}
         position: relative;
         right: 37px;
     }
-    
+
     #selfMenu #sardalHead {
         right: 95px;
     }
-    
+
     #selfMenu #shaimanHead {
         left: 60px;
     }
@@ -345,110 +345,110 @@ button:focus {outline:0;}
         right: 44px;
     }
 
-    
-    
+
+
     /*Third line of players*/
-    
+
     #selfMenu .third {
         float: left;
     }
-    
+
     #selfMenu .third > .playerHeadThirdLine {
         position: relative;
         top: 255px;
         float: left;
     }
-    
+
     #selfMenu .playerHeadThirdLine p {
         position: relative;
         font-size: 14px;
         right: 27px;
     }
-    
+
     #selfMenu #maximHead p {
         right: 42px;
     }
-    
-    
+
+
     #selfMenu #barskiHead {
         left: 136px;
         position: relative;
     }
-    
+
     #selfMenu #MamanHead {
         left: 240px;
         position: relative;
     }
-    
+
     #selfMenu #shchterHead {
         left: 362px;
         position: relative;
     }
-    
+
     #selfMenu #CiwanHead {
         left: 501px;
         position: relative;
     }
-    
+
     #selfMenu #maximHead {
-         left: 647px;
-         position: relative;
+            left: 647px;
+            position: relative;
     }
-    
-    
-    
+
+
+
     /*Fourth line of players*/
-    
+
     #selfMenu .fourth {
         float: left;
     }
-    
-    
+
+
     #selfMenu .fourth > .playerHeadFourthLine {
         position: relative;
         top: 410px;
         float: left;
     }
-    
+
     #selfMenu .playerHeadFourthLine p {
         position: relative;
         font-size: 14px;
         right: 27px;
     }
-    
+
     #selfMenu #arelHead p {
         right: 10px;
     }
-    
+
     #selfMenu #arelHead {
         right: 520px;
         position: relative;
     }
-    
+
     #selfMenu #edanHead {
         right: 375px;
         position: relative;
     }
-    
+
     #selfMenu #ginsariHead {
         right: 255px;
         position: relative;
     }
-    
+
     #selfMenu #turjemanHead {
         right: 110px;
         position: relative;
     }
-    
+
     #selfMenu #lahlaHead {
-         left: 40px;
-         position: relative;
+            left: 40px;
+            position: relative;
     }
-    
+
 
     /*---------------------//MainMenu---------------------*/
-    
-    
+
+
     /*---------------------NewGame---------------------*/
 
 
@@ -457,7 +457,7 @@ button:focus {outline:0;}
         width: 1300px;      height: 130px;
         background-color: #606060;
     }
-    
+
 
     #NewGame #logo {
         width: 340px;    height: 110px;
@@ -467,7 +467,7 @@ button:focus {outline:0;}
         position: relative;
         top: 45px;left: 515px;
     }
-    
+
     header > p {
         display: inline;
         color: #ffffff;
@@ -475,7 +475,7 @@ button:focus {outline:0;}
         position: relative;
         top: 25px;   right: 100px;
     }
-    
+
     #NewGame #reuven {
         background: url(../images/reuven.png);
         background-repeat: no-repeat;
@@ -485,18 +485,18 @@ button:focus {outline:0;}
         width: 85px;    height: 85px;
         float: right; 
     }
-    
-    
+
+
     .theNav {
         width: 1300px;  height: 25px;
         background-color: #606060 !important;
     }
-    
+
     #navMainOptions {
         position: relative;
         right: 10px;
     }
-    
+
     .theNav li {
         list-style: none;
         display: inline;
@@ -504,7 +504,7 @@ button:focus {outline:0;}
         right: 14px;
         bottom: 14px;
     }
-    
+
     .theNav li a {
         text-decoration: none;
         position: relative;
@@ -518,26 +518,26 @@ button:focus {outline:0;}
     #navMainOptions {
         display: none;
     }
-    
+
     .dropDownMenu i {
         font-size: 22px;
         position: relative;
         right: 18px;
     }
-    
+
     .dropdown-menu {
         position: absolute;
         border-radius: 10px;
         height: 545px;
-    
+
     }
-    
+
     .hamburger i{
         font-size: 32px;
         position: relative;
         bottom: 40px;   right: 17px;
     }
-    
+
     .dropDownMenu .dropdown-item { 
         position: relative;
         width: 250px;   height: 50px;
@@ -546,26 +546,26 @@ button:focus {outline:0;}
         padding-top: 0px;
         color: #111111;
     }
-    
+
     .dropDownMenu a {
         position: relative;
     }
-    
+
     .dropDownMenu .dropdown-item:hover {
         width: 230px;   height: 48px;
         background-color: transparent;
     }
-    
+
     .dropDownMenu {
         position: absolute;
         top: 48px;
         left: 13px;
     }
-    
+
     .dropdown-divider {
         position: relative;
     }
-    
+
     #field {
         display: none;
         position: absolute;
@@ -591,7 +591,7 @@ button:focus {outline:0;}
     #teams-list {
         display: none;
     }
-    
+
     #players-list {
         display: none;
     }
@@ -626,14 +626,14 @@ button:focus {outline:0;}
         width: fit-content;
         left: 35px;
         bottom: 23px;
-     }
+        }
 
     /*---------------------//NewGame---------------------*/
-    
-    
+
+
     /*---------------------contactUs---------------------*/
-    
-    
+
+
     #theForm {
         width: 790px;   height: 600px;
         margin: 0 auto;
@@ -646,17 +646,17 @@ button:focus {outline:0;}
         /* overflow-y: scroll; */
 
     }
-    
+
     form {
         position: relative;
         left: 65px; 
     }
-    
+
     .form-control {
         display: inline;
         width: 180%;
     }
-    
+
     form label .formDesign {
         border: none;
         border-bottom: solid 1px #a5a1a1;
@@ -664,7 +664,7 @@ button:focus {outline:0;}
         height: 45px;
         width: 600px;
     }
-    
+
     #comment {
         display: block;
         position: relative;
@@ -678,11 +678,11 @@ button:focus {outline:0;}
         background-color: #606060;
         border-color: transparent;
     }
-    
+
     #theButton:hover {
         background-color: #252525;
     }
-    
+
     #successMessage {
         display: none;
         width: 450px;   height: 200px;
@@ -694,34 +694,34 @@ button:focus {outline:0;}
         padding-top: 15px;
         
     }
-    
+
     #theSuccessButton {
         position: relative;
         background-color: #606060;
         border-color: transparent;
         top: 130px;
     }
-    
-    
+
+
     .swal-button {
         font-size: 14px;
         position: relative;
-      }
-    
-    
-    
-    
-    
-    
-    
+        }
+
+
+
+
+
+
+
     /*---------------------matchReport---------------------*/
-    
-    
+
+
     #matchReport header {
         width: 1300px;      height: 140px;
         background-color: #606060;
     }
-    
+
     #matchReport #logo {
         width: 340px;    height: 110px;
         background: url(../images/scoutITLogo.png);
@@ -730,7 +730,7 @@ button:focus {outline:0;}
         position: relative;
         top: 45px;left: 515px;
     }
-    
+
     #matchReport header > p {
         display: inline;
         color: #ffffff;
@@ -747,7 +747,7 @@ button:focus {outline:0;}
         width: 85px;    height: 85px;
         float: right;
     }
-    
+
     #matchReport main > section {
         width: 1300px;  height: 700px;
         background-color: #f7f6f6;
@@ -756,7 +756,7 @@ button:focus {outline:0;}
         position: relative;
         opacity: 1;
     }
-    
+
     #matchReport main > section > article > h3 {
         width: 1150px;
         padding-top: 37px;
@@ -767,7 +767,7 @@ button:focus {outline:0;}
         position: relative;
         left: 50px;
     }
-    
+
     #matchReport button {
         width: 180px;   height: 30px;
         position: relative;
@@ -778,25 +778,25 @@ button:focus {outline:0;}
         background-color: #d6d6d6;
         font-family: 'Poppins', sans-serif;
     }
-    
-    
+
+
     #theTeams {
         position: relative;
         top: 20px;  left: 454px;
     }
-    
+
     #theScore {
         display: inline;
         position: relative;
         bottom: 60px;   left: 150px;
     }
-    
-    
+
+
     #beitarLogo {
         position: relative;
         bottom: 127px;  left: 290px;
     }
-    
+
     #gameDate {
         width: 1150px;    height: 50px;
         position: relative;
@@ -806,7 +806,7 @@ button:focus {outline:0;}
         text-align: center;
         padding-top: 13px;
     }
-    
+
     #theReport {
         width: 1170px;  height: 380px; 
         position: relative;
@@ -814,63 +814,103 @@ button:focus {outline:0;}
         font-size: 19px;
         overflow-y: scroll;
     }
-    
+
     #theReport ul li {
         margin-top: 25px;
         list-style: square
     }
-    
-    
-    
-    
-    
-    /*---------------------//matchReport---------------------*/
-    
+
+
 }
+
+
+
+/*---------------------//matchReport---------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*------------------------------TABLET STARTING HERE------------------------------*/
 
 
- 
-@media screen and (min-width: 100px) and (max-width: 1029px) {
-    * {
+
+@media screen and (min-width: 100px) and (max-width: 1037px) {
+* {
         margin: 0px;
         padding: 0px;
     }
-    
+
     header, main, nav, aside, article, section, footer {
         display: block;
     }
-    
+
     #wrapper {
         width: 1024px;
         margin: 0px auto;
         font-family: 'Poppins', sans-serif;
     }
-    
+
     .clear {
         clear: both;
     }
-    
-    
-    
-    
+
+
+
+
     /*---------------------INDEX---------------------*/
-    
+
     #index header {
         width: 1024px;      height: 140px;
         background-color: #606060;
     }
-    
+
     #index #logo {
         width: 95px;    height: 80px;
         background: url(../images/logo.svg);
         background-repeat: no-repeat;
         display: inline-block;
-    
-    
+
+
     }
-    
+
     #index header > p {
         display: inline;
         color: #ffffff;
@@ -887,7 +927,7 @@ button:focus {outline:0;}
         float: right;
         left: 100px;
     }
-    
+
     #index main > section {
         height: 560px;
         border: solid 0.5px;
@@ -896,7 +936,7 @@ button:focus {outline:0;}
         display: block;
         opacity: 0.75;
     }
-    
+
     #index #self, #index #rival {
         width: 390px;   height: 71px;
         position: relative;
@@ -911,38 +951,38 @@ button:focus {outline:0;}
         font-family: Arial, Helvetica, sans-serif;
         text-decoration: none;
     }
-    
+
     /* too long */
     #index main > section >  article > a{   
         text-decoration: none;
         color: #d6dbda;
     }
-    
+
     #index #self{
         top: 225px; 
     }
-    
+
     #index #rival{
         top: 250px;
     }
-    
+
     /*---------------------//INDEX---------------------*/
-    
-    
+
+
     /*---------------------MainMenu---------------------*/
-    
+
     #selfMenu header {
         width: 1024px;      height: 140px;
         background-color: #606060;
     }
-    
+
     #selfMenu #logo {
         width: 95px;    height: 80px;
         background: url(../images/logo.svg);
         background-repeat: no-repeat;
         display: inline-block;
     }
-    
+
     #selfMenu header > p {
         display: inline;
         color: #ffffff;
@@ -959,18 +999,18 @@ button:focus {outline:0;}
         width: 85px;    height: 85px;
         float: right;
     }
-    
-    
+
+
     .theNav {
         width: 1024px;  height: 45px;
         background-color: #606060 !important;
     }
-    
+
     #navMainOptions {
         position: relative;
         right: 10px;
     }
-    
+
     .theNav li {
         list-style: none;
         display: inline;
@@ -978,7 +1018,7 @@ button:focus {outline:0;}
         right: 14px;
         bottom: 14px;
     }
-    
+
     .theNav li a {
         text-decoration: none;
         position: relative;
@@ -988,26 +1028,26 @@ button:focus {outline:0;}
         font-size: 20px;
         color: #ffffff;
     }
-    
+
     .dropDownMenu i {
         font-size: 22px;
         position: relative;
         right: 18px;
     }
-    
+
     .dropdown-menu {
         position: absolute;
         border-radius: 10px;
         height: 545px;
-    
+
     }
-    
+
     .hamburger i{
         font-size: 32px;
         position: relative;
         right: 17px;
     }
-    
+
     .dropDownMenu .dropdown-item { 
         position: relative;
         width: 250px;   height: 50px;
@@ -1016,26 +1056,26 @@ button:focus {outline:0;}
         padding-top: 0px;
         color: #111111;
     }
-    
+
     .dropDownMenu a {
         position: relative;
     }
-    
+
     .dropDownMenu .dropdown-item:hover {
         width: 230px;   height: 48px;
         background-color: transparent;
     }
-    
+
     .dropDownMenu {
         position: absolute;
         top: 48px;
         left: 13px;
     }
-    
+
     .dropdown-divider {
         position: relative;
     }
-    
+
     #selfMenu main > section {
         height: 560px;
         background-color: #f7f6f6;
@@ -1044,7 +1084,7 @@ button:focus {outline:0;}
         position: relative;
         opacity: 1;
     }
-    
+
     #selfMenu main > section > article > h3 {
         width: 890px;
         padding-top: 29px;
@@ -1055,68 +1095,68 @@ button:focus {outline:0;}
         position: relative;
         left: 50px;
     }
-    
-    
-    
+
+
+
     /*First line of players*/
-    
+
     #selfMenu .playerHeadFirstLine {
         position: relative;
         top: 12px;
         float: left;
     }
-    
+
     #selfMenu  .playerHeadFirstLine p {
         position: relative;
         font-size: 14px;
         right: 27px;
     }
-    
+
     #selfMenu #kadoshHead {
         left: 100px;
     }
-    
+
     #selfMenu #setkusHead {
         left: 170px;
     }
-    
+
     #selfMenu #tamasHead {
         left: 230px;
     }
-    
+
     #selfMenu #resmusHead {
         left: 290px;
     }
-    
+
     #selfMenu #kapilotoHead {
-     left: 350px;
+        left: 350px;
     }
-    
-    
-    
+
+
+
     /*Second line of players*/
-    
+
     #selfMenu .second {
         float: left;
     }
-    
-    
+
+
     #selfMenu .second > .playerHeadSecondLine {
         position: relative;
         top: 30px;
         font-size: 14px;    float: left;
     }
-    
+
     #selfMenu .playerHeadSecondLine p {
         position: relative;
         right: 27px;
     }
-    
-    
+
+
     #selfMenu #fishlerHead {
         left: 102px;
     }
-    
+
     #selfMenu #malulHead {
         left: 175px;
     }
@@ -1125,7 +1165,7 @@ button:focus {outline:0;}
         position: relative;
         right: 9px;
     }
-    
+
     #selfMenu #magrashviliHead {
         left: 282px;
     }
@@ -1134,109 +1174,109 @@ button:focus {outline:0;}
         position: relative;
         right: 32px;
     }
-    
+
     #selfMenu #sardalHead {
         left: 335px;
     }
-    
+
     #selfMenu #shaimanHead {
-         left: 418px;
+            left: 418px;
     }
-    
+
     #selfMenu #shaimanHead p {
         position: relative;
         right: 44px;
     }
 
-    
+
     /*Third line of players*/
-    
+
     #selfMenu .third {
         float: left;
     }
-    
-    
+
+
     #selfMenu .third > .playerHeadThirdLine {
         position: relative;
         top: 55px;
         float: left;
     }
-    
+
     #selfMenu .playerHeadThirdLine p {
         position: relative;
         font-size: 14px;
         right: 27px;
     }
-    
+
     #selfMenu #maximHead p {
         right: 39px;
     }
-    
-    
+
+
     #selfMenu #barskiHead {
         left: 105px;
         position: relative;
     }
-    
+
     #selfMenu #MamanHead {
         left: 157px;
         position: relative;
     }
-    
+
     #selfMenu #shchterHead {
         left: 227px;
         position: relative;
     }
-    
+
     #selfMenu #CiwanHead {
         left: 290px;
         position: relative;
     }
-    
+
     #selfMenu #maximHead {
-         position: relative;
-         left: 360px;
+            position: relative;
+            left: 360px;
 
     }
 
     #selfMenu #maximHead p{
         position: relative;
         right: 51px;
-   }
+    }
 
 
-    
-    
-    
-    
+
+
+
+
     /*Fourth line of players*/
-    
+
     #selfMenu .fourth {
         float: left;
     }
-    
-    
+
+
     #selfMenu .fourth > .playerHeadFourthLine {
         top: 70px;
         float: left;
     }
-    
+
     #selfMenu .playerHeadFourthLine p {
         position: relative;
         position: relative;
         font-size: 14px;
         right: 27px;
     }
-    
+
     #selfMenu #arelHead p {
         right: 10px;
     }
-    
+
     #selfMenu #arelHead {
         left: 107px;
         position: relative;
     }
-    
+
     #selfMenu #edanHead {
         left: 202px;
         position: relative;
@@ -1247,31 +1287,31 @@ button:focus {outline:0;}
         right: 40px;
     }
 
-    
+
     #selfMenu #ginsariHead {
         left: 268px;
         position: relative;
     }
-    
+
     #selfMenu #turjemanHead {
         left: 342px;
         position: relative;
     }
-    
+
     #selfMenu #lahlaHead {
-         left: 408px;
-         position: relative;
-    
+            left: 408px;
+            position: relative;
+
     }
-    
-    
+
+
     /*---------------------//MainMenu---------------------*/
-    
-    
-    
+
+
+
     /*---------------------contactUs---------------------*/
-    
-    
+
+
     #theForm {
         width: 590px;   height: 450px;
         margin: 0 auto;
@@ -1282,16 +1322,16 @@ button:focus {outline:0;}
         padding: 30px;
         top: 10px;
     }
-    
+
     form {
         position: relative;
         left: 100px;
     }
-    
+
     .form-control {
         display: inline;
     }
-    
+
     form label .formDesign {
         border: none;
         border-bottom: solid 1px #a5a1a1;
@@ -1301,7 +1341,7 @@ button:focus {outline:0;}
         position: relative;
         left: 74px
     }
-    
+
     #comment {
         display: block;
     }
@@ -1311,11 +1351,11 @@ button:focus {outline:0;}
         background-color: #606060;
         border-color: transparent;
     }
-    
+
     #theButton:hover {
         background-color: #252525;
     }
-    
+
     #successMessage {
         display: none;
         width: 450px;   height: 200px;
@@ -1327,7 +1367,7 @@ button:focus {outline:0;}
         padding-top: 15px;
         
     }
-    
+
     #theSuccessButton {
         position: relative;
         background-color: #606060;
@@ -1335,37 +1375,37 @@ button:focus {outline:0;}
         top: 30px;
     }
         
-      
+        
     .swal-button {
         font-size: 14px;
         position: relative;
-      }
-    
-      button {
+        }
+
+        button {
         border: none;
         align-content: center;
     }
-    
+
 
 
     /*---------------------//contactUs---------------------*/
-    
-    
-    
+
+
+
     /*---------------------NewGame---------------------*/
-    
+
     #NewGame header {
         width: 1024px;      height: 140px;
         background-color: #606060;
     }
-    
+
     #NewGame #logo {
         width: 95px;    height: 80px;
         background: url(../images/logo.svg);
         background-repeat: no-repeat;
         display: inline-block;
     }
-    
+
     #NewGame header > p {
         display: inline;
         color: #ffffff;
@@ -1382,46 +1422,46 @@ button:focus {outline:0;}
         width: 85px;    height: 85px;
         float: right;
     }
-    
+
     button {
         background-color: transparent;
         border: none;
     }
-    
+
     button:focus {outline:0;}
-    
-    
+
+
     main {
         position: relative;
         height: 100%;
         border: black solid 1px;
         width: 1024px;  height: 560px;
     }
-    
+
     #field {
-    
+
         position: absolute;
         height: 505px;
         width: 500px;
         float: right;
         left: 227px;
         top: 0px;
-    
+
     }
-    
+
     #functions {
         width: 227px;       height: 555px;
         background-color: #f7f6f6;
 
     }
-    
-    
+
+
     .stopWatch {
         height: 90px;
         border-bottom: black solid 0.5px;
         text-align: center;
     }
-    
+
     .stopWatch h1 {
         font-size: 18px;
         margin-top: 3px
@@ -1430,45 +1470,45 @@ button:focus {outline:0;}
     .stopWatch h2 {
         font-size: 18px;
     }
-    
+
     .myButton {
         padding-top: 4px;
         background-color: transparent;
         border: none;
-     }
-    
-     .myButton i {
+        }
+
+        .myButton i {
         font-size: 20px;        
-     }
-    
-     button {
+        }
+
+        button {
         border: none;
         align-content: center;
     }
-    
-    
+
+
     ul {
         position: relative;
         list-style-type: none;
     }
-    
-    
-    
+
+
+
     #icons {
         width: 84px;
         height: 465px;
         border-right: black solid 0.1px;
         float: left;
-    
+
     }
-    
+
     #icons h4 {
         position: relative;
         font-size: 11.5px;
         top: 5px;
         font-family: 'Poppins', sans-serif;
     }
-    
+
     .iconsList {
         position: relative;
         bottom: 20px;
@@ -1477,9 +1517,9 @@ button:focus {outline:0;}
         border: none;
         font-size: 31px;
     }
-    
-    
-    
+
+
+
     #lists {
         position: absolute;
         width: 140px;
@@ -1488,8 +1528,8 @@ button:focus {outline:0;}
         font-size: 10px;
     }
 
-    
-    
+
+
     #teams-list li {
         position: relative;
         float: left;
@@ -1505,26 +1545,26 @@ button:focus {outline:0;}
     #teams-list {
         overflow-y: scroll;
     }
-    
-     .iconsList {
-         position: relative;
-         padding-top:28px;
-         background-color: transparent;
-         border: none;
-     }
-    
-     button {
-         border: none;
-         align-content: center;
-     }
-    
+
+        .iconsList {
+            position: relative;
+            padding-top:28px;
+            background-color: transparent;
+            border: none;
+        }
+
+        button {
+            border: none;
+            align-content: center;
+        }
+
     #icons h4 {
         position: relative;
         font-size: 11.5px;
         top: 5px;
         font-family: 'Poppins', sans-serif;
     }
-    
+
     .fa-futbol-o {
         position: relative;
         left: 10px;
@@ -1549,8 +1589,8 @@ button:focus {outline:0;}
         position: relative;
         left: 12px;
     }
-    
-    
+
+
     #formation-list {
         height: 465px;
         overflow-y: scroll;
@@ -1577,7 +1617,7 @@ button:focus {outline:0;}
         text-align: left;
         font-family: 'Poppins', sans-serif;
     }
-    
+
     #players-list {
         height: 465px;
         width: 149px;
@@ -1594,7 +1634,7 @@ button:focus {outline:0;}
         left: 14px;
         padding-top: 17px;
     }
-    
+
     .largeFace{
         width: 100%;
         height: 100%;
@@ -1613,8 +1653,8 @@ button:focus {outline:0;}
         font-size: 11.5px;
         font-family: 'Poppins', sans-serif;
     }
-    
-    
+
+
     #personalComments {
         width: 140px;   height: 459px;
         overflow-y: scroll;
@@ -1649,15 +1689,15 @@ button:focus {outline:0;}
         right: 93px;
     }
 
-    
+
     /*TeanFormations..*/
-    
+
     /*-4-3-3-*/
-    
+
     #formation4_3_3 {
         display: none;
     }
-    
+
     #formation4_3_3 .empty {
         height: 60px; width: 60px;
         background-color: #d6d6d6;
@@ -1665,61 +1705,61 @@ button:focus {outline:0;}
         border: #000000 0.5px solid;
         position: absolute;
     }
-    
+
     #formation4_3_3 .fieldPlayer0 {
         display: block;
         top: 250px; left: 15px;
     }
-    
+
     #formation4_3_3 .fieldPlayer1 {
         display: block;
         top: 60px;  left: 170px
     }
-    
+
     #formation4_3_3 .fieldPlayer2 {
         display: block;
         top: 160px;  left: 120px
     }
-    
+
     #formation4_3_3 .fieldPlayer3 {
         display: block;
         top: 330px;  left: 120px
     }
-    
+
     #formation4_3_3 .fieldPlayer4 {
         display: block;
         top: 445px;  left: 170px
     }
-    
-    
-    
+
+
+
     #formation4_3_3 .fieldPlayer5 {
         display: block;
         top: 120px;  left: 370px
     }
-    
+
     #formation4_3_3 .fieldPlayer6 {
         display: block;
         top: 250px;  left: 310px
     }
-    
+
     #formation4_3_3 .fieldPlayer7 {
         display: block;
         top: 380px;  left: 370px
     }
-    
-    
-    
+
+
+
     #formation4_3_3 .fieldPlayer8 {
         display: block;
         top: 130px;  left: 590px;
     }
-    
+
     #formation4_3_3 .fieldPlayer9 {
         display: block;
         top: 255px;  left: 645px;
     }
-    
+
     #formation4_3_3 .fieldPlayerA {
         display: block;
         top: 380px;  left: 590px
@@ -1758,70 +1798,70 @@ button:focus {outline:0;}
         top: 250px; left: 15px;
         padding-left: 10px;
     }
-    
+
     #gameOn4_3_3 .fieldPlayer1 {
         display: block;
         top: 60px;  left: 170px
     }
-    
+
     #gameOn4_3_3 .fieldPlayer2 {
         display: block;
         top: 160px;  left: 120px
 
     }
-    
+
     #gameOn4_3_3 .fieldPlayer3 {
         display: block;
         top: 330px;  left: 120px
     }
-    
+
     #gameOn4_3_3 .fieldPlayer4 {
         display: block;
         top: 445px;  left: 170px
     }
-    
-    
-    
+
+
+
     #gameOn4_3_3 .fieldPlayer5 {
         display: block;
         top: 120px;  left: 370px
     }
-    
+
     #gameOn4_3_3 .fieldPlayer6 {
         display: block;
         top: 250px;  left: 310px
     }
-    
+
     #gameOn4_3_3 .fieldPlayer7 {
         display: block;
         top: 380px;  left: 370px
     }
-    
-    
-    
+
+
+
     #gameOn4_3_3 .fieldPlayer8 {
         display: block;
         top: 130px;  left: 590px;
     }
-    
+
     #gameOn4_3_3 .fieldPlayer9 {
         display: block;
         top: 255px;  left: 645px;
     }
-    
+
     #gameOn4_3_3 .fieldPlayer10 {
         display: block;
         top: 380px;  left: 590px
     }
-    
-    
-    
+
+
+
     /*-3-5-2-*/
-    
+
     #formation3_5_2 {
         display: none;
     }
-    
+
     #formation3_5_2 article {
         height: 60px; width: 60px;
         background-color: #d6d6d6;
@@ -1829,103 +1869,246 @@ button:focus {outline:0;}
         border: #000000 0.5px solid;
         position: absolute;
     }
-    
+
     #formation3_5_2 .goalKeeper {
         bottom: 200px; left: 15px;
     }
-    
+
     #formation3_5_2 .fieldPlayer1 {
         bottom: 310px;  left: 140px
     }
-    
+
     #formation3_5_2 .fieldPlayer2 {
         bottom: 200px;  left: 120px
     }
-    
+
     #formation3_5_2 .fieldPlayer3 {
         bottom: 80px;  left: 140px
     }
-    
+
 
     #formation3_5_2 .fieldPlayer4 {
         bottom: 400px;  left: 340px
     }
-    
+
     #formation3_5_2 .fieldPlayer5 {
         bottom: 250px;  left: 280px
     }
-    
+
     #formation3_5_2 .fieldPlayer6 {
         bottom: 120px;  left: 280px
     }
-    
+
     #formation3_5_2 .fieldPlayer7 {
         bottom: 190px;  left: 380px
     }
-    
+
     #formation3_5_2 .fieldPlayer8 {
         top: 450px;  left: 340px;
     }
-    
-    
-    
-    
+
+
+
+
     #formation3_5_2 .fieldPlayer9 {
         bottom: 70px;  left: 525px;
     }
-    
+
     #formation3_5_2 .fieldPlayer10 {
         bottom: 290px;  left: 525px
     } 
-    
 
 
-     #formation4-3-3 div > img {
+
+        #formation4-3-3 div > img {
         width: 100%;    height: 100%;
     }
-     
+        
     #formation3-5-2 div > img {
         width: 100%;    height: 100%;
     }
-    
+
 
     #notSupportingDesktopMessage {
         display: none;
     }
+
+
+    #commentsBox {
+        width: 675px;
+        height:430px;
+        background-color: #ffffff;
+        opacity: 0.85;
+        position: absolute;
+        bottom: 53px;
+        left: 205px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+
+
+    #commentsBox h4 {
+        position: relative;
+        top: 12px;
+        right: 80px;
+    }
+
+    #hapoelScore {
+        position: relative;
+        top: 10px;
+        left: 50px;
+        font-size: 18px;
+    }
+
+    #hapoelScore select {
+        position: relative;
+        top: 5px;
+        left: 45px;
+    }
+
+    #rivalScore {
+        position: relative;
+        top: 10px;
+        left: 210px;
+        font-size: 18px;
+    }
+
+    #rivalScore select {
+        position: relative;
+        top: 5px;
+        left: 27px;
+    }
+
+    #commentsBox #yellowCard {
+        position: relative;
+        top: 80px;
+        right: 30px;    
+
+    }
+
+
+    #commentsBox #theCard_Yellow {
+        width: 15px;
+        height: 35px;
+        background-color: #daec34;
+}
+
+
+
+    #commentsBox #redCard {
+        position: relative;
+        top: 80px;
+        left: 25px;    
+
+    }
     
+    #commentsBox #theCard_Red {
+        width: 15px;
+        height: 35px;
+        background-color: #a10c0c;
+    }
+
+
+    #yellowCard select {
+        position: relative;
+        top: 2px;
+        right: 7px;
+    }
+
+    #redCard select {
+        position: relative;
+        top: 2px;
+        right: 7px;
+    }
+
+
+
+
+    #corners {
+        position: relative;
+        top: 170px;
+        right: 210px;
+        font-size: 18px;
+    }
+
+    #corners select {
+        position: relative;
+        top: 5px;
+        left: 22px;
+    }
+
+    #offsides {
+        position: relative;
+        top: 170px;
+        right: 170px;
+        font-size: 18px;
+    }
+
+    #offsides select {
+        position: relative;
+        top: 5px;
+        left: 22px;
+    }
+
+
+    #penalties {
+        position: relative;
+        top: 170px;
+        right: 120px;
+        font-size: 18px;
+    }
+
+    #penalties select {
+        position: relative;
+        top: 5px;
+        left: 24px;
+    }
+
+    textarea {
+        position: relative;
+        top: 190px;
+        left: 100px;
+    }
+
+
+
+
     /*---------------------//NewGame---------------------*/
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /*---------------------matchReport---------------------*/
-    
-    
+
+
     #matchReport header {
         width: 1024px;      height: 140px;
         background-color: #606060;
     }
-    
+
     #matchReport #logo {
         width: 95px;    height: 80px;
         background: url(../images/logo.svg);
         background-repeat: no-repeat;
         display: inline-block;
     }
-    
+
     #matchReport header > p {
         display: inline;
         color: #ffffff;
@@ -1942,7 +2125,7 @@ button:focus {outline:0;}
         width: 85px;    height: 85px;
         float: right;
     }
-    
+
     #matchReport main > section {
         height: 560px;
         background-color: #f7f6f6;
@@ -1951,7 +2134,7 @@ button:focus {outline:0;}
         position: relative;
         opacity: 1;
     }
-    
+
     #matchReport main > section > article > h3 {
         width: 890px;
         padding-top: 29px;
@@ -1962,7 +2145,7 @@ button:focus {outline:0;}
         position: relative;
         left: 50px;
     }
-    
+
     #matchReport button {
         width: 180px;   height: 30px;
         position: relative;
@@ -1973,25 +2156,25 @@ button:focus {outline:0;}
         background-color: #d6d6d6;
         font-family: 'Poppins', sans-serif;
     }
-    
-    
+
+
     #theTeams {
         position: relative;
         top: 20px;  left: 330px;
     }
-    
+
     #theScore {
         display: inline;
         position: relative;
         bottom: 60px;   left: 150px;
     }
-    
-    
+
+
     #beitarLogo {
         position: relative;
         bottom: 127px;  left: 290px;
     }
-    
+
     #gameDate {
         width: 888px;    height: 50px;
         position: relative;
@@ -2001,7 +2184,7 @@ button:focus {outline:0;}
         text-align: center;
         padding-top: 13px;
     }
-    
+
     #theReport {
         width: 900px;  height: 280px; 
         position: relative;
@@ -2015,9 +2198,9 @@ button:focus {outline:0;}
         list-style: square
     }
         
-    
-    
-    
-    /*---------------------//matchReport---------------------*/
-    
+
+
+
+/*---------------------//matchReport---------------------*/
+
 }
