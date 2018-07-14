@@ -57,6 +57,7 @@
                     </nav>
                 </header>
                 <main>
+                <h1>Match Report</h1>
                         <?php
                             include ("db.php");
 
@@ -69,26 +70,21 @@
                                 die('DB QUERY FAILED.');
                             }
                             
-                            $hapoelScore = 'self_score';
-                            $rivalScore = 'rival_score';
-                            $corners = 'corners';
-                            $offsides = 'offsides';
-                            $penalties = 'pendelties';
-                            $comments = 'comments';
-                            $rival_team = 'rival_team';
-                            $game_date = 'game_date';
-                            $game_id = 'game_id';
                             
-                            while ($column = mysqli_fetch_assoc($result)){
-                                echo $column[$hapoelScore];
-                                echo $column[$rivalScore];
-                                echo $column[$corners];
-                                echo $column[$comments];
-                                echo $column[$rival_team];
-                                echo $column[$game_date];
-                                echo $column[$game_id];
-                                
-                            }
+                            $row = mysqli_fetch_assoc($result);
+
+                            // (rival_team,game_date,self_score,rival_score,corners,offsides,pendelties,comments)
+
+                                echo '<div class="rContainer">
+                                    <h4> Hapoel Haifa - ' . $row['rival_team'] . '</h4>';
+                                echo '<h4> ' . $row['self_score'] . ' - ' . $row['rival_score'] . ' </h4>';
+                                echo '<div class="sContainer">
+                                    <h5>' . $row['game_date'] . '</h5>';
+                                echo '<h6> Corners </h6>' .  $row['corners'] . '<h6> Offsides </h6>' .  $row['offsides'] . 
+                                '<h6> Pendelties </h6>' . $row['pendelties'] . '<h6> Comments </h6>' . $row['comments'];
+                                echo '</div>';
+                                echo '</div>';
+                        
                         ?>
 
                 </main>
