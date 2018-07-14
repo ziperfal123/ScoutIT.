@@ -821,11 +821,274 @@ display: none;
     }
 
 
+
+
+/*---------------------//matchReport---------------------*/
+
+
+
+/*---------------------PlauerPage---------------------*/
+
+#leftDetails {
+    width: 450px;  height: 680px;
+    position: relative;
+    top: 50px;
+    border-right: solid 2px #b9bdbd;
+}
+
+#personalDetailsTitle {
+    margin-left: 40px;
+    color: #010052;
+}
+
+#maximPhoto {
+    position: relative;
+    top: 20px;
+    left: 110px;
+}
+
+#maximFields {
+    margin-top: 55px;
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+#maximPrivateAttributes {
+    position: relative;
+    bottom: 184px;
+    left: 210px;
+    font-size: 14px;
+}
+
+#positionsTitle {
+    position: relative;
+    color: #010052;
+    bottom: 145px;
+    margin-left: 40px;
+}
+
+#positionData {
+    position: relative;
+    bottom: 240px;
+    left: 43px;
+    font-size: 14px;
+}
+
+#smallCourtMaxim {
+    position: relative;
+    bottom: 125px;
+    left: 215px;
 }
 
 
 
-/*---------------------//matchReport---------------------*/
+
+
+
+
+
+
+
+#rightDetails {
+    width: 850px;  height: 680px;
+    position: relative;
+    bottom: 627px;
+    left: 449px;
+}
+
+#generalStatisticsTitle {
+    margin-left: 30px;
+    color: #010052;
+}
+
+#offeneseStats {
+    width: 305px;   height: 220px;
+    font-size: 12px;
+    border-right: 1px solid #a8a7a7;
+    position: relative;
+    right:15px;
+}
+#offeneseStats .offenseFields {
+    width: 85px;
+    margin-top: 36px;
+    margin-left: 55px;
+    font-size: 12px;
+}
+
+#offeneseStats .offenseNumbers {
+    width: 35px;
+    position: relative;
+    bottom: 165px;
+    left: 170px;
+    font-size: 12px;
+}
+
+#offeneseStats .offenseRank {
+    width: 35px;
+    position: relative;
+    bottom: 370px;
+    left: 230px;
+    font-size: 12px;
+}
+
+
+
+
+#deffenseStats {
+    width: 238px;   height: 220px;
+    font-size: 12px;
+    border-right: 1px solid #a8a7a7;
+    position: absolute;
+    top: 57px;
+    left: 315px;
+    font-size: 12px;
+}
+
+#deffenseStats .deffenseFields {
+    width: 85px;
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+#deffenseStats .deffenseNumbers {
+    width: 55px;
+    position: relative;
+    left: 115px;
+    bottom: 167px;
+    font-size: 12px;
+}
+
+#deffenseStats .deffenseRank {
+    width: 35px;
+    position: relative;
+    bottom: 370px;
+    left: 165px;
+    font-size: 12px;
+}
+
+
+
+
+#setPiecesStats {
+    width: 330px;   height: 220px;
+    font-size: 12px;
+    position: relative;
+    bottom: 250px;
+    left:525px;
+}
+#setPiecesStats .setPiecesFields {
+    width: 130px;
+    margin-top: 35px;
+    margin-left: 55px;
+    font-size: 12px;
+}
+
+#setPiecesStats .setPiecesNumbers {
+    width: 35px;
+    position: relative;
+    bottom: 165px;
+    left: 193px;
+    font-size: 12px;
+}
+
+#setPiecesStats .setPiecesRank {
+    width: 35px;
+    position: relative;
+    bottom: 372px;
+    left: 248px;
+    font-size: 12px;
+}
+
+
+.rankTitle {
+    color: #979191;
+}
+
+.green {
+    color: #2b8807;
+}
+
+.blue {
+    color: #2220af;
+}
+
+.red {
+    color: #a10c0c;
+}
+
+
+
+#gpsDataTitle {
+    color: #010052;
+    position: relative;
+    bottom: 160px;
+    margin-left: 17px;
+}
+
+
+#heatMap {
+    position: relative;
+    bottom: 115px;
+    left: 60px;
+}
+
+
+#gpsData {
+    width: 300px;   height:225px;
+    position: relative;
+    float: left;
+    bottom: 60px;
+    left: 20px;
+}
+
+#gpsFields {
+    width: 190px;   height: 225px;
+    display: block;
+    position: relative;
+    bottom: 320px;
+    left: 470px;
+    
+    font-size: 15px;
+}
+
+#gpsNumbers {
+    width: 90px;   height: 225px;
+    display: block;
+    position: relative;
+    bottom: 545px;
+    left: 490px;
+    float: right;
+    font-size: 15px;
+
+}
+/*---------------------//PlauerPage---------------------*/
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1390,6 +1653,252 @@ display: none;
 
     /*---------------------//contactUs---------------------*/
 
+/*---------------------PlauerPage---------------------*/
+
+#playerDetails{
+    height: 300px;
+     overflow-y: scroll;
+}
+
+#leftDetails {
+    width: 450px;
+    position: relative;
+    top: 50px;
+    border-right: solid 2px #b9bdbd;
+
+}
+
+#personalDetailsTitle {
+    margin-left: 40px;
+    color: #010052;
+}
+
+#maximPhoto {
+    position: relative;
+    top: 20px;
+    left: 110px;
+}
+
+#maximFields {
+    margin-top: 55px;
+    margin-left: 60px;
+    font-size: 14px;
+}
+
+#maximPrivateAttributes {
+    position: relative;
+    bottom: 184px;
+    left: 230px;
+    font-size: 14px;
+}
+
+#positionsTitle {
+    position: relative;
+    color: #010052;
+    bottom: 35px;
+    left: 40px;
+}
+
+#positionData {
+    position: relative;
+    top: 25px;
+    left: 170px;
+    font-size: 14px;
+}
+
+
+#smallCourtMaxim {
+    position: relative;
+    bottom: 10px;
+    left: 130px;
+}
+
+
+
+
+
+
+
+
+
+#rightDetails {
+    width: 450px;  height: fit-content;
+    position: relative;
+    bottom: 777px;
+    left: 449px;
+}
+
+#generalStatisticsTitle {
+    margin-left: 40px;
+    color: #010052;
+}
+
+#offeneseStats {
+    width: 305px;   height: 220px;
+    font-size: 12px;
+    border-right: 1px solid #a8a7a7;
+    position: relative;
+    bottom: 16px;
+    right:15px;
+}
+#offeneseStats .offenseFields {
+    width: 85px;
+    margin-top: 36px;
+    margin-left: 55px;
+    font-size: 12px;
+}
+
+#offeneseStats .offenseNumbers {
+    width: 35px;
+    position: relative;
+    bottom: 165px;
+    left: 170px;
+    font-size: 12px;
+}
+
+#offeneseStats .offenseRank {
+    width: 35px;
+    position: relative;
+    bottom: 370px;
+    left: 230px;
+    font-size: 12px;
+}
+
+
+
+
+#deffenseStats {
+    width: 238px;   height: 220px;
+    font-size: 12px;
+    position: absolute;
+    top: 41px;
+    left: 330px;
+    font-size: 12px;
+}
+
+#deffenseStats .deffenseFields {
+    width: 85px;
+    font-size: 12px;
+    margin-top: 1px;
+}
+
+#deffenseStats .deffenseNumbers {
+    width: 55px;
+    position: relative;
+    left: 115px;
+    bottom: 167px;
+    font-size: 12px;
+}
+
+#deffenseStats .deffenseRank {
+    width: 35px;
+    position: relative;
+    bottom: 370px;
+    left: 165px;
+    font-size: 12px;
+}
+
+
+
+
+#setPiecesStats {
+    width: 330px;   height: 17px;
+    font-size: 12px;
+    position: relative;
+    bottom: 19px;
+    left:125px;
+    border-top: 1px solid #a8a7a7;
+}
+#setPiecesStats .setPiecesFields {
+    width: 130px;
+    margin-top: 35px;
+    margin-left: 55px;
+    font-size: 12px;
+}
+
+#setPiecesStats .setPiecesNumbers {
+    width: 35px;
+    position: relative;
+    bottom: 165px;
+    left: 193px;
+    font-size: 12px;
+}
+
+#setPiecesStats .setPiecesRank {
+    width: 35px;
+    position: relative;
+    bottom: 372px;
+    left: 248px;
+    font-size: 12px;
+}
+
+
+.rankTitle {
+    color: #979191;
+}
+
+.green {
+    color: #2b8807;
+}
+
+.blue {
+    color: #2220af;
+}
+
+.red {
+    color: #a10c0c;
+}
+
+
+
+#gpsDataTitle {
+    color: #010052;
+    position: relative;
+    bottom: 160px;
+    margin-left: 40px;
+}
+
+
+#heatMap {
+    position: relative;
+    bottom: 130px;
+    left: 110px;
+}
+
+
+
+
+
+#gpsData {
+    width: 300px;   height:225px;
+    position: relative;
+    float: left;
+    top: 435px;
+}
+
+#gpsFields {
+    width: 180px;   height: 225px;
+    display: inline-block;
+    float: left;
+    position: relative;
+    bottom: 70px;
+    left: 120px;
+    font-size: 15px;
+}
+
+#gpsNumbers {
+    width: 90px;   height: 225px;
+    display: inline;
+    float: right;
+    position: relative;
+    bottom: 68px;
+    left: 160px;
+    font-size: 15px;
+
+}
+
+
+/*---------------------//PlauerPage---------------------*/
 
 
     /*---------------------NewGame---------------------*/
@@ -1444,7 +1953,7 @@ display: none;
         height: 505px;
         width: 500px;
         float: right;
-        left: 227px;
+        left: 229px;
         top: 0px;
 
     }
@@ -1935,12 +2444,13 @@ display: none;
 
 
     #commentsBox {
+        display: none;
         width: 675px;
-        height:430px;
+        height:440px;
         background-color: #ffffff;
         opacity: 0.85;
         position: absolute;
-        bottom: 53px;
+        bottom: 50px;
         left: 205px;
         border-radius: 15px;
         -webkit-border-radius: 15px;
@@ -1956,33 +2466,33 @@ display: none;
         right: 80px;
     }
 
-    #hapoelScore {
+    #HhapoelScore {
         position: relative;
         top: 10px;
         left: 50px;
         font-size: 18px;
     }
 
-    #hapoelScore select {
+    #hapoelScore {
         position: relative;
         top: 5px;
         left: 45px;
     }
 
-    #rivalScore {
+    #HrivalScore {
         position: relative;
         top: 10px;
         left: 210px;
         font-size: 18px;
     }
 
-    #rivalScore select {
+    #rivalScore {
         position: relative;
         top: 5px;
         left: 27px;
     }
 
-    #commentsBox #yellowCard {
+    #HcommentsBox #yellowCard {
         position: relative;
         top: 80px;
         right: 30px;    
@@ -1990,7 +2500,7 @@ display: none;
     }
 
 
-    #commentsBox #theCard_Yellow {
+    #HcommentsBox #theCard_Yellow {
         width: 15px;
         height: 35px;
         background-color: #daec34;
@@ -1998,27 +2508,27 @@ display: none;
 
 
 
-    #commentsBox #redCard {
+    #HcommentsBox #redCard {
         position: relative;
         top: 80px;
         left: 25px;    
 
     }
     
-    #commentsBox #theCard_Red {
+    #HcommentsBox #theCard_Red {
         width: 15px;
         height: 35px;
         background-color: #a10c0c;
     }
 
 
-    #yellowCard select {
+    #yellowCard {
         position: relative;
         top: 2px;
         right: 7px;
     }
 
-    #redCard select {
+    #redCard {
         position: relative;
         top: 2px;
         right: 7px;
@@ -2027,47 +2537,47 @@ display: none;
 
 
 
-    #corners {
+    #Hcorners {
         position: relative;
         top: 170px;
         right: 210px;
         font-size: 18px;
     }
 
-    #corners select {
+    #corners  {
         position: relative;
         top: 5px;
         left: 22px;
     }
 
-    #offsides {
+    #Hoffsides {
         position: relative;
         top: 170px;
         right: 170px;
         font-size: 18px;
     }
 
-    #offsides select {
+    #offsides  {
         position: relative;
         top: 5px;
         left: 22px;
     }
 
 
-    #penalties {
+    #Hpenalties {
         position: relative;
         top: 170px;
         right: 120px;
         font-size: 18px;
     }
 
-    #penalties select {
+    #penalties  {
         position: relative;
         top: 5px;
         left: 24px;
     }
 
-    textarea {
+    #Hcomments  {
         position: relative;
         top: 190px;
         left: 100px;
@@ -2198,9 +2708,46 @@ display: none;
         list-style: square
     }
         
+    #submit {
+        position: absolute;
+        top: 403px;
+        right: 415px;
+        border: solid black 1px;
+        border-radius: 3px;
+        height: 25px;
+        width: 50px;
+    }
 
+    .reportIcon {
+       position: relative;
+       top: 25px;
+       left: 40px;
+       display: inline-block;
+   }
 
+   #matchReport h1 {
+       position: relative;
+       font-size: 17px;
+       width: 920px;
+       height: 50px;
+       border-bottom: 0.5px solid black;
+       padding-top: 23px;
+       padding-left: 5px;
+       left: 60px;
+   }
 
+   #matchReport main {
+        overflow-y: scroll;
+   }
+
+   .reportContainer{
+       
+       position: relative;
+       left: 60px;
+       width: 920px;
+       border-bottom: 0.5px solid black;
+       margin-left: 80px;
+   }
 /*---------------------//matchReport---------------------*/
 
 }

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="includes/style.css">
+    <script src="includes/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <title>Player Page</title>
+</head>
+<body>
+    <div id="wrapper">
+            <section id="selfMenu">
+                <header>
+                    <p>Hello Reuven!</p>
+                    <a id="logo"  href="index.html"></a>
+                    <article id="reuven"></article>      
+
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light theNav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link hamburger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                            <div class="dropdown-menu dropDownMenu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item first" href="newGame.html"><i class="far fa-futbol"></i>New Game</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-arrow-left"></i>Previous Games</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="fab fa-stack-exchange"></i>Statistics</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="far fa-chart-bar"></i>Player Analysis</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-table"></i>League Table</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-cog"></i>Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="contactUs.html"><i class="fas fa-phone"></i>Contact Us</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item logout" href="#"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                            </div>
+                        </li>
+                        <div id="navMainOptions">
+                            <li><a href="newGame.html">New Game</a></li>
+                            <li><a href="#">Previous Games</a></li>
+                            <li><a href="#">Statistics</a></li>
+                            <li><a href="#">Player Analysis</a></li>            
+                        </div>
+                    </nav>
+                </header>
+
+                <main>
+                    <section id="playerDetails">
+                        <section id="leftDetails">
+                            <h6 id="personalDetailsTitle"><b>Personal Details</b></h6>
+                            <img id="maximPhoto" src="images/MaximHalfBody.png">
+                            <article id="maximFields">
+                                <p>Name:</p>
+                                <p>Date of birth:</p>
+                                <p>Height:</p>
+                                <p>Weight:</p>
+                                <p>Nationality:</p>
+                            </article>
+
+                            <article id="maximPrivateAttributes">
+                                    <p>Maxim Flakuchenko</p>
+                                    <p>04-01-1996 / 22 years old</p>
+                                    <p>179 cm</p>
+                                    <p>73kg</p>
+                                    <p>Israeli</p>
+                            </article>
+
+                            <h6 id="positionsTitle"><b>Positions</b></h6>
+                            <img id="smallCourtMaxim" src="images/smallCourtMaxim.png">
+                            <article id="positionData">
+                                    <p>Positions: CMA / RW</p>
+                                    <p>Foot: Left</p>
+                            </article>
+
+                        </section>
+
+
+
+
+                        
+
+                        <section id="rightDetails">
+                            <h6 id="generalStatisticsTitle"><b>General Statistics</b></h6>
+                            
+                            <section id="offeneseStats">
+                                <article class="offenseFields">
+                                    <h4><b>OFFENSE</b></h4>
+                                    <p><b>Goals</b></p>
+                                    <p><b>Goals/game</b></p>
+                                    <p><b>Shots/game</b></p>
+                                    <p><b>passing %</b></p>
+                                    <p><b>Crosses/game</b></p>        
+                                </article>
+                                <article class="offenseNumbers">
+                                    <p>4</p>
+                                    <p>0.4</p>
+                                    <p>3.5</p>
+                                    <p>69.5%</p>  
+                                    <p>0.4</p>          
+                                </article>
+                                <article class="offenseRank">
+                                        <p class="rankTitle"><b>Rank</b></p>
+                                        <p class="blue">Avarage+</p>
+                                        <p class="blue">Avarage+</p>
+                                        <p class="green">Hight</p>
+                                        <p class="green">Hight</p>  
+                                        <p class="red">Avarage-</p>          
+                                    </article>
+    
+                            </section>
+
+                            <section id="deffenseStats">
+                                <article class="deffenseFields">
+                                    <h4><b>DEFFENSE</b></h4>
+                                    <p><b>Goals</b></p>
+                                    <p><b>Goals/game</b></p>
+                                    <p><b>Shots/game</b></p>
+                                    <p><b>passing %</b></p>
+                                    <p><b>Crosses/game</b></p>        
+                                </article>
+                                <article class="deffenseNumbers">
+                                    <p>4</p>
+                                    <p>0.4</p>
+                                    <p>3.5</p>
+                                    <p>69.5%</p>  
+                                    <p>0.4</p>          
+                                </article>
+                                <article class="deffenseRank">
+                                    <p class="rankTitle"><b>Rank</b></p>
+                                    <p class="red">Low</p>
+                                    <p class="blue">Avarage+</p>
+                                    <p class="red">Low</p>
+                                    <p class="red">Low</p>  
+                                    <p class="green">Hight</p>          
+                                </article>
+        
+                            </section>
+
+                            <section id="setPiecesStats">
+                                <article class="setPiecesFields">
+                                    <h4><b>SET PIECES</b></h4>
+                                    <p><b>Corners</b></p>
+                                    <p><b>Corners Efficiency%</b></p>
+                                    <p><b>Free Kicks</b></p>
+                                    <p><b>Free Kicks-targets</b></p>
+                                    <p><b>Throw ins</b></p>        
+                                </article>
+                                <article class="setPiecesNumbers">
+                                    <p>4</p>
+                                    <p>0.4</p>
+                                    <p>3.5</p>
+                                    <p>69.5%</p>  
+                                    <p>0.4</p>          
+                                </article>
+                                <article class="setPiecesRank">
+                                    <p class="rankTitle"><b>Rank</b></p>
+                                    <p class="green">Hight</p>
+                                    <p class="green">Hight</p>
+                                    <p class="blue">Avarage+</p>
+                                    <p class="red">Low</p>  
+                                    <p class="green">Hight</p>          
+                                </article>
+
+                            </section>
+
+                            <section id="gpsData">
+                                <h6 id="gpsDataTitle"><b>GPS Data</b></h6>
+                                <img id="heatMap" src="images/heatMap.png">        
+                                <article id="gpsFields">
+                                    <p>Average Km per Game:</p>
+                                    <p>Walking Time:</p>
+                                    <p>Jogging Time:</p>
+                                    <p>Running Time:</p>
+                                    <p>Sprinting Time:</p>
+                                    <p>Average Speed:</p>        
+                                </article>
+
+                                <article id="gpsNumbers">
+
+                                </article>
+    
+                            </section>
+        
+
+                        </section>
+                    </section>
+                </main>
+            </section>
+        </div>
+
+    <script src="includes/playerPage.js"></script>
+</body>
+</html>

@@ -13,18 +13,13 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
-
+    <script src="includes/jquery.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-
 
     <link rel="stylesheet" href="includes/style.css">
     <title>Match Report</title>
 </head>
-
-
-
 
 <body>
     <div id="wrapper">
@@ -61,42 +56,42 @@
                         </li>
                     </nav>
                 </header>
-
                 <main>
-                        <section>
-                                <article>
-                                    <button>Team Statistics</button>
-                                    <h3>Match Report</h3>
-                                </article>
+                        <?php
+                            include ("db.php");
 
-                                <article id="theTeams">
-                                        <img src="images/hapoelLogo.svg">
+                            $iconId= $_GET['id'];
+                            
+                            $query1 = "SELECT * FROM tb_games_216 WHERE game_id = $iconId";    
+                            $result = mysqli_query($connection, $query1);
 
-                                        <article id="theScore">
-                                            <h2> 3 - 1</h2>
-                                        </article>
+                            if(!$result) {
+                                die('DB QUERY FAILED.');
+                            }
+                            
+                            $hapoelScore = 'self_score';
+                            $rivalScore = 'rival_score';
+                            $corners = 'corners';
+                            $offsides = 'offsides';
+                            $penalties = 'pendelties';
+                            $comments = 'comments';
+                            $rival_team = 'rival_team';
+                            $game_date = 'game_date';
+                            $game_id = 'game_id';
+                            
+                            while ($column = mysqli_fetch_assoc($result)){
+                                echo $column[$hapoelScore];
+                                echo $column[$rivalScore];
+                                echo $column[$corners];
+                                echo $column[$comments];
+                                echo $column[$rival_team];
+                                echo $column[$game_date];
+                                echo $column[$game_id];
+                                
+                            }
+                        ?>
 
-                                        <img id="beitarLogo" src="images/beitarLogo.svg">
-                                </article>
-
-                                <article id="gameDate">
-                                    <p>Wednesday 9th May 2018</p>
-                                </article>
-
-                                <div id="theReport">
-                                    <h4>Comments</h4>
-                                    <ul>
-                                            <li>Beitar Jerusalem sufferd a cruel defeat at Sami-Offer as Hapoel secured a victory with a goal in the first minute and another two at the last act.</li>
-                                            <li>In added time, a panic has occured in Beitar while trying to take one goal and not lose with a 0 score.</li>    
-                                            <li>as well a possible handball there was also a hint of offside with Cachila standing on the goalline.</li>
-                                            <li>Gabriel Tamas had an outstanding game after a great sesone, pushing the team up the league table. his great tackles helped Hapoel to keep the sheet clean. </li>
-                                            <li>Eden Ben-Basat had a great game, didn't stop running from the edge to the middle of the court.</li>
-                                    </ul>
-                                </div>
-
-                        </main>
-            </section>
+                </main>
     </div>
-
 </body>
 </html>

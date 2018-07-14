@@ -1,4 +1,4 @@
-
+var rival;
 
 window.onload = function () {
 
@@ -6,6 +6,7 @@ window.onload = function () {
     var time = 0;
     var teams_list = document.getElementById("teams-list");
     var formation_list = document.getElementById("formation-list");
+    var commentsBox = document.getElementById("commentsBox");
     var players_list = document.getElementById("players-list");
     var formation1 = document.getElementById("formation3_5_2");
     var formation2 = document.getElementById("formation4_3_3");
@@ -15,6 +16,7 @@ window.onload = function () {
     var dataClass;
     var dataSrc;
     var dropArea;
+    
     
 
 
@@ -59,9 +61,14 @@ window.onload = function () {
     };
 
     document.getElementById("Comments").onclick = function () {
-        players_list.style.display = "none";
-        teams_list.style.display = "none";
-        formation_list.style.display = "none";
+    //     if (commentsBox.style.display === "none") {
+    //         if ((teams_list.style.display = "block") || (formation_list.style.display = "block") || (formation_list.style.display === "block")) {
+    //             (teams_list.style.display = "none") && (formation_list.style.display = "none") && (formation_list.style.display === "none");
+    //         }
+            commentsBox.style.display = "block";
+    //     } else {
+    //         commentsBox.style.display = "none";
+    //     }
     };
 
     document.getElementById("area-Select").onclick = function () {
@@ -98,8 +105,8 @@ window.onload = function () {
     }
 
     function onclick () {
-        console.log ('hiiiiii');
         this.style.fontWeight = 'bold';
+        rival= this.getAttribute("name");
     }
 
     for (const fill of fills){
@@ -180,7 +187,7 @@ window.onload = function () {
             text: "click OK to open report",
             type: "success",
         }).then(function() {
-            window.location = "matchReport.html";
+            window.location = "matchReport.php";
         });
          
     };
@@ -204,9 +211,30 @@ window.onload = function () {
                 document.getElementById("timer-lable").innerHTML = min + ":" + sec;
                 timer();
             }, 10);
-        }
-    }
+        };
+    };
+};
 
-    
+$(function() {
+    $("#gameForm").submit(function(event) {
+        event.preventDefault();
+    var dataString =  $("#gameForm").serialize();
+    console.log(dataString);    
+    console.log(rival);
+    $.ajax({
+        type: "POST",
+        url: "action.php",
+        data: dataString + "&rivalteam=" + rival,
+        cache: true,
+        success: function(data){
+            // newFunction(data);
+            $("#functions").html(data);
+        }  
+    }); 
+    return false;
+    });
+});
 
-}
+// function newFunction(data) {
+//     document.getElementById("commentsBox").style.display="none";
+// };
