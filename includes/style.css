@@ -2444,7 +2444,7 @@ display: none;
 
 
     #commentsBox {
-        display: none;
+        /* display: none; */
         width: 675px;
         height:440px;
         background-color: #ffffff;
@@ -2469,120 +2469,75 @@ display: none;
     #HhapoelScore {
         position: relative;
         top: 10px;
-        left: 50px;
+        left: 100px;
         font-size: 18px;
     }
 
     #hapoelScore {
         position: relative;
         top: 5px;
-        left: 45px;
+        left: 37px;
     }
 
     #HrivalScore {
         position: relative;
         top: 10px;
-        left: 210px;
+        left: 145px;
         font-size: 18px;
     }
 
     #rivalScore {
         position: relative;
         top: 5px;
-        left: 27px;
+        left: 24px;
     }
-
-    #HcommentsBox #yellowCard {
-        position: relative;
-        top: 80px;
-        right: 30px;    
-
-    }
-
-
-    #HcommentsBox #theCard_Yellow {
-        width: 15px;
-        height: 35px;
-        background-color: #daec34;
-}
-
-
-
-    #HcommentsBox #redCard {
-        position: relative;
-        top: 80px;
-        left: 25px;    
-
-    }
-    
-    #HcommentsBox #theCard_Red {
-        width: 15px;
-        height: 35px;
-        background-color: #a10c0c;
-    }
-
-
-    #yellowCard {
-        position: relative;
-        top: 2px;
-        right: 7px;
-    }
-
-    #redCard {
-        position: relative;
-        top: 2px;
-        right: 7px;
-    }
-
-
 
 
     #Hcorners {
         position: relative;
-        top: 170px;
-        right: 210px;
+        top: 110px;
+        right: 150px;
         font-size: 18px;
     }
 
     #corners  {
         position: relative;
         top: 5px;
-        left: 22px;
+        left: 15px;
     }
 
     #Hoffsides {
         position: relative;
-        top: 170px;
-        right: 170px;
+        top: 110px;
+        right: 91px;
         font-size: 18px;
     }
 
     #offsides  {
         position: relative;
         top: 5px;
-        left: 22px;
+        left: 15px;
     }
 
 
     #Hpenalties {
         position: relative;
-        top: 170px;
-        right: 120px;
+        top: 110px;
+        right: 30px;
         font-size: 18px;
     }
 
     #penalties  {
         position: relative;
         top: 5px;
-        left: 24px;
+        left: 19px;
     }
 
     #Hcomments  {
         position: relative;
-        top: 190px;
-        left: 100px;
+        top: 150px;
+        left: 11px;
     }
-
 
 
 
