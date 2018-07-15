@@ -187,7 +187,7 @@ window.onload = function () {
             text: "click OK to open report",
             type: "success",
         }).then(function() {
-            window.location = "matchReport.php";
+            window.location = "reports.php";
         });
          
     };
@@ -227,14 +227,14 @@ $(function() {
         data: dataString + "&rivalteam=" + rival,
         cache: true,
         success: function(data){
-            // newFunction(data);
-            $("#functions").html(data);
+            newFunction(data);
+            // $("#functions").html(data);
         }  
     }); 
     return false;
     });
 });
 
-// function newFunction(data) {
-//     document.getElementById("commentsBox").style.display="none";
-// };
+function newFunction(data) {
+    document.getElementById("commentsBox").style.display="none";
+};

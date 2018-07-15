@@ -37,9 +37,9 @@
                                 <i class="fas fa-bars"></i>
                             </a>
                             <div class="dropdown-menu dropDownMenu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item first" href="newGame.html"><i class="far fa-futbol"></i>New Game</a>
+                                <a class="dropdown-item first" href="newGame.php"><i class="far fa-futbol"></i>New Game</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"><i class="fas fa-arrow-left"></i>Previous Games</a>
+                                <a class="dropdown-item" href="reports.php"><i class="fas fa-arrow-left"></i>Previous Games</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#"><i class="fab fa-stack-exchange"></i>Statistics</a>
                                 <div class="dropdown-divider"></div>
@@ -75,15 +75,17 @@
 
                             // (rival_team,game_date,self_score,rival_score,corners,offsides,pendelties,comments)
 
-                                echo '<div class="rContainer">
-                                    <h4> Hapoel Haifa - ' . $row['rival_team'] . '</h4>';
-                                echo '<h4> ' . $row['self_score'] . ' - ' . $row['rival_score'] . ' </h4>';
-                                echo '<div class="sContainer">
-                                    <h5>' . $row['game_date'] . '</h5>';
-                                echo '<h6> Corners </h6>' .  $row['corners'] . '<h6> Offsides </h6>' .  $row['offsides'] . 
-                                '<h6> Pendelties </h6>' . $row['pendelties'] . '<h6> Comments </h6>' . $row['comments'];
-                                echo '</div>';
-                                echo '</div>';
+                            echo '<div class="rContainer">
+                            <h4> H. Haifa - ' . $row['rival_team'] . '</h4>';
+                        echo '<h4 class="theScore"> ' . $row['self_score'] . ' - ' . $row['rival_score'] . ' </h4>
+                        <h5 class="theDate">' . $row['game_date'] . '</h5>';
+                        echo '</div>';
+                        echo '<div class="sContainer">';
+                         
+                        echo '<h6> Corners </h6>' .  $row['corners'] . '<h6> Offsides </h6>' .  $row['offsides'] . 
+                        '<h6> Pendelties </h6>' . $row['pendelties'] . '<h6> Comments </h6>' . $row['comments'];
+                        
+                        echo '</div>';
                         
                         ?>
 

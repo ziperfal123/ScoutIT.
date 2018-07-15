@@ -41,7 +41,7 @@
                             <div class="dropdown-menu dropDownMenu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item first" href="#"><i class="far fa-futbol"></i>New Game</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"><i class="fas fa-arrow-left"></i>Previous Games</a>
+                                <a class="dropdown-item" href="reports.php"><i class="fas fa-arrow-left"></i>Previous Games</a>
                                 <div class="dropdown-divider"></div> 
                                 <a class="dropdown-item" href="#"><i class="fab fa-stack-exchange"></i>Statistics</a>
                                 <div class="dropdown-divider"></div>

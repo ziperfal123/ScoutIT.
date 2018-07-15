@@ -14,6 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script src="includes/jquery.min.js"></script>
+    <script src=includes/formScript></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
     <link rel="stylesheet" href="includes/style.css">
@@ -36,9 +37,9 @@
                                 <i class="fas fa-bars"></i>
                             </a>
                             <div class="dropdown-menu dropDownMenu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item first" href="newGame.html"><i class="far fa-futbol"></i>New Game</a>
+                                <a class="dropdown-item first" href="newGame.php"><i class="far fa-futbol"></i>New Game</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#"><i class="fas fa-arrow-left"></i>Previous Games</a>
+                                <a class="dropdown-item" href="reports.php"><i class="fas fa-arrow-left"></i>Previous Games</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#"><i class="fab fa-stack-exchange"></i>Statistics</a>
                                 <div class="dropdown-divider"></div>
@@ -72,18 +73,14 @@
                             $game_date = 'game_date';
                             $game_id = 'game_id';
                             
-                            while ($rows = mysqli_fetch_assoc($result3)){
+                            while ($rows = mysqli_fetch_assoc($result3)){                                
                                 
-                                // echo '<li><i class="reportIcon fas fa-2x fa-file-alt" id="' . $rows[$game_id] . '"></i><h3> Hapoel Haifa vs. ' . $rows[$rival_team] . '</h3>';
-                                
-                                
-                                // echo '<li><i class="reportIcon fas fa-2x fa-file-alt" id="' . $rows[$game_id] . '"></i><h3> Hapoel Haifa vs. ' . $rows[$rival_team] . '</h3>';
                                 echo '<a class="reportIcon" href="matchReport.php?id=' . $rows[$game_id] . '"><i class=" reportIcon fas fa-2x fa-file-alt"></i></a>';
                                 echo '<div class="reportContainer">
                                 <h3"> Hapoel Haifa vs. ' . $rows[$rival_team] . '</h3>
                                 <p>' . $rows[$game_date] . '<br>' .
-                                // // echo '<img src="images/logo.png">' . '<img src="images/' . $rows[$rival_team] . '.png" . >';
                                 $rows[$hapoelScore] . "-" . $rows[$rivalScore] . '</p>';
+                                echo '<button id=' . $rows[$game_id] . ' class="deleteButton">Delete</button>';
                                 echo '</div>';
                                 
                             }

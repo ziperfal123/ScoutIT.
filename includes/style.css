@@ -817,17 +817,88 @@ display: none;
 
     #theReport ul li {
         margin-top: 25px;
-        list-style: square
+        list-style: square;
     }
 
+    .reportIcon {
+        position: relative;
+        top: 25px;
+        left: 40px;
+        display: inline-block;
+    }
+
+    #matchReport h1 {
+        position: relative;
+        font-size: 17px;
+        width: 1170px;
+        height: 50px;
+        border-bottom: 0.5px solid black;
+        padding-top: 23px;
+        padding-left: 5px;
+        left: 60px;
+    }
+
+    #matchReport main .rContainer {
+        position: relative;
+        left: 100px;
+        text-align: center;
+        width: 1100px;
+        border-bottom: 0.5px solid #000000;
+   }
+
+   .rContainer .theScore {
+       position: relative;
+       right: 2px;;
+   }
+
+   .rContainer .theDate {
+    position: relative;
+    left: 3px;
+}
+
+
+#matchReport main .sContainer {
+    width: 1090px;
+    position: relative;
+    top: 25px;
+    left: 100px;
+}
+
+.sContainer h6 {
+    position: relative;
+    top: 5px;
+    font-weight: bold;
+
+}
+
+ 
+    #matchReport main {
+         overflow-y: scroll;
+    }
+ 
+    .reportContainer{
+        
+        position: relative;
+        left: 60px;
+        width: 1087px;
+        border-bottom: 0.5px solid black;
+        margin-left: 80px;
+    }
+ 
+    #matchReport main .deleteButton {
+        position: absolute;
+        left: 900px;
+        top: 10px;
+        width: 100px;
+        
+        
+    }
 
 
 
 /*---------------------//matchReport---------------------*/
 
 
-
-/*---------------------PlauerPage---------------------*/
 
 #leftDetails {
     width: 450px;  height: 680px;
@@ -890,7 +961,7 @@ display: none;
 
 
 #rightDetails {
-    width: 850px;  height: 680px;
+    width: 890px;  height: 680px;
     position: relative;
     bottom: 627px;
     left: 449px;
@@ -977,7 +1048,7 @@ display: none;
     left:525px;
 }
 #setPiecesStats .setPiecesFields {
-    width: 130px;
+    width: 150px;
     margin-top: 35px;
     margin-left: 55px;
     font-size: 12px;
@@ -987,7 +1058,7 @@ display: none;
     width: 35px;
     position: relative;
     bottom: 165px;
-    left: 193px;
+    left: 210px;
     font-size: 12px;
 }
 
@@ -995,7 +1066,7 @@ display: none;
     width: 35px;
     position: relative;
     bottom: 372px;
-    left: 248px;
+    left: 258px;
     font-size: 12px;
 }
 
@@ -1653,252 +1724,250 @@ display: none;
 
     /*---------------------//contactUs---------------------*/
 
-/*---------------------PlauerPage---------------------*/
-
-#playerDetails{
-    height: 300px;
-     overflow-y: scroll;
-}
-
-#leftDetails {
-    width: 450px;
-    position: relative;
-    top: 50px;
-    border-right: solid 2px #b9bdbd;
-
-}
-
-#personalDetailsTitle {
-    margin-left: 40px;
-    color: #010052;
-}
-
-#maximPhoto {
-    position: relative;
-    top: 20px;
-    left: 110px;
-}
-
-#maximFields {
-    margin-top: 55px;
-    margin-left: 60px;
-    font-size: 14px;
-}
-
-#maximPrivateAttributes {
-    position: relative;
-    bottom: 184px;
-    left: 230px;
-    font-size: 14px;
-}
-
-#positionsTitle {
-    position: relative;
-    color: #010052;
-    bottom: 35px;
-    left: 40px;
-}
-
-#positionData {
-    position: relative;
-    top: 25px;
-    left: 170px;
-    font-size: 14px;
-}
-
-
-#smallCourtMaxim {
-    position: relative;
-    bottom: 10px;
-    left: 130px;
-}
-
-
-
-
-
-
-
-
-
-#rightDetails {
-    width: 450px;  height: fit-content;
-    position: relative;
-    bottom: 777px;
-    left: 449px;
-}
-
-#generalStatisticsTitle {
-    margin-left: 40px;
-    color: #010052;
-}
-
-#offeneseStats {
-    width: 305px;   height: 220px;
-    font-size: 12px;
-    border-right: 1px solid #a8a7a7;
-    position: relative;
-    bottom: 16px;
-    right:15px;
-}
-#offeneseStats .offenseFields {
-    width: 85px;
-    margin-top: 36px;
-    margin-left: 55px;
-    font-size: 12px;
-}
-
-#offeneseStats .offenseNumbers {
-    width: 35px;
-    position: relative;
-    bottom: 165px;
-    left: 170px;
-    font-size: 12px;
-}
-
-#offeneseStats .offenseRank {
-    width: 35px;
-    position: relative;
-    bottom: 370px;
-    left: 230px;
-    font-size: 12px;
-}
-
-
-
-
-#deffenseStats {
-    width: 238px;   height: 220px;
-    font-size: 12px;
-    position: absolute;
-    top: 41px;
-    left: 330px;
-    font-size: 12px;
-}
-
-#deffenseStats .deffenseFields {
-    width: 85px;
-    font-size: 12px;
-    margin-top: 1px;
-}
-
-#deffenseStats .deffenseNumbers {
-    width: 55px;
-    position: relative;
-    left: 115px;
-    bottom: 167px;
-    font-size: 12px;
-}
-
-#deffenseStats .deffenseRank {
-    width: 35px;
-    position: relative;
-    bottom: 370px;
-    left: 165px;
-    font-size: 12px;
-}
-
-
-
-
-#setPiecesStats {
-    width: 330px;   height: 17px;
-    font-size: 12px;
-    position: relative;
-    bottom: 19px;
-    left:125px;
-    border-top: 1px solid #a8a7a7;
-}
-#setPiecesStats .setPiecesFields {
-    width: 130px;
-    margin-top: 35px;
-    margin-left: 55px;
-    font-size: 12px;
-}
-
-#setPiecesStats .setPiecesNumbers {
-    width: 35px;
-    position: relative;
-    bottom: 165px;
-    left: 193px;
-    font-size: 12px;
-}
-
-#setPiecesStats .setPiecesRank {
-    width: 35px;
-    position: relative;
-    bottom: 372px;
-    left: 248px;
-    font-size: 12px;
-}
-
-
-.rankTitle {
-    color: #979191;
-}
-
-.green {
-    color: #2b8807;
-}
-
-.blue {
-    color: #2220af;
-}
-
-.red {
-    color: #a10c0c;
-}
-
-
-
-#gpsDataTitle {
-    color: #010052;
-    position: relative;
-    bottom: 160px;
-    margin-left: 40px;
-}
-
-
-#heatMap {
-    position: relative;
-    bottom: 130px;
-    left: 110px;
-}
-
-
-
-
-
-#gpsData {
-    width: 300px;   height:225px;
-    position: relative;
-    float: left;
-    top: 435px;
-}
-
-#gpsFields {
-    width: 180px;   height: 225px;
-    display: inline-block;
-    float: left;
-    position: relative;
-    bottom: 70px;
-    left: 120px;
-    font-size: 15px;
-}
-
-#gpsNumbers {
-    width: 90px;   height: 225px;
-    display: inline;
-    float: right;
-    position: relative;
-    bottom: 68px;
-    left: 160px;
-    font-size: 15px;
-
-}
-
-
-/*---------------------//PlauerPage---------------------*/
+    #playerDetails{
+        height: 300px;
+         overflow-y: scroll;
+    }
+    
+    #leftDetails {
+        width: 450px;
+        position: relative;
+        top: 50px;
+        border-right: solid 2px #b9bdbd;
+    
+    }
+    
+    #personalDetailsTitle {
+        margin-left: 40px;
+        color: #010052;
+    }
+    
+    #maximPhoto {
+        position: relative;
+        top: 20px;
+        left: 110px;
+    }
+    
+    #maximFields {
+        margin-top: 55px;
+        margin-left: 60px;
+        font-size: 14px;
+    }
+    
+    #maximPrivateAttributes {
+        position: relative;
+        bottom: 184px;
+        left: 230px;
+        font-size: 14px;
+    }
+    
+    #positionsTitle {
+        position: relative;
+        color: #010052;
+        bottom: 35px;
+        left: 40px;
+    }
+    
+    #positionData {
+        position: relative;
+        top: 25px;
+        left: 170px;
+        font-size: 14px;
+    }
+    
+    
+    #smallCourtMaxim {
+        position: relative;
+        bottom: 10px;
+        left: 130px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #rightDetails {
+        width: 450px;  height: fit-content;
+        position: relative;
+        bottom: 777px;
+        left: 449px;
+    }
+    
+    #generalStatisticsTitle {
+        margin-left: 40px;
+        color: #010052;
+    }
+    
+    #offeneseStats {
+        width: 305px;   height: 220px;
+        font-size: 12px;
+        border-right: 1px solid #a8a7a7;
+        position: relative;
+        bottom: 16px;
+        right:15px;
+    }
+    #offeneseStats .offenseFields {
+        width: 85px;
+        margin-top: 36px;
+        margin-left: 55px;
+        font-size: 12px;
+    }
+    
+    #offeneseStats .offenseNumbers {
+        width: 35px;
+        position: relative;
+        bottom: 165px;
+        left: 170px;
+        font-size: 12px;
+    }
+    
+    #offeneseStats .offenseRank {
+        width: 35px;
+        position: relative;
+        bottom: 370px;
+        left: 230px;
+        font-size: 12px;
+    }
+    
+    
+    
+    
+    #deffenseStats {
+        width: 238px;   height: 220px;
+        font-size: 12px;
+        position: absolute;
+        top: 41px;
+        left: 330px;
+        font-size: 12px;
+    }
+    
+    #deffenseStats .deffenseFields {
+        width: 85px;
+        font-size: 12px;
+        margin-top: 1px;
+    }
+    
+    #deffenseStats .deffenseNumbers {
+        width: 55px;
+        position: relative;
+        left: 115px;
+        bottom: 167px;
+        font-size: 12px;
+    }
+    
+    #deffenseStats .deffenseRank {
+        width: 35px;
+        position: relative;
+        bottom: 370px;
+        left: 165px;
+        font-size: 12px;
+    }
+    
+    
+    
+    
+    #setPiecesStats {
+        width: 330px;   height: 17px;
+        font-size: 12px;
+        position: relative;
+        bottom: 19px;
+        left:125px;
+        border-top: 1px solid #a8a7a7;
+    }
+    #setPiecesStats .setPiecesFields {
+        width: 145px;
+        margin-top: 35px;
+        margin-left: 55px;
+        font-size: 12px;
+    }
+    
+    #setPiecesStats .setPiecesNumbers {
+        width: 35px;
+        position: relative;
+        bottom: 172px;
+        left: 213px;
+        font-size: 12px;
+    }
+    
+    #setPiecesStats .setPiecesRank {
+        width: 35px;
+        position: relative;
+        bottom: 378px;
+        left: 275px;
+        font-size: 12px;
+    }
+    
+    
+    .rankTitle {
+        color: #979191;
+    }
+    
+    .green {
+        color: #2b8807;
+    }
+    
+    .blue {
+        color: #2220af;
+    }
+    
+    .red {
+        color: #a10c0c;
+    }
+    
+    
+    
+    #gpsDataTitle {
+        color: #010052;
+        position: relative;
+        bottom: 160px;
+        margin-left: 40px;
+    }
+    
+    
+    #heatMap {
+        position: relative;
+        bottom: 130px;
+        left: 110px;
+    }
+    
+    
+    
+    
+    
+    #gpsData {
+        width: 300px;   height:225px;
+        position: relative;
+        float: left;
+        top: 435px;
+    }
+    
+    #gpsFields {
+        width: 180px;   height: 225px;
+        display: inline-block;
+        float: left;
+        position: relative;
+        bottom: 70px;
+        left: 120px;
+        font-size: 15px;
+    }
+    
+    #gpsNumbers {
+        width: 90px;   height: 225px;
+        display: inline;
+        float: right;
+        position: relative;
+        bottom: 68px;
+        left: 160px;
+        font-size: 15px;
+    
+    }
+    
+    
+    /*---------------------//PlauerPage---------------------*/
 
 
     /*---------------------NewGame---------------------*/
@@ -2444,7 +2513,7 @@ display: none;
 
 
     #commentsBox {
-        /* display: none; */
+        display: none;
         width: 675px;
         height:440px;
         background-color: #ffffff;
@@ -2640,7 +2709,7 @@ display: none;
         bottom: 127px;  left: 290px;
     }
 
-    #gameDate {
+    gameDate {
         width: 888px;    height: 50px;
         position: relative;
         bottom: 85px;   left: 65px;
@@ -2667,7 +2736,7 @@ display: none;
         position: absolute;
         top: 403px;
         right: 415px;
-        border: solid black 1px;
+        border: solid #000000 1px;
         border-radius: 3px;
         height: 25px;
         width: 50px;
@@ -2699,10 +2768,54 @@ display: none;
        
        position: relative;
        left: 60px;
-       width: 920px;
+       width: 840px;
        border-bottom: 0.5px solid black;
        margin-left: 80px;
    }
+
+   #matchReport main .deleteButton {
+       position: absolute;
+       left: 700px;
+       top: 10px;
+       width: 100px;
+       
+       
+   }
+   #matchReport main .rContainer {
+    position: relative;
+    left: 100px;
+    text-align: center;
+    width: 850px;
+    border-bottom: 0.5px solid #000000;
+}
+
+.rContainer .theScore {
+    position: relative;
+    right: 2px;;
+}
+
+.rContainer .theDate {
+position: relative;
+left: 3px;
+}
+
+
+#matchReport main .sContainer {
+    width: 820px;
+    position: relative;
+    top: 25px;
+    left: 100px;
+}
+
+.sContainer h6 {
+    position: relative;
+    top: 5px;
+    font-weight: bold;
+
+}
+
+
+
 /*---------------------//matchReport---------------------*/
 
 }
