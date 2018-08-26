@@ -16,7 +16,7 @@ the app is for holding & managing data during football game (in realtime), in a 
 
 
 
-### main Page:
+### Main Page:
 
 <img width="1439" alt="screen shot 2018-08-26 at 15 12 42" src="https://user-images.githubusercontent.com/37538597/44629287-96ac7900-a955-11e8-88be-34a6095e630a.png">
 
