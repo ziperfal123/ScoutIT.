@@ -1,4 +1,4 @@
-#ScoutIT.
+ScoutIT.
 Web Project- Shenkar
 
 
