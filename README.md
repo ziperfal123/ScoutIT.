@@ -23,6 +23,13 @@ the app is for holding & managing data during football game (specially in realti
 
 
 
-### Game mode:
+### Game mode - Choosing rival team:
+
+<img width="1026" alt="screen shot 2018-08-26 at 15 19 21" src="https://user-images.githubusercontent.com/37538597/44647978-4f22fd00-a9e8-11e8-94ee-9792d511ce4a.png">
+
+
+
+
+### Game mode - choosing starting 11:
 
 <img width="1032" alt="screen shot 2018-08-26 at 15 20 40" src="https://user-images.githubusercontent.com/37538597/44629291-a330d180-a955-11e8-9769-efb07b256d58.png">
