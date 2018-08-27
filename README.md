@@ -1,5 +1,6 @@
 # ScoutIT.
-Web Project- Shenkar
+Web Project- Shenkar. HTML, CSS, JS. 
+Also supporting some basic DataBase functionallity
 <br/><br/>
 
 "ScoutIT." is an app for scouters / professional football people.
