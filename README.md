@@ -3,7 +3,7 @@ Web Project- Shenkar. HTML, CSS, JS. <br/>
 Also supporting some basic DataBase functionallity.
 <br/><br/>
 
-"ScoutIT." is an app for scouters / professional football people.
+*"ScoutIT."* is an app for scouters / professional football people.
 the app is for holding & managing data during football game (specially in realtime), in a visual and easy way for non-digital people. the system has been simplified in order to make the scouting job easy & fast as possible during live game. 
 <br/><br/>
 
