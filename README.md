@@ -1,5 +1,5 @@
 # ScoutIT.
-Web Project- Shenkar. HTML, CSS, JS. 
+Web Project- Shenkar. HTML, CSS, JS. <br/> 
 Also supporting some basic DataBase functionallity
 <br/><br/>
 
