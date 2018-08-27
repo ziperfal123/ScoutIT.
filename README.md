@@ -1,5 +1,3 @@
-<pre>
-
 # ScoutIT.
 Web Project- Shenkar
 
@@ -38,4 +36,3 @@ the app is for holding & managing data during football game (specially in realti
 
 <img width="1032" alt="screen shot 2018-08-26 at 15 20 40" src="https://user-images.githubusercontent.com/37538597/44629291-a330d180-a955-11e8-9769-efb07b256d58.png">
 
-</pre>
