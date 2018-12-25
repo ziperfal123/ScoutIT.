@@ -4,7 +4,7 @@ Also supporting some basic DataBase functionallity.
 <br/><br/>
 
 *"ScoutIT."* is an app for scouters / professional football people.
-The app is used for holding & managing data during football game (specially in realtime), in a visual and easy way that was designed specialy for non-digital people. The system has been simplified in order to make the scouting job easy & fast as possible during live game. 
+The app is used for holding & managing data during football game (specially in realtime), in a visual and easy way that was designed specially for non-digital people. The system has been simplified in order to make the scouting job easy & fast as possible during live game. 
 <br/><br/>
 
 
