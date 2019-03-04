@@ -1,7 +1,7 @@
 # ScoutIT.
 Web Project- HTML, CSS, Vanilla JS. <br/> 
 Also supporting some basic DataBase functionallity.
-<br/><br/>
+<br/>
 
 *"ScoutIT."* is an app for scouters / professional football people.
 The app is used for holding & managing data during football game (specially in realtime. 
