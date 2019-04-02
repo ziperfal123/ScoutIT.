@@ -40,7 +40,7 @@ The app is used for holding & managing data during football game (specially in r
 <br/>
 
 
-### Game mode - choosing starting 11 - Tablet view:
+### Game mode - choosing starting 11 using drag & drop functionality - Tablet view:
 
 <img width="1032" alt="screen shot 2018-08-26 at 15 20 40" src="https://user-images.githubusercontent.com/37538597/44629291-a330d180-a955-11e8-9769-efb07b256d58.png">
 
